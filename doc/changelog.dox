@@ -2863,7 +2863,7 @@ and
 <li>Refactoring: Replaced QDict&lt;Void&gt; by StringUnorderedSet in dotnode.cpp [<a href="https://github.com/doxygen/doxygen/commit/aa3385f19d06c6b526e6d09c6172d89a1b91d8da">view</a>]</li>
 <li>Refactoring: Replaced QDict&lt;void&gt; by StringUnorderedSet for fortrancode.l [<a href="https://github.com/doxygen/doxygen/commit/a0ff9effd8591a54d8c49a27e26ed7cc086d2be9">view</a>]</li>
 <li>Refactoring: Replaced QDict&lt;void&gt; by StringUnorderedSet used to keep track of visited paths [<a href="https://github.com/doxygen/doxygen/commit/713a6167733e660dcdfd48a36134576aaa8b80d3">view</a>]</li>
-<li>Refactoring: Replaced addDir(const DirDef *dd) by addDir(DirDef *const dd) in GroupDef and GropuDefImpl. [<a href="https://github.com/doxygen/doxygen/commit/8b2d00106d564068ad58d2f51bef155a4d0e982e">view</a>]</li>
+<li>Refactoring: Replaced addDir(const DirDef *dd) by addDir(DirDef *const dd) in GroupDef and GroupDefImpl. [<a href="https://github.com/doxygen/doxygen/commit/8b2d00106d564068ad58d2f51bef155a4d0e982e">view</a>]</li>
 <li>Refactoring: Replaced bitmap of doxygen logo by SVG version [<a href="https://github.com/doxygen/doxygen/commit/1fb2408b0ef717f0e475894f646bcd4c1b90b65e">view</a>]</li>
 <li>Refactoring: Replaced calls to DirDef::append() to DirDef::push_back(). [<a href="https://github.com/doxygen/doxygen/commit/b5a2d0b03fe7de2570a9b6d326be7062b774c506">view</a>]</li>
 <li>Refactoring: Restructured the split_and_keep function [<a href="https://github.com/doxygen/doxygen/commit/08686b4117ae8b0f8dc3711e169e3da3fa1fe8fc">view</a>]</li>
