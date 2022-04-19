@@ -57,7 +57,7 @@ class DotDirPropertyBuilder
     DotDirProperty m_property;
 };
 
-/** Elements consist of (1) directory relation and (2) whether it is pointing only to inherited dependees. */
+/** Elements consist of (1) directory relation and (2) whether it is pointing only to inherited dependencies. */
 typedef std::vector< std::pair< std::unique_ptr<DirRelation>, bool> > DirRelations;
 
 /** Returns a DOT color name according to the directory depth. */
