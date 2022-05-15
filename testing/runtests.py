@@ -678,7 +678,7 @@ def main():
     # sanity check
     if (not args.xml) and (not args.pdf) and (not args.xhtml) and (not args.qhp) and (not args.docbook and (not args.rtf) and (not args.xmlxsd)):
         args.xml=True
-    if (not args.updateref is None) and (args.ids is None) and (args.all is None):
+    if (args.updateref is not None) and (args.ids is None) and (args.all is None):
         parser.error('--updateref requires either --id or --all')
 
     starting_directory = os.getcwd()
