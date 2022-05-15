@@ -71,7 +71,7 @@ class Finder:
         if self.row_type is int:
             return " rowid=?"
         else:
-            if g_use_regexp == True:
+            if g_use_regexp:
                 return " REGEXP (?,%s)" %row
             else:
                 return " %s=?" %row
