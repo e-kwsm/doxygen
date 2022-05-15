@@ -19,7 +19,7 @@ class PyClass:
    
     def __init__(self):
         """The constructor."""
-        self._memVar = 0;
+        self._memVar = 0
    
     def PyMethod(self):
         """Documentation for a method."""

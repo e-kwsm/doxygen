@@ -16,7 +16,7 @@ class PyClass:
    
     ## The constructor.
     def __init__(self):
-        self._memVar = 0;
+        self._memVar = 0
    
     ## Documentation for a method.
     #  @param self The object pointer.
@@ -24,7 +24,7 @@ class PyClass:
         pass
      
     ## A class variable.
-    classVar = 0;
+    classVar = 0
 
     ## @var _memVar
     #  a member variable
