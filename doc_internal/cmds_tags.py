@@ -1,7 +1,13 @@
 #!/usr/bin/env python
 
 from __future__ import print_function
-import argparse, glob, itertools, re, shutil, os, sys
+import argparse
+import glob
+import itertools
+import re
+import shutil
+import os
+import sys
 import subprocess
 import shlex
 
