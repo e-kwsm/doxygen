@@ -49,7 +49,7 @@ def re_fn(expr, item):
     return reg.search(item) is not None
 
 def openDb(dbname):
-    if dbname == None:
+    if dbname is None:
         dbname = "doxygen_sqlite3.db"
 
     if not os.path.isfile(dbname):
@@ -380,7 +380,7 @@ def serveCli(argv):
 
         cn=openDb(dbname)
         f=Finder(cn,o)
-        if ref != None:
+        if ref is not None:
             j=processHref(cn,ref)
         else:
             j=process(f,kind)

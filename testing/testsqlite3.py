@@ -24,7 +24,7 @@ def extract_attribute(node,attribute,pnl):
 
 def extract_element(node,chld,pnl):
     # deal with <tag />
-    if chld.text == None:
+    if chld.text is None:
         if len(chld.attrib)==0:
             node.remove(chld)
         return
@@ -111,7 +111,7 @@ def load_xml(name):
 def open_db(dbname):
     global g_conn
 
-    if dbname == None:
+    if dbname is None:
         dbname = "doxygen_sqlite3.db"
 
     if not os.path.isfile(dbname):

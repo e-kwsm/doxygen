@@ -487,7 +487,7 @@ class Transl:
                     self.status = '0.0.00'
 
             # Check whether status was set, or set 'strange'.
-            if self.status == None:
+            if self.status is None:
                 self.status = 'strange'
             if not self.readableStatus:
                 self.readableStatus = 'strange'
@@ -732,7 +732,7 @@ class Transl:
         the source file."""
 
         assert(self.classId != 'Translator')
-        assert self.baseClassId != None, 'Class ' + self.classId + ' from the file ' + self.fname + ' does not have a base class.'
+        assert self.baseClassId is not None, 'Class ' + self.classId + ' from the file ' + self.fname + ' does not have a base class.'
 
         # The following finite automaton slightly differs from the one
         # inside self.collectPureVirtualPrototypes(). It produces the
