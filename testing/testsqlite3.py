@@ -16,7 +16,7 @@ def print_unprocessed_attributes(node):
         print("WARNING: '%s' has unprocessed attr '%s'" % (node.tag,key))
 
 def extract_attribute(node,attribute,pnl):
-    if not attribute in node.attrib:
+    if attribute not in node.attrib:
         return
     pnl.append("%s = ?" % attribute)
     val.append(node.attrib[attribute])
