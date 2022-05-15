@@ -162,7 +162,7 @@ def prepCDocs(node):
     format = node.getAttribute('format')
     defval = node.getAttribute('defval')
     adefval = node.getAttribute('altdefval')
-    doc = "";
+    doc = ""
     if (type != 'obsolete'):
         for n in node.childNodes:
             if (n.nodeName == "docs"):
@@ -237,7 +237,7 @@ def prepCDocs(node):
             doc += "<br/>" + messages['depstxt'].format(depends.lower(), depends.upper())
 
     docC = transformDocs(doc)
-    return docC;
+    return docC
 
 
 def parseOption(node):
@@ -252,7 +252,7 @@ def parseOption(node):
     depends = node.getAttribute('depends')
     setting = node.getAttribute('setting')
     orgtype = node.getAttribute('orgtype')
-    docC = prepCDocs(node);
+    docC = prepCDocs(node)
     if len(setting) > 0:
         print("#if %s" % (setting))
     print("  //----")
@@ -468,7 +468,7 @@ def parseGroupMapAvailable(node):
             if type=='enum':
                 if len(setting) > 0:
                     print("#if %s" % (setting))
-                print("    %-22s isAvailable_%-41s { return v.lower() == %s_enum2str(%s_str2enum(v)).lower(); }" % ('bool',name+'(QCString v)',name,name));
+                print("    %-22s isAvailable_%-41s { return v.lower() == %s_enum2str(%s_str2enum(v)).lower(); }" % ('bool',name+'(QCString v)',name,name))
                 if len(setting) > 0:
                     print("#endif")
 
@@ -536,7 +536,7 @@ def parseGroupCDocs(node):
         if n.nodeType == Node.ELEMENT_NODE:
             type = n.getAttribute('type')
             name = n.getAttribute('id')
-            docC = prepCDocs(n);
+            docC = prepCDocs(n)
             if type != 'obsolete':
                 print("  doc->add(")
                 print("              \"%s\"," % (name))
@@ -828,7 +828,7 @@ def main():
         print("    struct Info")
         print("    {")
         print("      enum Type { Bool, Int, String, List, Unknown };")
-        print("      using Enum2BoolMap = std::unordered_map<std::string,bool>;");
+        print("      using Enum2BoolMap = std::unordered_map<std::string,bool>;")
         print("      Info(Type t,bool         ConfigValues::*b) : type(t), value(b) {}")
         print("      Info(Type t,int          ConfigValues::*i) : type(t), value(i) {}")
         print("      Info(Type t,QCString     ConfigValues::*s, const Enum2BoolMap &boolMap = {}) : type(t), value(s), m_boolMap(boolMap) {}")
@@ -868,18 +868,18 @@ def main():
         print("#include \"configimpl.h\"")
         print("#include <unordered_map>")
         print("")
-        print("const ConfigValues::Info *ConfigValues::get(const QCString &tag) const");
-        print("{");
-        print("  static const std::unordered_map< std::string, Info > configMap =");
-        print("  {");
+        print("const ConfigValues::Info *ConfigValues::get(const QCString &tag) const")
+        print("{")
+        print("  static const std::unordered_map< std::string, Info > configMap =")
+        print("  {")
         for n in elem.childNodes:
             if n.nodeType == Node.ELEMENT_NODE:
                 if (n.nodeName == "group"):
                     parseGroupMapInit(n)
-        print("  };");
-        print("  auto it = configMap.find(tag.str());");
-        print("  return it!=configMap.end() ? &it->second : nullptr;");
-        print("}");
+        print("  };")
+        print("  auto it = configMap.find(tag.str());")
+        print("  return it!=configMap.end() ? &it->second : nullptr;")
+        print("}")
         print("")
         print("void ConfigValues::init()")
         print("{")
@@ -895,7 +895,7 @@ def main():
         print("")
         print("StringVector ConfigValues::fields() const")
         print("{")
-        print("  return {");
+        print("  return {")
         first=True
         for n in elem.childNodes:
             if n.nodeType == Node.ELEMENT_NODE:
@@ -920,7 +920,7 @@ def main():
         print("    auto it = m_boolMap.find((ConfigValues::instance().*(value.s)).str());")
         print("    if (it!=m_boolMap.end())")
         print("    {")
-        print("      return it->second;");
+        print("      return it->second;")
         print("    }")
         print("  }")
         print("  return false;")

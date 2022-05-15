@@ -80,7 +80,7 @@ def main():
                                 rule_num = int(rule_cnt)
                                 rule_num -= get_line_correction(rule_num)
                                 out_list.append("{0:5d}".format(rule_num))
-                            out_file.write(','.join(out_list));
+                            out_file.write(','.join(out_list))
                             if re.search(r',$', line): # re-add trailing comma
                                 out_file.write(",")
                             out_file.write("\n")

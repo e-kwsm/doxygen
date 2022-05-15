@@ -513,7 +513,7 @@ class Tester:
             if outType:
                 exe_string += ' %s more temp' % (separ)
             latex_out = xpopen(exe_string,exe_string1,getStderr=outType)
-            os.chdir(cur_directory);
+            os.chdir(cur_directory)
             if (outType and latex_out.find("Error")!=-1):
                 msg += ("PDF generation failed\n  For a description of the problem see 'refman.log' in the latex directory of this test",)
                 failed_latex=True

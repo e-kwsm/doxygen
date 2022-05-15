@@ -76,7 +76,7 @@ def get_commands(version):
         if cmds_reg.match(line):
             lst_list.append(re.sub(cmds_reg,'',line).replace("\\\\","\\"))
         elif line.startswith("\\endsecreflist"):
-            break;
+            break
     return lst_list
 
 
