@@ -55,10 +55,14 @@ class File(object):
     @staticmethod
     def factory(directory,subdir,fname):
         ext = splitext(fname)[1]
-        if ext=='.lum':  return LumFile(directory,subdir,fname)
-        if ext=='.luma': return LumaFile(directory,subdir,fname)
-        if ext=='.css':  return CSSFile(directory,subdir,fname)
-        if ext=='.svg':  return SVGFile(directory,subdir,fname)
+        if ext=='.lum':
+            return LumFile(directory,subdir,fname)
+        if ext=='.luma':
+            return LumaFile(directory,subdir,fname)
+        if ext=='.css':
+            return CSSFile(directory,subdir,fname)
+        if ext=='.svg':
+            return SVGFile(directory,subdir,fname)
         return VerbatimFile(directory,subdir,fname)
 
 class VerbatimFile(File):

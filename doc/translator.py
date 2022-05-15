@@ -1381,7 +1381,8 @@ class TrManager:
         # of the list.
         langReadableLst = []
         for name, obj in self.langLst:
-            if obj.status == 'En': continue
+            if obj.status == 'En':
+                continue
 
             # Append the 'En' to the classId to possibly obtain the classId
             # of the English-based object. If the object exists, modify the
@@ -1632,7 +1633,8 @@ class TrManager:
                 f.write('  %-6s' % obj.readableStatus)
                 numimpl = len(obj.missingMethods)
                 pluralS = ''
-                if numimpl > 1: pluralS = 's'
+                if numimpl > 1:
+                    pluralS = 's'
                 percent = 100 * numimpl / numRequired
                 f.write('\t%2d method%s to implement (%d %%)' % (
                         numimpl, pluralS, percent))
@@ -1660,7 +1662,8 @@ class TrManager:
                 lst.sort()
                 plural = len(lst) > 1
                 note = 'Note: The adapter class'
-                if plural: note += 'es'
+                if plural:
+                    note += 'es'
                 note += ' ' + ', '.join(lst)
                 if not plural:
                     note += ' is'
