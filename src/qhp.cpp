@@ -17,7 +17,7 @@
 // standard includes
 #include <algorithm>
 #include <memory>
-#include <string.h>
+#include <cstring>
 #include <vector>
 #include <mutex>
 

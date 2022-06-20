@@ -1,8 +1,8 @@
 #ifndef VHDLPARSERERRORHANDLER_H
 #define VHDLPARSERERRORHANDLER_H
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <cstdio>
+#include <cstdlib>
 #include <exception>
 #include "VhdlParser.h"
 #include "ErrorHandler.h"

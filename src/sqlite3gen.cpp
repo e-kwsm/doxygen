@@ -18,7 +18,7 @@
 
 // standard includes
 #include <sys/stat.h>
-#include <string.h>
+#include <cstring>
 #include <sqlite3.h>
 
 // other includes

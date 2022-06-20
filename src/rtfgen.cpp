@@ -21,7 +21,7 @@
 // standard includes
 #include <algorithm>
 #include <mutex>
-#include <stdlib.h>
+#include <cstdlib>
 #include <unordered_map>
 
 // other includes
