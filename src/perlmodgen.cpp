@@ -14,7 +14,7 @@
  *
  */
 
-#include <stdlib.h>
+#include <cstdlib>
 #include <stack>
 
 #include "perlmodgen.h"

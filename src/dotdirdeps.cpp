@@ -24,7 +24,7 @@
 #include <iterator>
 #include <utility>
 #include <cstdint>
-#include <math.h>
+#include <cmath>
 #include <cassert>
 #include <map>
 #include <memory>

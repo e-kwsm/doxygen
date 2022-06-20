@@ -13,7 +13,7 @@
  *
  */
 
-#include <stdio.h>
+#include <cstdio>
 
 #include <unordered_map>
 #include <string>

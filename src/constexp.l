@@ -21,7 +21,7 @@
 %option reentrant bison-bridge
 %option extra-type="struct constexpYY_state *"
 %top{
-#include <stdint.h>
+#include <cstdint>
 // forward declare yyscan_t to improve typesafety
 #include "constexp_p.h"  
 }

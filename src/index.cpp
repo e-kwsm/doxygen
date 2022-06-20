@@ -20,7 +20,7 @@
 #include <cstdlib>
 #include <array>
 
-#include <assert.h>
+#include <cassert>
 
 #include "message.h"
 #include "index.h"

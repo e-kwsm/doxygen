@@ -16,7 +16,7 @@
  */
 
 #include <mutex>
-#include <stdlib.h>
+#include <cstdlib>
 
 #include "rtfgen.h"
 #include "config.h"

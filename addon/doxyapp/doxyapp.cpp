@@ -26,7 +26,7 @@
  *  show some information about them.
  */
 
-#include <stdlib.h>
+#include <cstdlib>
 #include <map>
 #include <string>
 #include "dir.h"
