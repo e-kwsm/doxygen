@@ -64,7 +64,7 @@ void DotCallGraph::buildGraph(DotNode *n,const MemberDef *md,int distance)
             linkToText(rmd->getLanguage(),name,FALSE),
             tooltip,
             uniqueId,
-            0 //distance
+            false //distance
             );
         n->addChild(bn,EdgeInfo::Blue,EdgeInfo::Solid);
         bn->addParent(n);

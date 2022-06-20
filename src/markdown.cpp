@@ -2759,8 +2759,8 @@ static bool hasLineBreak(std::string_view data)
     if (data[i]!=' ' && data[i]!='\t') j++; // some non whitespace
     i++;
   }
-  if (i>=data.size()) { return 0; } // empty line
-  if (i<2)            { return 0; } // not long enough
+  if (i>=data.size()) { return false; } // empty line
+  if (i<2)            { return false; } // not long enough
   bool res = (j>0 && data[i-1]==' ' && data[i-2]==' '); // non blank line with at two spaces at the end
   AUTO_TRACE_EXIT("result={}",res);
   return res;

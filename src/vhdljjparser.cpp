@@ -443,7 +443,7 @@ void VHDLOutlineParser::handleCommentBlock(const QCString &doc1, bool brief)
       p->yyFileName, // file
       lineNr,       // line of block start
       brief,
-      0,
+      false,
       FALSE,
       protection,
       position,
