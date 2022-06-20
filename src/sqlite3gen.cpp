@@ -13,8 +13,8 @@
  *
  */
 
-#include <stdlib.h>
-#include <stdio.h>
+#include <cstdlib>
+#include <cstdio>
 #include <sstream>
 
 #include "settings.h"
@@ -51,7 +51,7 @@
 #include "moduledef.h"
 
 #include <sys/stat.h>
-#include <string.h>
+#include <cstring>
 #include <sqlite3.h>
 
 // enable to show general debug messages

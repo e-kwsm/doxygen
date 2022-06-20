@@ -128,7 +128,7 @@
 extern void initResources();
 
 #if !defined(_WIN32) || defined(__CYGWIN__)
-#include <signal.h>
+#include <csignal>
 #define HAS_SIGNALS
 #endif
 
