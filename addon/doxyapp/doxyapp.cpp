@@ -427,7 +427,7 @@ int main(int argc,char **argv)
   }
 
   char cmd[256];
-  while (1)
+  while (true)
   {
     printf("> Type a symbol name or\n> .list for a list of symbols or\n> .quit to exit\n> ");
     (void)fgets(cmd,256,stdin);

@@ -1047,7 +1047,7 @@ void ClassDefImpl::internalInsertMember(MemberDef *md,
     m_vhdlSummaryTitles.insert(title.str());
   }
 
-  if (1 /*!isReference()*/) // changed to 1 for showing members of external
+  if (true /*!isReference()*/) // changed to true for showing members of external
                             // classes when HAVE_DOT and UML_LOOK are enabled.
   {
     bool isSimple=FALSE;
