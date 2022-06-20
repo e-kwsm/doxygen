@@ -20,10 +20,10 @@
  ******************************************************************************/
 
 // global includes
-#include <stdio.h>
-#include <stdlib.h>
-#include <assert.h>
-#include <string.h>
+#include <cstdio>
+#include <cstdlib>
+#include <cassert>
+#include <cstring>
 #include <map>
 #include <algorithm>
 #include <unordered_set>

@@ -16,7 +16,7 @@
  */
 
 #include <mutex>
-#include <stdlib.h>
+#include <cstdlib>
 #include <algorithm>
 #include <unordered_map>
 

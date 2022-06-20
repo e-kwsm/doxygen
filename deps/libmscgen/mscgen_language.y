@@ -24,10 +24,10 @@
  *
  ***************************************************************************/
 
-#include <stdio.h>
-#include <stdint.h>
-#include <stdlib.h>
-#include <string.h>
+#include <cstdio>
+#include <cstdint>
+#include <cstdlib>
+#include <cstring>
 #include "mscgen_lexer.h"
 #include "mscgen_safe.h"
 #include "mscgen_msc.h"

@@ -18,8 +18,8 @@
  * Folder Tree View for offline help on browsers that do not support HTML Help.
  */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <cstdio>
+#include <cstdlib>
 #include <algorithm>
 
 #include "ftvhelp.h"

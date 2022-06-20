@@ -16,7 +16,7 @@
  *
  */
 
-#include <stdlib.h>
+#include <cstdlib>
 
 #include "portable.h"
 #include "defgen.h"

@@ -22,14 +22,14 @@
 %option extra-type="struct xmlYY_state *"
 %option 8bit noyywrap
 %top{
-#include <stdint.h>
+#include <cstdint>
 }
 
 %{
 
-#include <ctype.h>
+#include <cctype>
 #include <vector>
-#include <stdio.h>
+#include <cstdio>
 #include "xml.h"
 
 #define YY_NEVER_INTERACTIVE 1
