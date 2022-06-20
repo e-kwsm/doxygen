@@ -168,7 +168,7 @@ int Portable::system(const DString &command,const DString &args,bool commandHasC
   }
   if (pid==0)
   {
-    const char * const argv[4] = { "sh", "-c", fullCmd.data(), 0 };
+    const char * const argv[4] = { "sh", "-c", fullCmd.data(), nullptr };
     execve("/bin/sh",const_cast<char * const*>(argv),environ);
     exit(127);
   }

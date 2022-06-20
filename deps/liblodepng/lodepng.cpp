@@ -132,7 +132,7 @@ static void vector_cleanup(void* p)
 {
   ((vector*)p)->size = ((vector*)p)->allocsize = 0;
   free(((vector*)p)->data);
-  ((vector*)p)->data = NULL;
+  ((vector*)p)->data = nullptr;
 }
 
 static void vector_cleanupd(vector* p, void dtor(void*)) /*clear and use destructor on elements*/
@@ -143,7 +143,7 @@ static void vector_cleanupd(vector* p, void dtor(void*)) /*clear and use destruc
 
 static void vector_init(vector* p, unsigned typesize)
 {
-  p->data = NULL;
+  p->data = nullptr;
   p->size = p->allocsize = 0;
   p->typesize = typesize;
 }
@@ -175,7 +175,7 @@ static void uivector_cleanup(void* p)
 {
   ((uivector*)p)->size = ((uivector*)p)->allocsize = 0;
   free(((uivector*)p)->data);
-  ((uivector*)p)->data = NULL;
+  ((uivector*)p)->data = nullptr;
 }
 
 static unsigned uivector_resize(uivector* p, size_t size) /*returns 1 if success, 0 if failure ==> nothing done*/
@@ -206,7 +206,7 @@ static unsigned uivector_resizev(uivector* p, size_t size, unsigned value) /*res
 
 static void uivector_init(uivector* p)
 {
-  p->data = NULL;
+  p->data = nullptr;
   p->size = p->allocsize = 0;
 }
 
@@ -247,7 +247,7 @@ static void ucvector_cleanup(void* p)
 {
   ((ucvector*)p)->size = ((ucvector*)p)->allocsize = 0;
   free(((ucvector*)p)->data);
-  ((ucvector*)p)->data = NULL;
+  ((ucvector *)p)->data = nullptr;
 }
 
 static unsigned ucvector_resize(ucvector* p, size_t size) /*returns 1 if success, 0 if failure ==> nothing done*/
@@ -271,7 +271,7 @@ static unsigned ucvector_resize(ucvector* p, size_t size) /*returns 1 if success
 
 static void ucvector_init(ucvector* p)
 {
-  p->data = NULL;
+  p->data = nullptr;
   p->size = p->allocsize = 0;
 }
 
@@ -1525,7 +1525,7 @@ static void LodePNG_InfoColor_init(LodePNG_InfoColor* info)
   info->key_r = info->key_g = info->key_b = 0;
   info->colorType = 6;
   info->bitDepth = 8;
-  info->palette = 0;
+  info->palette = nullptr;
   info->palettesize = 0;
 }
 
@@ -1979,7 +1979,7 @@ static unsigned addChunk_IDAT(ucvector* out, const unsigned char* data, size_t d
 static unsigned addChunk_IEND(ucvector* out)
 {
   unsigned error = 0;
-  error = addChunk(out, "IEND", 0, 0);
+  error = addChunk(out, "IEND", nullptr, 0);
   return error;
 }
 
@@ -2043,7 +2043,7 @@ static unsigned filter(unsigned char* out, const unsigned char* in, unsigned w, 
   unsigned bpp = LodePNG_InfoColor_getBpp(info);
   size_t linebytes = (w * bpp + 7) / 8; /*the width of a scanline in bytes, not including the filter type*/
   size_t bytewidth = (bpp + 7) / 8; /*bytewidth is used for filtering, is 1 when bpp < 8, number of bytes per pixel otherwise*/
-  const unsigned char* prevline = 0;
+  const unsigned char *prevline = nullptr;
   unsigned x, y;
   unsigned heuristic;
   unsigned error = 0;
@@ -2321,11 +2321,11 @@ void LodePNG_encode(LodePNG_Encoder* encoder, unsigned char** out, size_t* outsi
 {
   LodePNG_InfoPng info;
   ucvector outv;
-  unsigned char* data = 0; /*uncompressed version of the IDAT chunk data*/
+  unsigned char *data = nullptr; /*uncompressed version of the IDAT chunk data*/
   size_t datasize = 0;
 
   /*provide some proper output values if error will happen*/
-  *out = 0;
+  *out = nullptr;
   *outsize = 0;
   encoder->error = 0;
 
