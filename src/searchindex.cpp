@@ -14,8 +14,8 @@
  */
 
 
-#include <ctype.h>
-#include <assert.h>
+#include <cctype>
+#include <cassert>
 #include <mutex>
 #include <map>
 #include <unordered_map>

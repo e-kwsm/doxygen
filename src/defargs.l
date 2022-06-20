@@ -44,7 +44,7 @@
 %option reentrant
 %option extra-type="struct defargsYY_state *"
 %top{
-#include <stdint.h>
+#include <cstdint>
 // forward declare yyscan_t to improve type safety
 #define YY_TYPEDEF_YY_SCANNER_T
 struct yyguts_t;
@@ -56,10 +56,10 @@ typedef yyguts_t *yyscan_t;
 /*
  *	includes
  */
-#include <stdio.h>
+#include <cstdio>
 //#include <iostream.h>
-#include <assert.h>
-#include <ctype.h>
+#include <cassert>
+#include <cctype>
 
 #include "defargs.h"
 #include "entry.h"

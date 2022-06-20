@@ -19,7 +19,7 @@
 %option reentrant
 %option extra-type="struct lexcodeYY_state *"
 %top{
-#include <stdint.h>
+#include <cstdint>
 // forward declare yyscan_t to improve type safety
 #define YY_TYPEDEF_YY_SCANNER_T
 struct yyguts_t;
@@ -29,7 +29,7 @@ typedef yyguts_t *yyscan_t;
 %{
 
 #include <memory>
-#include <stdio.h>
+#include <cstdio>
 
 #include "config.h"
 #include "doxygen.h"

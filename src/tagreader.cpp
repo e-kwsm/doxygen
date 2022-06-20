@@ -21,9 +21,9 @@
 #include <algorithm>
 #include <variant>
 
-#include <assert.h>
-#include <stdio.h>
-#include <stdarg.h>
+#include <cassert>
+#include <cstdio>
+#include <cstdarg>
 
 #include "xml.h"
 #include "entry.h"

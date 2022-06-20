@@ -14,7 +14,7 @@
 #include "input.h"
 #include "doxywizard.h"
 
-#include <math.h>
+#include <cmath>
 
 #include <QGridLayout>
 #include <QImage>

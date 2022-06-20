@@ -14,12 +14,12 @@
  *
  */
 
-#include <stdlib.h>
-#include <errno.h>
-#include <math.h>
-#include <limits.h>
-#include <string.h>
-#include <assert.h>
+#include <cstdlib>
+#include <cerrno>
+#include <cmath>
+#include <climits>
+#include <cstring>
+#include <cassert>
 
 #include <mutex>
 #include <unordered_set>

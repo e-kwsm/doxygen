@@ -12,7 +12,7 @@
 %option never-interactive
 %option prefix="configimplYY"
 %top{
-#include <stdint.h>
+#include <cstdint>
 }
 
 %{
@@ -20,12 +20,12 @@
 /*
  *      includes
  */
-#include <stdio.h>
-#include <stdlib.h>
-#include <assert.h>
-#include <ctype.h>
-#include <stdarg.h>
-#include <errno.h>
+#include <cstdio>
+#include <cstdlib>
+#include <cassert>
+#include <cctype>
+#include <cstdarg>
+#include <cerrno>
 #include <thread>
 #include <algorithm>
 #include <iostream>

@@ -17,7 +17,7 @@
 
 #include <stdexcept>
 
-#include <stdlib.h>
+#include <cstdlib>
 
 #include "doxygen.h"
 #include "outputgen.h"

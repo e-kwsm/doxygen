@@ -24,7 +24,7 @@
 %option reentrant
 %option extra-type="struct commentcnvYY_state *"
 %top{
-#include <stdint.h>
+#include <cstdint>
 // forward declare yyscan_t to improve type safety
 #define YY_TYPEDEF_YY_SCANNER_T
 struct yyguts_t;
@@ -34,8 +34,8 @@ typedef yyguts_t *yyscan_t;
 %{
 
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <cstdio>
+#include <cstdlib>
 #include <stack>
 #include <algorithm>
 #include <deque>
@@ -53,7 +53,7 @@ typedef yyguts_t *yyscan_t;
 #include "regex.h"
 #include "section.h"
 
-#include <assert.h>
+#include <cassert>
 
 #define YY_NO_INPUT 1
 #define YY_NO_UNISTD_H 1

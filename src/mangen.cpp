@@ -16,8 +16,8 @@
 /* http://www.cubic.org/source/archive/fileform/txt/man/ has some
    nice introductions to groff and man pages. */
 
-#include <stdlib.h>
-#include <string.h>
+#include <cstdlib>
+#include <cstring>
 
 #include "message.h"
 #include "mangen.h"

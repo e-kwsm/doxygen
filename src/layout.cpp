@@ -15,7 +15,7 @@
 
 #include <array>
 
-#include <assert.h>
+#include <cassert>
 
 #include "types.h"
 #include "layout.h"

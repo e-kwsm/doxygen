@@ -17,8 +17,8 @@
 #define GROWBUF_H
 
 #include <utility>
-#include <stdlib.h>
-#include <string.h>
+#include <cstdlib>
+#include <cstring>
 #include <string>
 
 #define GROW_AMOUNT 1024*4

@@ -1,9 +1,9 @@
 #ifndef VHDLSTRING_H
 #define VHDLSTRING_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
 
 #include "VhdlParser.h"
 // super class for VhdlParserTokenManager

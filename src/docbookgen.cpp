@@ -15,7 +15,7 @@
 *
 */
 
-#include <stdlib.h>
+#include <cstdlib>
 
 #include "docbookgen.h"
 #include "doxygen.h"

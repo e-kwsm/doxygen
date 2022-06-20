@@ -1,8 +1,8 @@
 #include "portable.h"
 #include "qcstring.h"
 
-#include <stdlib.h>
-#include <stdio.h>
+#include <cstdlib>
+#include <cstdio>
 #include <chrono>
 #include <thread>
 #include <mutex>
@@ -16,12 +16,12 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/wait.h>
-#include <errno.h>
+#include <cerrno>
 extern char **environ;
 #endif
 
-#include <assert.h>
-#include <ctype.h>
+#include <cassert>
+#include <cctype>
 #include <map>
 #include <string>
 

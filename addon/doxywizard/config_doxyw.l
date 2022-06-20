@@ -13,7 +13,7 @@
 %option never-interactive
 %option prefix="config_doxywYY"
 %top{
-#include <stdint.h>
+#include <cstdint>
 }
 
 %{

@@ -13,9 +13,9 @@
  *
  */
 
-#include <stdarg.h>
+#include <cstdarg>
 #include <algorithm>
-#include <stdio.h>
+#include <cstdio>
 #include <map>
 #include <string>
 #include <chrono>

@@ -14,7 +14,7 @@
  */
 
 #include <algorithm>
-#include <stdio.h>
+#include <cstdio>
 
 #include "reflist.h"
 #include "util.h"

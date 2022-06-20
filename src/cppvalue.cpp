@@ -13,7 +13,7 @@
  *
  */
 
-#include <stdlib.h>
+#include <cstdlib>
 
 #include "cppvalue.h"
 #include "constexp.h"

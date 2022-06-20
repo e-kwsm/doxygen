@@ -14,8 +14,8 @@
  */
 
 
-#include <stdio.h>
-#include <assert.h>
+#include <cstdio>
+#include <cassert>
 #include <mutex>
 
 #include "md5.h"

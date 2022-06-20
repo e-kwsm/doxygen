@@ -13,11 +13,11 @@
  *
  */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <cstdio>
+#include <cstdlib>
 #include <cassert>
 
-#include <ctype.h>
+#include <cctype>
 
 #include "classlist.h"
 #include "cmdmapper.h"

@@ -9,7 +9,7 @@
 #include <clang-c/Index.h>
 #include "clang/Tooling/CompilationDatabase.h"
 #include "clang/Tooling/Tooling.h"
-#include <stdlib.h>
+#include <cstdlib>
 #include "message.h"
 #include "outputgen.h"
 #include "outputlist.h"

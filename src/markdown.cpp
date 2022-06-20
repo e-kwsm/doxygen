@@ -31,7 +31,7 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <stdio.h>
+#include <cstdio>
 
 #include <unordered_map>
 #include <functional>
