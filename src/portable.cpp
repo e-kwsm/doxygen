@@ -169,7 +169,7 @@ int Portable::system(const QCString &command,const QCString &args,bool commandHa
   }
   if (pid==0)
   {
-    const char * const argv[4] = { "sh", "-c", fullCmd.data(), 0 };
+    const char * const argv[4] = { "sh", "-c", fullCmd.data(), nullptr };
     execve("/bin/sh",const_cast<char * const*>(argv),environ);
     exit(127);
   }
@@ -276,12 +276,12 @@ uint32_t Portable::pid()
 #if !defined(_WIN32) || defined(__CYGWIN__)
 void loadEnvironment()
 {
-  if(environ != NULL)
+  if(environ != nullptr)
   {
     unsigned int i = 0;
     char* current = environ[i];
 
-    while(current != NULL)                            // parse all strings contained by environ til the last element (NULL)
+    while(current != nullptr)                         // parse all strings contained by environ til the last element (nullptr)
     {
       std::string env_var(current);                   // load current environment variable string
       size_t pos = env_var.find("=");
@@ -573,7 +573,7 @@ static const char * portable_memmem (const char *haystack, size_t haystack_len,
   // Sanity check
   if (haystack_len < needle_len)
   {
-    return 0;
+    return nullptr;
   }
 
   for (const char *begin = haystack; begin <= last_possible; ++begin)
@@ -584,7 +584,7 @@ static const char * portable_memmem (const char *haystack, size_t haystack_len,
     }
   }
 
-  return 0;
+  return nullptr;
 }
 
 const char *Portable::strnstr(const char *haystack, const char *needle, size_t haystack_len)
@@ -598,7 +598,7 @@ const char *Portable::strnstr(const char *haystack, const char *needle, size_t h
       return x;
     }
   }
-  return 0;
+  return nullptr;
 }
 
 const char *Portable::devNull()
@@ -612,7 +612,7 @@ const char *Portable::devNull()
 
 size_t Portable::recodeUtf8StringToW(const QCString &inputStr,uint16_t **outBuf)
 {
-  if (inputStr.isEmpty() || outBuf==0) return 0; // empty input or invalid output
+  if (inputStr.isEmpty() || outBuf==nullptr) return 0; // empty input or invalid output
   void *handle = portable_iconv_open("UTF-16LE","UTF-8");
   if (handle==reinterpret_cast<void *>(-1)) return 0; // invalid encoding
   size_t len = inputStr.length();

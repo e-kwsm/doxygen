@@ -151,7 +151,7 @@ void DotGroupCollaboration::buildGraph(const GroupDef* gd)
 void DotGroupCollaboration::addMemberList( MemberList* ml )
 {
   QCString url;
-  if ( ml==0 || ml->empty() ) return;
+  if ( ml==nullptr || ml->empty() ) return;
   for (const auto &def : *ml)
   {
     makeURL(def,url);
@@ -194,7 +194,7 @@ void DotGroupCollaboration::addCollaborationMember(
     DotNode* nnode = it!=m_usedNodes.end() ? it->second : 0;
     if ( nnode != m_rootNode )
     {
-      if ( nnode==0 )
+      if ( nnode==nullptr )
       { // add node
         tmp_str = d->getReference()+"$"+d->getOutputFileBase();
         QCString tooltip = d->briefDescriptionAsTooltip();

@@ -62,14 +62,14 @@ namespace parser {
    * of integers represents a sequence of tokens (by their ordinal
    * values) that is expected at this point of the parse.
    */
-  int** expectedTokenSequences = 0;
+  int** expectedTokenSequences = nullptr;
 
   /**
    * This is a reference to the "tokenImage" array of the generated
    * parser within which the parse error occurred.  This array is
    * defined in the generated ...Constants class.
    */
-  JJString* tokenImage = 0;
+  JJString* tokenImage = nullptr;
 
   /**
    * It uses "currentToken" and "expectedTokenSequences" to generate a parse

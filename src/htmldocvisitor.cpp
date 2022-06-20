@@ -563,11 +563,11 @@ void HtmlDocVisitor::operator()(const DocVerbatim &s)
                                         langExt,
                                         s.isExample(),
                                         s.exampleFile(),
-                                        0,     // fileDef
+                                        nullptr,  // fileDef
                                         -1,    // startLine
                                         -1,    // endLine
                                         FALSE, // inlineFragment
-                                        0,     // memberDef
+                                        nullptr,  // memberDef
                                         TRUE,  // show line numbers
                                         m_ctx  // search context
                                        );
@@ -715,11 +715,11 @@ void HtmlDocVisitor::operator()(const DocInclude &inc)
                                         langExt,
                                         inc.isExample(),
                                         inc.exampleFile(),
-                                        0,     // fileDef
+                                        nullptr,  // fileDef
                                         -1,    // startLine
                                         -1,    // endLine
                                         TRUE,  // inlineFragment
-                                        0,     // memberDef
+                                        nullptr,  // memberDef
                                         FALSE, // show line numbers
                                         m_ctx  // search context
                                        );
@@ -742,7 +742,7 @@ void HtmlDocVisitor::operator()(const DocInclude &inc)
                                            -1,    // start line
                                            -1,    // end line
                                            FALSE, // inline fragment
-                                           0,     // memberDef
+                                           nullptr,  // memberDef
                                            TRUE,  // show line numbers
                                            m_ctx  // search context
                                            );
@@ -826,7 +826,7 @@ void HtmlDocVisitor::operator()(const DocIncOperator &op)
                                 op.line(),    // startLine
                                 -1,    // endLine
                                 FALSE, // inline fragment
-                                0,     // memberDef
+                                nullptr,  // memberDef
                                 op.showLineNo(),  // show line numbers
                                 m_ctx  // search context
                                );
@@ -1082,7 +1082,7 @@ bool isSeparatedParagraph(const DocSimpleSect &parent,const DocPara &par)
   auto it = std::find_if(std::begin(nodes),std::end(nodes),[&par](const auto &n) { return holds_value(&par,n); });
   if (it==std::end(nodes)) return FALSE;
   size_t count = parent.children().size();
-  auto isSeparator = [](auto &&it_) { return std::get_if<DocSimpleSectSep>(&(*it_))!=0; };
+  auto isSeparator = [](auto &&it_) { return std::get_if<DocSimpleSectSep>(&(*it_))!=nullptr; };
   if (count>1 && it==std::begin(nodes)) // it points to first node
   {
     return isSeparator(std::next(it));

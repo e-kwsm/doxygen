@@ -693,7 +693,7 @@ void MainWindow::saveLog()
     }
     else
     {
-      QMessageBox::warning(0,tr("Warning"),
+      QMessageBox::warning(nullptr,tr("Warning"),
           tr("Cannot open file ")+fn+tr(" for writing. Nothing saved!"),tr("ok"));
     }
   }

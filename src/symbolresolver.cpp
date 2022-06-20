@@ -221,7 +221,7 @@ const ClassDef *SymbolResolver::Private::getResolvedTypeRec(
            QCString *pResolvedType)
 {
   AUTO_TRACE("scope={} name={}",scope->name(),n);
-  if (n.isEmpty()) return 0;
+  if (n.isEmpty()) return nullptr;
   QCString explicitScopePart;
   QCString strippedTemplateParams;
   QCString scopeName=scope!=Doxygen::globalScope ? scope->name() : QCString();
@@ -246,14 +246,14 @@ const ClassDef *SymbolResolver::Private::getResolvedTypeRec(
   if (name.isEmpty())
   {
     AUTO_TRACE_EXIT("empty name");
-    return 0; // empty name
+    return nullptr; // empty name
   }
 
   auto &range = Doxygen::symbolMap->find(name);
   if (range.empty())
   {
     AUTO_TRACE_EXIT("no symbol with this name");
-    return 0;
+    return nullptr;
   }
 
   bool hasUsingStatements =
@@ -303,7 +303,7 @@ const ClassDef *SymbolResolver::Private::getResolvedTypeRec(
       // we are already in the middle of find the definition for this key.
       // avoid recursion
       AUTO_TRACE_EXIT("recursion detected");
-      return 0;
+      return nullptr;
     }
     // remember the key
     visitedKeys.push_back(key.str());
@@ -382,7 +382,7 @@ const Definition *SymbolResolver::Private::getResolvedSymbolRec(
 {
   AUTO_TRACE("scope={} name={} args={} checkCV={} insideCode={}",
       scope->name(),n,args,checkCV,insideCode);
-  if (n.isEmpty()) return 0;
+  if (n.isEmpty()) return nullptr;
   QCString explicitScopePart;
   QCString strippedTemplateParams;
   QCString scopeName=scope!=Doxygen::globalScope ? scope->name() : QCString();
@@ -408,7 +408,7 @@ const Definition *SymbolResolver::Private::getResolvedSymbolRec(
   if (name.isEmpty())
   {
     AUTO_TRACE_EXIT("empty name qualifierIndex={}",qualifierIndex);
-    return 0; // empty name
+    return nullptr; // empty name
   }
 
   auto &range = Doxygen::symbolMap->find(name);
@@ -421,13 +421,13 @@ const Definition *SymbolResolver::Private::getResolvedSymbolRec(
       if (range.empty())
       {
         AUTO_TRACE_ADD("no symbols (including unspecialized)");
-        return 0;
+        return nullptr;
       }
     }
     else
     {
       AUTO_TRACE_ADD("no symbols");
-      return 0;
+      return nullptr;
     }
   }
   else
@@ -487,7 +487,7 @@ const Definition *SymbolResolver::Private::getResolvedSymbolRec(
     {
       // we are already in the middle of find the definition for this key.
       // avoid recursion
-      return 0;
+      return nullptr;
     }
     // remember the key
     visitedKeys.push_back(key);
@@ -524,7 +524,7 @@ const Definition *SymbolResolver::Private::getResolvedSymbolRec(
 
     // in case we are looking for e.g. func() and the real function is func(int x) we also
     // accept func(), see example 036 in the test set.
-    if (bestMatch==0 && args=="()")
+    if (bestMatch==nullptr && args=="()")
     {
       for (Definition *d : range)
       {
@@ -673,7 +673,7 @@ void SymbolResolver::Private::getResolvedType(
               else if (enumType) // type resolves to a member type
               {
                 AUTO_TRACE_ADD("found enum");
-                bestMatch = 0;
+                bestMatch = nullptr;
                 bestTypedef = enumType;
                 bestTemplSpec = "";
                 bestResolvedType = enumType->qualifiedName();
@@ -681,7 +681,7 @@ void SymbolResolver::Private::getResolvedType(
               else if (md->isReference()) // external reference
               {
                 AUTO_TRACE_ADD("found external reference");
-                bestMatch = 0;
+                bestMatch = nullptr;
                 bestTypedef = md;
                 bestTemplSpec = spec;
                 bestResolvedType = type;
@@ -689,7 +689,7 @@ void SymbolResolver::Private::getResolvedType(
               else
               {
                 AUTO_TRACE_ADD("no match");
-                bestMatch = 0;
+                bestMatch = nullptr;
                 bestTypedef = md;
                 bestTemplSpec.clear();
                 bestResolvedType.clear();
@@ -711,7 +711,7 @@ void SymbolResolver::Private::getResolvedType(
           {
             AUTO_TRACE_ADD("found enum={} at distance={} minDistance={}",md->name(),distance,minDistance);
             minDistance=distance;
-            bestMatch = 0;
+            bestMatch = nullptr;
             bestTypedef = md;
             bestTemplSpec = "";
             bestResolvedType = md->qualifiedName();
@@ -888,7 +888,7 @@ const ClassDef *SymbolResolver::Private::newResolveTypedef(
   if (m_resolvedTypedefs.find(qname.str())!=m_resolvedTypedefs.end())
   {
     AUTO_TRACE_EXIT("already being processed");
-    return 0; // typedef already done
+    return nullptr; // typedef already done
   }
 
   auto typedef_it = m_resolvedTypedefs.insert({qname.str(),md}).first; // put on the trace list
@@ -918,12 +918,12 @@ const ClassDef *SymbolResolver::Private::newResolveTypedef(
   while (sp<tl && type.at(sp)==' ') sp++;
   const MemberDef *memTypeDef = nullptr;
   const ClassDef *result = getResolvedTypeRec(visitedKeys,md->getOuterScope(),type,
-                                                &memTypeDef,0,pResolvedType);
+                                                &memTypeDef,nullptr,pResolvedType);
   // if type is a typedef then return what it resolves to.
   if (memTypeDef && memTypeDef->isTypedef())
   {
     AUTO_TRACE_ADD("resolving typedef");
-    result=newResolveTypedef(visitedKeys,m_fileScope,memTypeDef,pMemType,pTemplSpec,0);
+    result=newResolveTypedef(visitedKeys,m_fileScope,memTypeDef,pMemType,pTemplSpec,nullptr);
     goto done;
   }
   else if (memTypeDef && memTypeDef->isEnumerate() && pMemType)
@@ -931,7 +931,7 @@ const ClassDef *SymbolResolver::Private::newResolveTypedef(
     *pMemType = memTypeDef;
   }
 
-  if (result==0)
+  if (result==nullptr)
   {
     // try unspecialized version if type is template
     int si=type.findRev("::");
@@ -939,7 +939,7 @@ const ClassDef *SymbolResolver::Private::newResolveTypedef(
     if (si==-1 && i!=-1) // typedef of a template => try the unspecialized version
     {
       if (pTemplSpec) *pTemplSpec = type.mid(i);
-      result = getResolvedTypeRec(visitedKeys,md->getOuterScope(),type.left(i),0,0,pResolvedType);
+      result = getResolvedTypeRec(visitedKeys,md->getOuterScope(),type.left(i),nullptr,nullptr,pResolvedType);
     }
     else if (si!=-1) // A::B
     {
@@ -953,7 +953,7 @@ const ClassDef *SymbolResolver::Private::newResolveTypedef(
         if (pTemplSpec) *pTemplSpec = type.mid(i);
       }
       result = getResolvedTypeRec(visitedKeys,md->getOuterScope(),
-           stripTemplateSpecifiersFromScope(type.left(i),FALSE),0,0,pResolvedType);
+           stripTemplateSpecifiersFromScope(type.left(i),FALSE),nullptr,nullptr,pResolvedType);
     }
   }
 
@@ -1180,7 +1180,7 @@ const Definition *SymbolResolver::Private::followPath(VisitedKeys &visitedKeys,
     AUTO_TRACE_ADD("qualScopePart={}",qualScopePart);
     if (memTypeDef)
     {
-      const ClassDef *type = newResolveTypedef(visitedKeys,m_fileScope,memTypeDef,0,0,0);
+      const ClassDef *type = newResolveTypedef(visitedKeys,m_fileScope,memTypeDef,nullptr,nullptr,nullptr);
       if (type)
       {
         AUTO_TRACE_EXIT("type={}",type->name());
@@ -1190,7 +1190,7 @@ const Definition *SymbolResolver::Private::followPath(VisitedKeys &visitedKeys,
     const Definition *next = current->findInnerCompound(qualScopePart);
     AUTO_TRACE_ADD("Looking for {} inside {} result={}",
         qualScopePart, current->name(), next?next->name():QCString());
-    if (next==0)
+    if (next==nullptr)
     {
       next = current->findInnerCompound(qualScopePart+"-p");
     }
@@ -1234,7 +1234,7 @@ const Definition *SymbolResolver::Private::followPath(VisitedKeys &visitedKeys,
          }
        }
     }
-    if (next==0) // failed to follow the path
+    if (next==nullptr) // failed to follow the path
     {
       if (current->definitionType()==Definition::TypeNamespace)
       {
@@ -1247,7 +1247,7 @@ const Definition *SymbolResolver::Private::followPath(VisitedKeys &visitedKeys,
             (toFileDef(current))->getUsedClasses(),qualScopePart);
       }
       current = next;
-      if (current==0) break;
+      if (current==nullptr) break;
     }
     else // continue to follow scope
     {
@@ -1269,7 +1269,7 @@ const Definition *SymbolResolver::Private::endOfPathIsUsedClass(const LinkedRefM
       return cd;
     }
   }
-  return 0;
+  return nullptr;
 }
 
 bool SymbolResolver::Private::accessibleViaUsingNamespace(
@@ -1568,7 +1568,7 @@ const ClassDef *SymbolResolver::resolveClass(const Definition *scope,
       scope?scope->name():QCString(), name, mayBeUnlinkable, mayBeHidden);
   p->reset();
 
-  if (scope==0 ||
+  if (scope==nullptr ||
       (scope->definitionType()!=Definition::TypeClass &&
        scope->definitionType()!=Definition::TypeNamespace
       ) ||
@@ -1587,7 +1587,7 @@ const ClassDef *SymbolResolver::resolveClass(const Definition *scope,
   {
     VisitedKeys visitedKeys;
     result = p->getResolvedTypeRec(visitedKeys,scope,name,&p->typeDef,&p->templateSpec,&p->resolvedType);
-    if (result==0) // for nested classes imported via tag files, the scope may not
+    if (result==nullptr) // for nested classes imported via tag files, the scope may not
                    // present, so we check the class name directly as well.
                    // See also bug701314
     {
@@ -1599,7 +1599,7 @@ const ClassDef *SymbolResolver::resolveClass(const Definition *scope,
     if (!mayBeHidden || !result->isHidden())
     {
       AUTO_TRACE_ADD("hiding symbol {}",result->name());
-      result=0; // don't link to artificial/hidden classes unless explicitly allowed
+      result=nullptr; // don't link to artificial/hidden classes unless explicitly allowed
     }
   }
   AUTO_TRACE_EXIT("result={}",result?result->name():QCString());
