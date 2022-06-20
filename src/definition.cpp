@@ -17,10 +17,10 @@
 #include <iterator>
 #include <unordered_map>
 #include <string>
-#include <ctype.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <assert.h>
+#include <cctype>
+#include <cstdio>
+#include <cstdlib>
+#include <cassert>
 
 #include "anchor.h"
 #include "md5.h"

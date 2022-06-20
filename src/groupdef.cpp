@@ -18,7 +18,7 @@
 #include <algorithm>
 #include <vector>
 
-#include <ctype.h>
+#include <cctype>
 
 #include "groupdef.h"
 #include "classdef.h"

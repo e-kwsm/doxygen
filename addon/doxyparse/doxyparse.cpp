@@ -18,7 +18,7 @@
  *
  */
 
-#include <stdlib.h>
+#include <cstdlib>
 #if !defined(_WIN32) || defined(__CYGWIN__)
   #include <unistd.h>
 #else

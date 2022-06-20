@@ -24,9 +24,9 @@
  *
  ***************************************************************************/
 
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
+#include <cstdio>
+#include <cstring>
+#include <cctype>
 #include "mscgen_config.h"
 #include "mscgen_msc.h"
 #include "mscgen_bool.h"

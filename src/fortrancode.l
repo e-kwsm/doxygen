@@ -32,7 +32,7 @@
 %option extra-type="struct fortrancodeYY_state *"
 %option noyy_top_state
 %top{
-#include <stdint.h>
+#include <cstdint>
 // forward declare yyscan_t to improve type safety
 #define YY_TYPEDEF_YY_SCANNER_T
 struct yyguts_t;
@@ -44,9 +44,9 @@ typedef yyguts_t *yyscan_t;
 /*
  *      includes
  */
-#include <stdio.h>
-#include <assert.h>
-#include <ctype.h>
+#include <cstdio>
+#include <cassert>
+#include <cctype>
 
 #include "doxygen.h"
 #include "message.h"

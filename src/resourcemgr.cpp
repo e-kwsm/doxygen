@@ -14,7 +14,7 @@
  */
 
 #include <map>
-#include <string.h>
+#include <cstring>
 #include <cstdint>
 
 #include "resourcemgr.h"

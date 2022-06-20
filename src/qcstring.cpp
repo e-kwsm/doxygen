@@ -15,11 +15,11 @@
 
 #include "qcstring.h"
 
-#include <limits.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <stdarg.h>
-#include <ctype.h>
+#include <climits>
+#include <cstdlib>
+#include <cstdio>
+#include <cstdarg>
+#include <cctype>
 
 inline char toLowerChar(char c)
 {

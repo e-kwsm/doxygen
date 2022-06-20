@@ -19,8 +19,8 @@
 #include "constexp_p.h"
 #include "message.h"
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <cstdio>
+#include <cstdlib>
 
 int constexpYYerror(yyscan_t yyscanner, const char *s)
 {

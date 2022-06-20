@@ -13,7 +13,7 @@
  *
  */
 
-#include <stdlib.h>
+#include <cstdlib>
 
 #include "textstream.h"
 #include "xmlgen.h"
