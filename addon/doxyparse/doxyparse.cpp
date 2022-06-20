@@ -499,7 +499,7 @@ int main(int argc,char **argv) {
   for (int i = 1; i < argc; i++) {
     if (strcmp(argv[i], "-") == 0) {
       char filename[1024];
-      while (1) {
+      while (true) {
         (void)scanf("%s[^\n]", filename);
         if (feof(stdin)) {
           break;
