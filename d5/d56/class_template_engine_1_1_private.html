@@ -143,7 +143,7 @@ Public Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a8c65c76594d8e012b6400fbe2721690f"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, std::unique_ptr&lt; <a class="el" href="../../d5/de9/class_template.html">Template</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d56/class_template_engine_1_1_private.html#a8c65c76594d8e012b6400fbe2721690f">m_templateCache</a></td></tr>
 <tr class="separator:a8c65c76594d8e012b6400fbe2721690f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acac518ac71d61fc014193eaa82c55e19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d1d/class_template_engine.html">TemplateEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d56/class_template_engine_1_1_private.html#acac518ac71d61fc014193eaa82c55e19">m_engine</a> = nullptr</td></tr>
+<tr class="memitem:acac518ac71d61fc014193eaa82c55e19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d1d/class_template_engine.html">TemplateEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d56/class_template_engine_1_1_private.html#acac518ac71d61fc014193eaa82c55e19">m_engine</a> = 0</td></tr>
 <tr class="separator:acac518ac71d61fc014193eaa82c55e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5116eea080f59e7f3676b31bcc8c020f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../de/d8d/class_template_engine_1_1_private_1_1_include_entry.html">IncludeEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d56/class_template_engine_1_1_private.html#a5116eea080f59e7f3676b31bcc8c020f">m_includeStack</a></td></tr>
 <tr class="separator:a5116eea080f59e7f3676b31bcc8c020f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -383,7 +383,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno"> 5289</span>          }</div>
 <div class="line"><span class="lineno"> 5290</span>        }</div>
 <div class="line"><span class="lineno"> 5291</span>      }</div>
-<div class="line"><span class="lineno"> 5292</span>      <span class="keywordflow">return</span> kv!=<a class="code hl_variable" href="../../d5/d56/class_template_engine_1_1_private.html#a8c65c76594d8e012b6400fbe2721690f">m_templateCache</a>.end() ? kv-&gt;second.get() : <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 5292</span>      <span class="keywordflow">return</span> kv!=<a class="code hl_variable" href="../../d5/d56/class_template_engine_1_1_private.html#a8c65c76594d8e012b6400fbe2721690f">m_templateCache</a>.end() ? kv-&gt;second.get() : 0;</div>
 <div class="line"><span class="lineno"> 5293</span>    }</div>
 <div class="ttc" id="aclass_file_info_html"><div class="ttname"><a href="../../d0/da1/class_file_info.html">FileInfo</a></div><div class="ttdoc">Minimal replacement for QFileInfo.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d45/fileinfo_8h_source.html#l00022">fileinfo.h:23</a></div></div>
 <div class="ttc" id="aclass_q_c_string_html"><div class="ttname"><a href="../../d9/d45/class_q_c_string.html">QCString</a></div><div class="ttdoc">This is an alternative implementation of QCString.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5c/qcstring_8h_source.html#l00108">qcstring.h:109</a></div></div>
@@ -475,7 +475,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno"> 5324</span>      {</div>
 <div class="line"><span class="lineno"> 5325</span>        <span class="keyword">const</span> IncludeEntry &amp;ie = *it;</div>
 <div class="line"><span class="lineno"> 5326</span>        ++it;</div>
-<div class="line"><span class="lineno"> 5327</span>        <span class="keyword">const</span> IncludeEntry *next = it!=<a class="code hl_variable" href="../../d5/d56/class_template_engine_1_1_private.html#a5116eea080f59e7f3676b31bcc8c020f">m_includeStack</a>.rend() ? &amp;(*it) : <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 5327</span>        <span class="keyword">const</span> IncludeEntry *next = it!=<a class="code hl_variable" href="../../d5/d56/class_template_engine_1_1_private.html#a5116eea080f59e7f3676b31bcc8c020f">m_includeStack</a>.rend() ? &amp;(*it) : 0;</div>
 <div class="line"><span class="lineno"> 5328</span>        <span class="keywordflow">if</span> (ie.type()==<a class="code hl_enumvalue" href="../../de/d8d/class_template_engine_1_1_private_1_1_include_entry.html#a0c6074a445312be0263fbb45abe14e9ead6b41d5cbeff40cf1d29108db305c878">IncludeEntry::Template</a>)</div>
 <div class="line"><span class="lineno"> 5329</span>        {</div>
 <div class="line"><span class="lineno"> 5330</span>          <span class="keywordflow">if</span> (next)</div>
@@ -610,7 +610,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d0/d1d/class_template_engine.html">TemplateEngine</a>* TemplateEngine::Private::m_engine = nullptr</td>
+          <td class="memname"><a class="el" href="../../d0/d1d/class_template_engine.html">TemplateEngine</a>* TemplateEngine::Private::m_engine = 0</td>
         </tr>
       </table>
   </td>

@@ -441,7 +441,7 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno"> 1478</span>{</div>
 <div class="line"><span class="lineno"> 1479</span>  <a class="code hl_variable" href="../../da/d0c/class_symbol_resolver.html#a74d53555d942680120e24d2a54022fe0">p</a>-&gt;reset();</div>
 <div class="line"><span class="lineno"> 1480</span> </div>
-<div class="line"><span class="lineno"> 1481</span>  <span class="keywordflow">if</span> (scope==<span class="keyword">nullptr</span> ||</div>
+<div class="line"><span class="lineno"> 1481</span>  <span class="keywordflow">if</span> (scope==0 ||</div>
 <div class="line"><span class="lineno"> 1482</span>      (scope-&gt;<a class="code hl_function" href="../../d5/dcc/class_definition.html#a526c39074637d4b17a3f67df56d961ff">definitionType</a>()!=<a class="code hl_enumvalue" href="../../d5/dcc/class_definition.html#aa41b6bc53dcf93ecf745698aaf15ef8eafa4d5f6cdc4791da57411cbcc8fa7654">Definition::TypeClass</a> &amp;&amp;</div>
 <div class="line"><span class="lineno"> 1483</span>       scope-&gt;<a class="code hl_function" href="../../d5/dcc/class_definition.html#a526c39074637d4b17a3f67df56d961ff">definitionType</a>()!=<a class="code hl_enumvalue" href="../../d5/dcc/class_definition.html#aa41b6bc53dcf93ecf745698aaf15ef8ea35a2dfa1d3ce6c023cbddb4af2cd18bc">Definition::TypeNamespace</a></div>
 <div class="line"><span class="lineno"> 1484</span>      ) ||</div>
@@ -456,7 +456,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno"> 1493</span>  <span class="comment">//    qPrint(name),</span></div>
 <div class="line"><span class="lineno"> 1494</span>  <span class="comment">//    mayBeUnlinkable</span></div>
 <div class="line"><span class="lineno"> 1495</span>  <span class="comment">//   );</span></div>
-<div class="line"><span class="lineno"> 1496</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d1/dcf/class_class_def.html">ClassDef</a> *result=<span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 1496</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d1/dcf/class_class_def.html">ClassDef</a> *result=0;</div>
 <div class="line"><span class="lineno"> 1497</span>  <span class="keywordflow">if</span> (<a class="code hl_define" href="../../db/d16/config_8h.html#a5373d0332a31f16ad7a42037733e8c79">Config_getBool</a>(OPTIMIZE_OUTPUT_VHDL))</div>
 <div class="line"><span class="lineno"> 1498</span>  {</div>
 <div class="line"><span class="lineno"> 1499</span>    result = <a class="code hl_function" href="../../de/d89/classdef_8cpp.html#a9682735bd2cf0656eaa944f8b3e364a2">getClass</a>(name);</div>
@@ -464,7 +464,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno"> 1501</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 1502</span>  {</div>
 <div class="line"><span class="lineno"> 1503</span>    result = <a class="code hl_variable" href="../../da/d0c/class_symbol_resolver.html#a74d53555d942680120e24d2a54022fe0">p</a>-&gt;getResolvedTypeRec(scope,name,&amp;<a class="code hl_variable" href="../../da/d0c/class_symbol_resolver.html#a74d53555d942680120e24d2a54022fe0">p</a>-&gt;typeDef,&amp;<a class="code hl_variable" href="../../da/d0c/class_symbol_resolver.html#a74d53555d942680120e24d2a54022fe0">p</a>-&gt;templateSpec,&amp;<a class="code hl_variable" href="../../da/d0c/class_symbol_resolver.html#a74d53555d942680120e24d2a54022fe0">p</a>-&gt;resolvedType);</div>
-<div class="line"><span class="lineno"> 1504</span>    <span class="keywordflow">if</span> (result==<span class="keyword">nullptr</span>) <span class="comment">// for nested classes imported via tag files, the scope may not</span></div>
+<div class="line"><span class="lineno"> 1504</span>    <span class="keywordflow">if</span> (result==0) <span class="comment">// for nested classes imported via tag files, the scope may not</span></div>
 <div class="line"><span class="lineno"> 1505</span>                   <span class="comment">// present, so we check the class name directly as well.</span></div>
 <div class="line"><span class="lineno"> 1506</span>                   <span class="comment">// See also bug701314</span></div>
 <div class="line"><span class="lineno"> 1507</span>    {</div>
@@ -476,7 +476,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno"> 1513</span>    <span class="keywordflow">if</span> (!mayBeHidden || !result-&gt;<a class="code hl_function" href="../../d5/dcc/class_definition.html#a930740d353cfe143eb9efe0d12b7f938">isHidden</a>())</div>
 <div class="line"><span class="lineno"> 1514</span>    {</div>
 <div class="line"><span class="lineno"> 1515</span>      <span class="comment">//fprintf(stderr,&quot;result was %s\n&quot;,result?qPrint(result-&gt;name()):&quot;&lt;none&gt;&quot;);</span></div>
-<div class="line"><span class="lineno"> 1516</span>      result=<span class="keyword">nullptr</span>; <span class="comment">// don&#39;t link to artificial/hidden classes unless explicitly allowed</span></div>
+<div class="line"><span class="lineno"> 1516</span>      result=0; <span class="comment">// don&#39;t link to artificial/hidden classes unless explicitly allowed</span></div>
 <div class="line"><span class="lineno"> 1517</span>    }</div>
 <div class="line"><span class="lineno"> 1518</span>  }</div>
 <div class="line"><span class="lineno"> 1519</span>  <span class="comment">//fprintf(stderr,&quot;ResolvedClass(%s,%s)=%s\n&quot;,scope?qPrint(scope-&gt;name()):&quot;&lt;global&gt;&quot;,</span></div>
@@ -617,7 +617,7 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="../../d2/d99/symbolresolver_8cpp_source.html#l01524">1524</a> of file <a class="el" href="../../d2/d99/symbolresolver_8cpp_source.html">symbolresolver.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1528</span>{</div>
 <div class="line"><span class="lineno"> 1529</span>  <a class="code hl_variable" href="../../da/d0c/class_symbol_resolver.html#a74d53555d942680120e24d2a54022fe0">p</a>-&gt;reset();</div>
-<div class="line"><span class="lineno"> 1530</span>  <span class="keywordflow">if</span> (scope==<span class="keyword">nullptr</span>) scope=<a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a70414f815dfe6f9b6605380312f0dbc2">Doxygen::globalScope</a>;</div>
+<div class="line"><span class="lineno"> 1530</span>  <span class="keywordflow">if</span> (scope==0) scope=<a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a70414f815dfe6f9b6605380312f0dbc2">Doxygen::globalScope</a>;</div>
 <div class="line"><span class="lineno"> 1531</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d5/dcc/class_definition.html">Definition</a> *result = <a class="code hl_variable" href="../../da/d0c/class_symbol_resolver.html#a74d53555d942680120e24d2a54022fe0">p</a>-&gt;getResolvedSymbolRec(scope,name,args,checkCV,&amp;<a class="code hl_variable" href="../../da/d0c/class_symbol_resolver.html#a74d53555d942680120e24d2a54022fe0">p</a>-&gt;typeDef,&amp;<a class="code hl_variable" href="../../da/d0c/class_symbol_resolver.html#a74d53555d942680120e24d2a54022fe0">p</a>-&gt;templateSpec,&amp;<a class="code hl_variable" href="../../da/d0c/class_symbol_resolver.html#a74d53555d942680120e24d2a54022fe0">p</a>-&gt;resolvedType);</div>
 <div class="line"><span class="lineno"> 1532</span>  <span class="comment">//printf(&quot;resolveSymbol(%s,%s,%s,%d)=%s\n&quot;,qPrint(scope?scope-&gt;name():QCString()),qPrint(name),qPrint(args),checkCV,qPrint(result?result-&gt;qualifiedName():QCString()));</span></div>
 <div class="line"><span class="lineno"> 1533</span>  <span class="keywordflow">return</span> result;</div>

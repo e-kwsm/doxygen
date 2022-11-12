@@ -604,9 +604,9 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2d/util_8cpp_source.html#l04310">4310</a> of file <a class="el" href="../../df/d2d/util_8cpp_source.html">util.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 4313</span>{</div>
-<div class="line"><span class="lineno"> 4314</span>  <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aca68c0d4ac8df0838e209fb5300f7be3">ASSERT</a>(context!=<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno"> 4314</span>  <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aca68c0d4ac8df0838e209fb5300f7be3">ASSERT</a>(context!=0);</div>
 <div class="line"><span class="lineno"> 4315</span>  <span class="comment">//printf(&quot;addMemberToMemberGroup() context=%s\n&quot;,qPrint(context-&gt;name()));</span></div>
-<div class="line"><span class="lineno"> 4316</span>  <span class="keywordflow">if</span> (ml==<span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno"> 4316</span>  <span class="keywordflow">if</span> (ml==0) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno"> 4317</span> </div>
 <div class="line"><span class="lineno"> 4318</span>  <span class="keyword">struct </span>MoveMemberInfo</div>
 <div class="line"><span class="lineno"> 4319</span>  {</div>
@@ -636,7 +636,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 4343</span>                                      [&amp;groupId](<span class="keyword">const</span> <span class="keyword">auto</span> &amp;g)</div>
 <div class="line"><span class="lineno"> 4344</span>                                      { return g-&gt;groupId()==groupId; }</div>
 <div class="line"><span class="lineno"> 4345</span>                                     );</div>
-<div class="line"><span class="lineno"> 4346</span>            <a class="code hl_class" href="../../da/d32/class_member_group.html">MemberGroup</a> *mg_ptr = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 4346</span>            <a class="code hl_class" href="../../da/d32/class_member_group.html">MemberGroup</a> *mg_ptr = 0;</div>
 <div class="line"><span class="lineno"> 4347</span>            <span class="keywordflow">if</span> (mg_it==pMemberGroups-&gt;end())</div>
 <div class="line"><span class="lineno"> 4348</span>            {</div>
 <div class="line"><span class="lineno"> 4349</span>              <span class="keyword">auto</span> mg = std::make_unique&lt;MemberGroup&gt;(</div>
@@ -676,7 +676,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 4383</span>                                  [&amp;groupId](<span class="keyword">const</span> <span class="keyword">auto</span> &amp;g)</div>
 <div class="line"><span class="lineno"> 4384</span>                                  { return g-&gt;groupId()==groupId; }</div>
 <div class="line"><span class="lineno"> 4385</span>                                 );</div>
-<div class="line"><span class="lineno"> 4386</span>        <a class="code hl_class" href="../../da/d32/class_member_group.html">MemberGroup</a> *mg_ptr = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 4386</span>        <a class="code hl_class" href="../../da/d32/class_member_group.html">MemberGroup</a> *mg_ptr = 0;</div>
 <div class="line"><span class="lineno"> 4387</span>        <span class="keywordflow">if</span> (mg_it==pMemberGroups-&gt;end())</div>
 <div class="line"><span class="lineno"> 4388</span>        {</div>
 <div class="line"><span class="lineno"> 4389</span>          <span class="keyword">auto</span> mg = std::make_unique&lt;MemberGroup&gt;(</div>
@@ -889,7 +889,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2d/util_8cpp_source.html#l04839">4839</a> of file <a class="el" href="../../df/d2d/util_8cpp_source.html">util.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 4850</span>{</div>
-<div class="line"><span class="lineno"> 4851</span>  <a class="code hl_class" href="../../dd/d41/class_page_def.html">PageDef</a> *pd=<span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 4851</span>  <a class="code hl_class" href="../../dd/d41/class_page_def.html">PageDef</a> *pd=0;</div>
 <div class="line"><span class="lineno"> 4852</span>  <span class="comment">//printf(&quot;addRelatedPage(name=%s gd=%p)\n&quot;,qPrint(name),gd);</span></div>
 <div class="line"><span class="lineno"> 4853</span>  <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a> title=ptitle.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a66269a694d9e6961bfd145bb4ca72f42">stripWhiteSpace</a>();</div>
 <div class="line"><span class="lineno"> 4854</span>  <span class="keywordtype">bool</span> newPage = <span class="keyword">true</span>;</div>
@@ -932,7 +932,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 4891</span>      pd-&gt;<a class="code hl_function" href="../../dd/d41/class_page_def.html#a77bc8d4f9d20290d6f05c0a141803adf">setFileName</a>(<a class="code hl_function" href="../../df/d2d/util_8cpp.html#a8e04495ad97c6aab7960cc989e3f8c67">::convertNameToFile</a>(baseName,<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>,<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>));</div>
 <div class="line"><span class="lineno"> 4892</span>      pd-&gt;<a class="code hl_function" href="../../dd/d41/class_page_def.html#a8f0a903703155767c3889a101bb13399">setShowLineNo</a>(<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><span class="lineno"> 4893</span>      pd-&gt;<a class="code hl_function" href="../../dd/d41/class_page_def.html#a5bb360dae3ef60e6148658d24a17db03">setNestingLevel</a>(0);</div>
-<div class="line"><span class="lineno"> 4894</span>      pd-&gt;<a class="code hl_function" href="../../dd/d41/class_page_def.html#ac80c3bc365a1ba6946e2ac578197db53">setPageScope</a>(<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno"> 4894</span>      pd-&gt;<a class="code hl_function" href="../../dd/d41/class_page_def.html#ac80c3bc365a1ba6946e2ac578197db53">setPageScope</a>(0);</div>
 <div class="line"><span class="lineno"> 4895</span>      pd-&gt;<a class="code hl_function" href="../../dd/d41/class_page_def.html#a415078f57106a154fe06e4f092d359a3">setTitle</a>(title);</div>
 <div class="line"><span class="lineno"> 4896</span>    }</div>
 <div class="line"><span class="lineno"> 4897</span>    <span class="keywordflow">else</span> <span class="comment">// newPage</span></div>
@@ -1413,7 +1413,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2d/util_8cpp_source.html#l05429">5429</a> of file <a class="el" href="../../df/d2d/util_8cpp_source.html">util.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 5430</span>{</div>
-<div class="line"><span class="lineno"> 5431</span>  <span class="keywordflow">if</span> (str.isEmpty() || <a class="code hl_variable" href="../../df/d2d/util_8cpp.html#a5ee566002626114272def590e5eecf76">word</a>==<span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno"> 5431</span>  <span class="keywordflow">if</span> (str.isEmpty() || <a class="code hl_variable" href="../../df/d2d/util_8cpp.html#a5ee566002626114272def590e5eecf76">word</a>==0) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno"> 5432</span>  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="../../d2/dd8/classreg_1_1_ex.html">reg::Ex</a> re(R<span class="stringliteral">&quot;(\a+)&quot;);</span></div>
 <div class="line"><span class="lineno"> 5433</span><span class="stringliteral">  std::string s = str.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a875e9ad762554ef12f3ed69b015bb245">str</a>();</span></div>
 <div class="line"><span class="lineno"> 5434</span><span class="stringliteral">  </span><span class="keywordflow">for</span> (<a class="code hl_class" href="../../d4/d72/classreg_1_1_iterator.html">reg::Iterator</a> it(s,re) ; it!=<a class="code hl_class" href="../../d4/d72/classreg_1_1_iterator.html">reg::Iterator</a>() ; ++it)</div>
@@ -1468,7 +1468,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 4279</span>    }</div>
 <div class="line"><span class="lineno"> 4280</span>    <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a> entity(<a class="code hl_function" href="../../db/d35/namespacereg.html#a1a29dcc7e2ccf462503adc5d496881ae">match</a>.str());</div>
 <div class="line"><span class="lineno"> 4281</span>    <a class="code hl_enumeration" href="../../db/d5f/class_html_entity_mapper.html#a5fa49b07f0b74254ab5bd5b18474d7df">HtmlEntityMapper::SymType</a> symType = <a class="code hl_function" href="../../db/d5f/class_html_entity_mapper.html#ae6ddba77b763691a6e3a1c9021e8d944">HtmlEntityMapper::instance</a>()-&gt;<a class="code hl_function" href="../../db/d5f/class_html_entity_mapper.html#af0c3a82ead9d9f041131d3bf6ebf9f35">name2sym</a>(entity);</div>
-<div class="line"><span class="lineno"> 4282</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *code=<span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 4282</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *code=0;</div>
 <div class="line"><span class="lineno"> 4283</span>    <span class="keywordflow">if</span> (symType!=<a class="code hl_enumvalue" href="../../db/d5f/class_html_entity_mapper.html#a5fa49b07f0b74254ab5bd5b18474d7dfa4afd8f33f5ff42a444da284278109d9f">HtmlEntityMapper::Sym_Unknown</a> &amp;&amp; (code=<a class="code hl_function" href="../../db/d5f/class_html_entity_mapper.html#ae6ddba77b763691a6e3a1c9021e8d944">HtmlEntityMapper::instance</a>()-&gt;utf8(symType)))</div>
 <div class="line"><span class="lineno"> 4284</span>    {</div>
 <div class="line"><span class="lineno"> 4285</span>      growBuf.<a class="code hl_function" href="../../d8/d33/class_grow_buf.html#a5e0ff6d9f7a7139725d77a9d669340f3">addStr</a>(code);</div>
@@ -3235,8 +3235,8 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno"> 3825</span>{</div>
 <div class="line"><span class="lineno"> 3826</span>  <span class="keywordtype">int</span> i,p;</div>
 <div class="line"><span class="lineno"> 3827</span>  <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a> clName=scopeName;</div>
-<div class="line"><span class="lineno"> 3828</span>  <a class="code hl_class" href="../../d0/d07/class_namespace_def.html">NamespaceDef</a> *nd = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno"> 3829</span>  <span class="keywordflow">if</span> (!clName.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a621c4090d69ad7d05ef8e5234376c3d8">isEmpty</a>() &amp;&amp; (nd=<a class="code hl_function" href="../../d7/d1c/namespacedef_8cpp.html#ac29daa4ae4a11022a30d2deb6934624c">getResolvedNamespace</a>(clName)) &amp;&amp; <a class="code hl_function" href="../../de/d89/classdef_8cpp.html#a9682735bd2cf0656eaa944f8b3e364a2">getClass</a>(clName)==<span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno"> 3828</span>  <a class="code hl_class" href="../../d0/d07/class_namespace_def.html">NamespaceDef</a> *nd = 0;</div>
+<div class="line"><span class="lineno"> 3829</span>  <span class="keywordflow">if</span> (!clName.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a621c4090d69ad7d05ef8e5234376c3d8">isEmpty</a>() &amp;&amp; (nd=<a class="code hl_function" href="../../d7/d1c/namespacedef_8cpp.html#ac29daa4ae4a11022a30d2deb6934624c">getResolvedNamespace</a>(clName)) &amp;&amp; <a class="code hl_function" href="../../de/d89/classdef_8cpp.html#a9682735bd2cf0656eaa944f8b3e364a2">getClass</a>(clName)==0)</div>
 <div class="line"><span class="lineno"> 3830</span>  { <span class="comment">// the whole name is a namespace (and not a class)</span></div>
 <div class="line"><span class="lineno"> 3831</span>    namespaceName=nd-&gt;<a class="code hl_function" href="../../d5/dcc/class_definition.html#a9374fedd7f64fea7e0e164302d1a9e61">name</a>();</div>
 <div class="line"><span class="lineno"> 3832</span>    className.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a993474e2da59141336e6105b8e154f2b">resize</a>(0);</div>
@@ -3247,7 +3247,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 3837</span>    <span class="comment">// see if the first part is a namespace (and not a class)</span></div>
 <div class="line"><span class="lineno"> 3838</span>  {</div>
 <div class="line"><span class="lineno"> 3839</span>    <span class="comment">//printf(&quot;Trying %s\n&quot;,qPrint(clName.left(i)));</span></div>
-<div class="line"><span class="lineno"> 3840</span>    <span class="keywordflow">if</span> (i&gt;0 &amp;&amp; (nd=<a class="code hl_function" href="../../d7/d1c/namespacedef_8cpp.html#ac29daa4ae4a11022a30d2deb6934624c">getResolvedNamespace</a>(clName.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#aecf8b66312c4e97333219cc344c11a4f">left</a>(i))) &amp;&amp; <a class="code hl_function" href="../../de/d89/classdef_8cpp.html#a9682735bd2cf0656eaa944f8b3e364a2">getClass</a>(clName.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#aecf8b66312c4e97333219cc344c11a4f">left</a>(i))==<span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno"> 3840</span>    <span class="keywordflow">if</span> (i&gt;0 &amp;&amp; (nd=<a class="code hl_function" href="../../d7/d1c/namespacedef_8cpp.html#ac29daa4ae4a11022a30d2deb6934624c">getResolvedNamespace</a>(clName.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#aecf8b66312c4e97333219cc344c11a4f">left</a>(i))) &amp;&amp; <a class="code hl_function" href="../../de/d89/classdef_8cpp.html#a9682735bd2cf0656eaa944f8b3e364a2">getClass</a>(clName.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#aecf8b66312c4e97333219cc344c11a4f">left</a>(i))==0)</div>
 <div class="line"><span class="lineno"> 3841</span>    {</div>
 <div class="line"><span class="lineno"> 3842</span>      <span class="comment">//printf(&quot;found!\n&quot;);</span></div>
 <div class="line"><span class="lineno"> 3843</span>      namespaceName=nd-&gt;<a class="code hl_function" href="../../d5/dcc/class_definition.html#a9374fedd7f64fea7e0e164302d1a9e61">name</a>();</div>
@@ -3794,7 +3794,7 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="../../df/d2d/util_8cpp_source.html#l03295">3295</a> of file <a class="el" href="../../df/d2d/util_8cpp_source.html">util.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 3296</span>{</div>
 <div class="line"><span class="lineno"> 3297</span>  ambig=<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><span class="lineno"> 3298</span>  <span class="keywordflow">if</span> (n.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a621c4090d69ad7d05ef8e5234376c3d8">isEmpty</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 3298</span>  <span class="keywordflow">if</span> (n.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a621c4090d69ad7d05ef8e5234376c3d8">isEmpty</a>()) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno"> 3299</span> </div>
 <div class="line"><span class="lineno"> 3300</span>  std::lock_guard&lt;std::mutex&gt; lock(<a class="code hl_variable" href="../../df/d2d/util_8cpp.html#a587447708f655fb9eade00029b06d878">g_findFileDefMutex</a>);</div>
 <div class="line"><span class="lineno"> 3301</span> </div>
@@ -3814,7 +3814,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 3315</span>  }</div>
 <div class="line"><span class="lineno"> 3316</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 3317</span>  {</div>
-<div class="line"><span class="lineno"> 3318</span>    cachedResult = <a class="code hl_variable" href="../../df/d2d/util_8cpp.html#a3da5e75c51369294e5f45bcaa83b11d2">g_findFileDefCache</a>.insert(key.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a875e9ad762554ef12f3ed69b015bb245">str</a>(),<a class="code hl_struct" href="../../d4/d2f/struct_find_file_cache_elem.html">FindFileCacheElem</a>(<span class="keyword">nullptr</span>,<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>));</div>
+<div class="line"><span class="lineno"> 3318</span>    cachedResult = <a class="code hl_variable" href="../../df/d2d/util_8cpp.html#a3da5e75c51369294e5f45bcaa83b11d2">g_findFileDefCache</a>.insert(key.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a875e9ad762554ef12f3ed69b015bb245">str</a>(),<a class="code hl_struct" href="../../d4/d2f/struct_find_file_cache_elem.html">FindFileCacheElem</a>(0,<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>));</div>
 <div class="line"><span class="lineno"> 3319</span>  }</div>
 <div class="line"><span class="lineno"> 3320</span> </div>
 <div class="line"><span class="lineno"> 3321</span>  <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a> name=<a class="code hl_function" href="../../d2/dc2/class_dir.html#ab25b50ffd43d7163ea07a6625dfe9088">Dir::cleanDirPath</a>(n.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a875e9ad762554ef12f3ed69b015bb245">str</a>());</div>
@@ -3847,7 +3847,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 3348</span>    <span class="keywordflow">else</span> <span class="comment">// file name alone is ambiguous</span></div>
 <div class="line"><span class="lineno"> 3349</span>    {</div>
 <div class="line"><span class="lineno"> 3350</span>      <span class="keywordtype">int</span> count=0;</div>
-<div class="line"><span class="lineno"> 3351</span>      <a class="code hl_class" href="../../de/db0/class_file_def.html">FileDef</a> *lastMatch=<span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 3351</span>      <a class="code hl_class" href="../../de/db0/class_file_def.html">FileDef</a> *lastMatch=0;</div>
 <div class="line"><span class="lineno"> 3352</span>      <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a> pathStripped = <a class="code hl_function" href="../../df/d2d/util_8cpp.html#a3d790f4b8fa74cbafd6c4b34d4573093">stripFromIncludePath</a>(path);</div>
 <div class="line"><span class="lineno"> 3353</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;fd_p : *fn)</div>
 <div class="line"><span class="lineno"> 3354</span>      {</div>
@@ -3872,7 +3872,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 3373</span>  }</div>
 <div class="line"><span class="lineno"> 3374</span>exit:</div>
 <div class="line"><span class="lineno"> 3375</span>  <span class="comment">//delete cachedResult;</span></div>
-<div class="line"><span class="lineno"> 3376</span>  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 3376</span>  <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno"> 3377</span>}</div>
 <div class="ttc" id="aclass_dir_html_ab25b50ffd43d7163ea07a6625dfe9088"><div class="ttname"><a href="../../d2/dc2/class_dir.html#ab25b50ffd43d7163ea07a6625dfe9088">Dir::cleanDirPath</a></div><div class="ttdeci">static std::string cleanDirPath(const std::string &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d48/dir_8cpp_source.html#l00298">dir.cpp:298</a></div></div>
 <div class="ttc" id="aclass_file_def_html"><div class="ttname"><a href="../../de/db0/class_file_def.html">FileDef</a></div><div class="ttdoc">A model of a file symbol.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3a/filedef_8h_source.html#l00072">filedef.h:73</a></div></div>
@@ -4074,7 +4074,7 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="../../df/d2d/util_8cpp_source.html#l03224">3224</a> of file <a class="el" href="../../df/d2d/util_8cpp_source.html">util.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 3226</span>{</div>
 <div class="line"><span class="lineno"> 3227</span>  <span class="comment">//printf(&quot;generateLink(clName=%s,lr=%s,lr=%s)\n&quot;,clName,lr,lt);</span></div>
-<div class="line"><span class="lineno"> 3228</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d5/dcc/class_definition.html">Definition</a> *compound = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 3228</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d5/dcc/class_definition.html">Definition</a> *compound = 0;</div>
 <div class="line"><span class="lineno"> 3229</span>  <span class="comment">//PageDef *pageDef=0;</span></div>
 <div class="line"><span class="lineno"> 3230</span>  <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a> anchor,linkText=<a class="code hl_function" href="../../df/d2d/util_8cpp.html#a1193619fc22f8093dc4096b092165b96">linkToText</a>(<a class="code hl_enumvalue" href="../../d9/d49/types_8h.html#a9974623ce72fc23df5d64426b9178bf2a17e01b5bb16dab5d94d806a8a0f3aab0">SrcLangExt_Unknown</a>,lt,<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><span class="lineno"> 3231</span>  <span class="comment">//printf(&quot;generateLink linkText=%s\n&quot;,qPrint(linkText));</span></div>
@@ -4276,11 +4276,11 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 2699</span>    printf(<span class="stringliteral">&quot;@@ ------ getDefsOld start\n&quot;</span>);</div>
 <div class="line"><span class="lineno"> 2700</span>    <span class="keywordtype">bool</span> result = <a class="code hl_function" href="../../df/d2d/util_8cpp.html#a9cbafc5ba005ce8b1c0287e9a4ede947">getDefsOld</a>(scName,mbName,args,md,cd,fd,nd,gd,forceEmptyScope,currentFile,checkCV);</div>
 <div class="line"><span class="lineno"> 2701</span>    printf(<span class="stringliteral">&quot;@@ ------ getDefsOld end\n&quot;</span>);</div>
-<div class="line"><span class="lineno"> 2702</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../da/d09/class_member_def.html">MemberDef</a> *nmd    = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno"> 2703</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d1/dcf/class_class_def.html">ClassDef</a> *ncd     = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno"> 2704</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../de/db0/class_file_def.html">FileDef</a> *nfd      = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno"> 2705</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d0/d07/class_namespace_def.html">NamespaceDef</a> *nnd = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno"> 2706</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d8/d09/class_group_def.html">GroupDef</a> *ngd     = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 2702</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../da/d09/class_member_def.html">MemberDef</a> *nmd    = 0;</div>
+<div class="line"><span class="lineno"> 2703</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d1/dcf/class_class_def.html">ClassDef</a> *ncd     = 0;</div>
+<div class="line"><span class="lineno"> 2704</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../de/db0/class_file_def.html">FileDef</a> *nfd      = 0;</div>
+<div class="line"><span class="lineno"> 2705</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d0/d07/class_namespace_def.html">NamespaceDef</a> *nnd = 0;</div>
+<div class="line"><span class="lineno"> 2706</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d8/d09/class_group_def.html">GroupDef</a> *ngd     = 0;</div>
 <div class="line"><span class="lineno"> 2707</span>    printf(<span class="stringliteral">&quot;@@ ------ getDefsNew start\n&quot;</span>);</div>
 <div class="line"><span class="lineno"> 2708</span>    <span class="keywordtype">bool</span> newResult = <a class="code hl_function" href="../../df/d2d/util_8cpp.html#ae1d4eb64c5814d4eb0724be8fdd6327d">getDefsNew</a>(scName,mbName,args,</div>
 <div class="line"><span class="lineno"> 2709</span>                                nmd,ncd,nfd,nnd,ngd,</div>
@@ -5009,10 +5009,10 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 3874</span>  <span class="keywordflow">if</span> (!templ.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a621c4090d69ad7d05ef8e5234376c3d8">isEmpty</a>() &amp;&amp; scope.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a0182ece6b76dad6475dafb53e2faaf10">find</a>(<span class="charliteral">&#39;&lt;&#39;</span>)==-1)</div>
 <div class="line"><span class="lineno"> 3875</span>  {</div>
 <div class="line"><span class="lineno"> 3876</span>    <span class="keywordtype">int</span> si,pi=0;</div>
-<div class="line"><span class="lineno"> 3877</span>    <a class="code hl_class" href="../../d1/dcf/class_class_def.html">ClassDef</a> *cd=<span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 3877</span>    <a class="code hl_class" href="../../d1/dcf/class_class_def.html">ClassDef</a> *cd=0;</div>
 <div class="line"><span class="lineno"> 3878</span>    <span class="keywordflow">while</span> (</div>
 <div class="line"><span class="lineno"> 3879</span>        (si=scope.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a0182ece6b76dad6475dafb53e2faaf10">find</a>(<span class="stringliteral">&quot;::&quot;</span>,pi))!=-1 &amp;&amp; !<a class="code hl_function" href="../../de/d89/classdef_8cpp.html#a9682735bd2cf0656eaa944f8b3e364a2">getClass</a>(scope.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#aecf8b66312c4e97333219cc344c11a4f">left</a>(si)+templ) &amp;&amp;</div>
-<div class="line"><span class="lineno"> 3880</span>        ((cd=<a class="code hl_function" href="../../de/d89/classdef_8cpp.html#a9682735bd2cf0656eaa944f8b3e364a2">getClass</a>(scope.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#aecf8b66312c4e97333219cc344c11a4f">left</a>(si)))==<span class="keyword">nullptr</span> || cd-&gt;<a class="code hl_function" href="../../d1/dcf/class_class_def.html#a201b8f24043f9b7c7cc59d55282f6d47">templateArguments</a>().<a class="code hl_function" href="../../d7/df8/class_argument_list.html#aaa15ddcfdb06a535a3398f1dc73d336d">empty</a>())</div>
+<div class="line"><span class="lineno"> 3880</span>        ((cd=<a class="code hl_function" href="../../de/d89/classdef_8cpp.html#a9682735bd2cf0656eaa944f8b3e364a2">getClass</a>(scope.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#aecf8b66312c4e97333219cc344c11a4f">left</a>(si)))==0 || cd-&gt;<a class="code hl_function" href="../../d1/dcf/class_class_def.html#a201b8f24043f9b7c7cc59d55282f6d47">templateArguments</a>().<a class="code hl_function" href="../../d7/df8/class_argument_list.html#aaa15ddcfdb06a535a3398f1dc73d336d">empty</a>())</div>
 <div class="line"><span class="lineno"> 3881</span>        )</div>
 <div class="line"><span class="lineno"> 3882</span>    {</div>
 <div class="line"><span class="lineno"> 3883</span>      <span class="comment">//printf(&quot;Tried &#39;%s&#39;\n&quot;,qPrint((scope.left(si)+templ)));</span></div>
@@ -5864,7 +5864,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2d/util_8cpp_source.html#l07165">7165</a> of file <a class="el" href="../../df/d2d/util_8cpp_source.html">util.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 7166</span>{</div>
-<div class="line"><span class="lineno"> 7167</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a2cc3616eca3e3c550a211d8b1eaf4661">Doxygen::mainPage</a>!=<span class="keyword">nullptr</span> &amp;&amp; <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a2cc3616eca3e3c550a211d8b1eaf4661">Doxygen::mainPage</a>-&gt;hasTitle();</div>
+<div class="line"><span class="lineno"> 7167</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a2cc3616eca3e3c550a211d8b1eaf4661">Doxygen::mainPage</a>!=0 &amp;&amp; <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a2cc3616eca3e3c550a211d8b1eaf4661">Doxygen::mainPage</a>-&gt;hasTitle();</div>
 <div class="line"><span class="lineno"> 7168</span>}</div>
 <div class="ttc" id="aclass_doxygen_html_a2cc3616eca3e3c550a211d8b1eaf4661"><div class="ttname"><a href="../../de/d6a/class_doxygen.html#a2cc3616eca3e3c550a211d8b1eaf4661">Doxygen::mainPage</a></div><div class="ttdeci">static std::unique_ptr&lt; PageDef &gt; mainPage</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/da1/doxygen_8h_source.html#l00093">doxygen.h:93</a></div></div>
 </div><!-- fragment -->
@@ -5938,9 +5938,9 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2d/util_8cpp_source.html#l01862">1862</a> of file <a class="el" href="../../df/d2d/util_8cpp_source.html">util.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1865</span>{</div>
-<div class="line"><span class="lineno"> 1866</span>  <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aca68c0d4ac8df0838e209fb5300f7be3">ASSERT</a>(srcScope!=<span class="keyword">nullptr</span> &amp;&amp; dstScope!=<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno"> 1866</span>  <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aca68c0d4ac8df0838e209fb5300f7be3">ASSERT</a>(srcScope!=0 &amp;&amp; dstScope!=0);</div>
 <div class="line"><span class="lineno"> 1867</span> </div>
-<div class="line"><span class="lineno"> 1868</span>  <span class="keywordflow">if</span> (srcAl==<span class="keyword">nullptr</span> || dstAl==<span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno"> 1868</span>  <span class="keywordflow">if</span> (srcAl==0 || dstAl==0)</div>
 <div class="line"><span class="lineno"> 1869</span>  {</div>
 <div class="line"><span class="lineno"> 1870</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../db/d35/namespacereg.html#a1a29dcc7e2ccf462503adc5d496881ae">match</a> = srcAl==dstAl;</div>
 <div class="line"><span class="lineno"> 1871</span>    <span class="keywordflow">if</span> (match)</div>
@@ -7141,14 +7141,14 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  550</span>  <span class="comment">// We use a static character array to</span></div>
 <div class="line"><span class="lineno">  551</span>  <span class="comment">// improve the performance of this function</span></div>
 <div class="line"><span class="lineno">  552</span>  <span class="comment">// and thread_local is needed to make it multi-thread safe</span></div>
-<div class="line"><span class="lineno">  553</span>  <span class="keyword">static</span> <a class="code hl_define" href="../../d1/da1/doxygen_8h.html#af8556c37f3acfa45992b8697930c501b">THREAD_LOCAL</a> <span class="keywordtype">char</span> *growBuf = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  553</span>  <span class="keyword">static</span> <a class="code hl_define" href="../../d1/da1/doxygen_8h.html#af8556c37f3acfa45992b8697930c501b">THREAD_LOCAL</a> <span class="keywordtype">char</span> *growBuf = 0;</div>
 <div class="line"><span class="lineno">  554</span>  <span class="keyword">static</span> <a class="code hl_define" href="../../d1/da1/doxygen_8h.html#af8556c37f3acfa45992b8697930c501b">THREAD_LOCAL</a> <span class="keywordtype">size_t</span> growBufLen = 0;</div>
 <div class="line"><span class="lineno">  555</span>  <span class="keywordflow">if</span> (s.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#ac52596733e9110b778019946d73fb268">length</a>()*3&gt;growBufLen) <span class="comment">// For input character we produce at most 3 output characters,</span></div>
 <div class="line"><span class="lineno">  556</span>  {</div>
 <div class="line"><span class="lineno">  557</span>    growBufLen = s.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#ac52596733e9110b778019946d73fb268">length</a>()*3;</div>
 <div class="line"><span class="lineno">  558</span>    growBuf = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span> *<span class="keyword">&gt;</span>(realloc(growBuf,growBufLen+1)); <span class="comment">// add 1 for 0-terminator</span></div>
 <div class="line"><span class="lineno">  559</span>  }</div>
-<div class="line"><span class="lineno">  560</span>  <span class="keywordflow">if</span> (growBuf==<span class="keyword">nullptr</span>) <span class="keywordflow">return</span> s; <span class="comment">// should not happen, only we run out of memory</span></div>
+<div class="line"><span class="lineno">  560</span>  <span class="keywordflow">if</span> (growBuf==0) <span class="keywordflow">return</span> s; <span class="comment">// should not happen, only we run out of memory</span></div>
 <div class="line"><span class="lineno">  561</span> </div>
 <div class="line"><span class="lineno">  562</span>  <span class="keyword">const</span> <span class="keywordtype">char</span> *src=s.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#ac3aa3ac1a1c36d3305eba22a2eb0d098">data</a>();</div>
 <div class="line"><span class="lineno">  563</span>  <span class="keywordtype">char</span> *dst=growBuf;</div>
@@ -7660,7 +7660,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2d/util_8cpp_source.html#l03110">3110</a> of file <a class="el" href="../../df/d2d/util_8cpp_source.html">util.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 3116</span>{</div>
-<div class="line"><span class="lineno"> 3117</span>  *resContext=<span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 3117</span>  *resContext=0;</div>
 <div class="line"><span class="lineno"> 3118</span> </div>
 <div class="line"><span class="lineno"> 3119</span>  <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a> linkRef=lr;</div>
 <div class="line"><span class="lineno"> 3120</span>  <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a> linkRefWithoutTemplates = <a class="code hl_function" href="../../df/d2d/util_8cpp.html#a195c37037adf1a2af69ad01cf8d72cac">stripTemplateSpecifiersFromScope</a>(linkRef,<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
@@ -7672,7 +7672,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 3126</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d4/dd4/class_dir_def.html">DirDef</a>   *dir;</div>
 <div class="line"><span class="lineno"> 3127</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d6/d8d/class_concept_def.html">ConceptDef</a> *cnd;</div>
 <div class="line"><span class="lineno"> 3128</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d0/d07/class_namespace_def.html">NamespaceDef</a> *nd;</div>
-<div class="line"><span class="lineno"> 3129</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../de/d3c/class_section_info.html">SectionInfo</a> *si=<span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 3129</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../de/d3c/class_section_info.html">SectionInfo</a> *si=0;</div>
 <div class="line"><span class="lineno"> 3130</span>  <span class="keywordtype">bool</span> ambig;</div>
 <div class="line"><span class="lineno"> 3131</span>  <span class="keywordflow">if</span> (linkRef.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a621c4090d69ad7d05ef8e5234376c3d8">isEmpty</a>()) <span class="comment">// no reference name!</span></div>
 <div class="line"><span class="lineno"> 3132</span>  {</div>
@@ -7752,7 +7752,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 3206</span>  }</div>
 <div class="line"><span class="lineno"> 3207</span>  <span class="keywordflow">else</span> <span class="comment">// probably a member reference</span></div>
 <div class="line"><span class="lineno"> 3208</span>  {</div>
-<div class="line"><span class="lineno"> 3209</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../da/d09/class_member_def.html">MemberDef</a> *md = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 3209</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../da/d09/class_member_def.html">MemberDef</a> *md = 0;</div>
 <div class="line"><span class="lineno"> 3210</span>    <span class="keywordtype">bool</span> res = <a class="code hl_function" href="../../df/d2d/util_8cpp.html#a6aee1ec15ba34cf7ffde95867eaa59a3">resolveRef</a>(scName,lr,<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>,resContext,&amp;md);</div>
 <div class="line"><span class="lineno"> 3211</span>    <span class="keywordflow">if</span> (md) resAnchor=md-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a170c6221384447f7e2e9f5a529efef40">anchor</a>();</div>
 <div class="line"><span class="lineno"> 3212</span>    <span class="keywordflow">return</span> res;</div>
@@ -7866,17 +7866,17 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 2855</span>  <span class="keywordtype">bool</span> explicitScope = fullName.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a1f43c0a4958cf17f086dc0e3a4b13a68">startsWith</a>(<span class="stringliteral">&quot;::&quot;</span>) &amp;&amp;   <span class="comment">// ::scope or #scope</span></div>
 <div class="line"><span class="lineno"> 2856</span>                       (scopePos&gt;2 ||                 <span class="comment">// ::N::A</span></div>
 <div class="line"><span class="lineno"> 2857</span>                        tsName.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a1f43c0a4958cf17f086dc0e3a4b13a68">startsWith</a>(<span class="stringliteral">&quot;::&quot;</span>) ||    <span class="comment">// ::foo in local scope</span></div>
-<div class="line"><span class="lineno"> 2858</span>                        scName==<span class="keyword">nullptr</span>               <span class="comment">// #foo  in global scope</span></div>
+<div class="line"><span class="lineno"> 2858</span>                        scName==0                     <span class="comment">// #foo  in global scope</span></div>
 <div class="line"><span class="lineno"> 2859</span>                       );</div>
 <div class="line"><span class="lineno"> 2860</span> </div>
 <div class="line"><span class="lineno"> 2861</span>  <span class="comment">// default result values</span></div>
-<div class="line"><span class="lineno"> 2862</span>  *resContext=<span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno"> 2863</span>  *resMember=<span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 2862</span>  *resContext=0;</div>
+<div class="line"><span class="lineno"> 2863</span>  *resMember=0;</div>
 <div class="line"><span class="lineno"> 2864</span> </div>
 <div class="line"><span class="lineno"> 2865</span>  <span class="keywordflow">if</span> (bracePos==-1) <span class="comment">// simple name</span></div>
 <div class="line"><span class="lineno"> 2866</span>  {</div>
-<div class="line"><span class="lineno"> 2867</span>    <a class="code hl_class" href="../../d1/dcf/class_class_def.html">ClassDef</a> *cd=<span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno"> 2868</span>    <a class="code hl_class" href="../../d0/d07/class_namespace_def.html">NamespaceDef</a> *nd=<span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 2867</span>    <a class="code hl_class" href="../../d1/dcf/class_class_def.html">ClassDef</a> *cd=0;</div>
+<div class="line"><span class="lineno"> 2868</span>    <a class="code hl_class" href="../../d0/d07/class_namespace_def.html">NamespaceDef</a> *nd=0;</div>
 <div class="line"><span class="lineno"> 2869</span> </div>
 <div class="line"><span class="lineno"> 2870</span>    <span class="comment">// the following if() was commented out for releases in the range</span></div>
 <div class="line"><span class="lineno"> 2871</span>    <span class="comment">// 1.5.2 to 1.6.1, but has been restored as a result of bug report 594787.</span></div>
@@ -7897,7 +7897,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 2886</span>      }</div>
 <div class="line"><span class="lineno"> 2887</span>      <span class="keywordflow">else</span> <span class="comment">// scope matches that of a namespace</span></div>
 <div class="line"><span class="lineno"> 2888</span>      {</div>
-<div class="line"><span class="lineno"> 2889</span>        <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aca68c0d4ac8df0838e209fb5300f7be3">ASSERT</a>(nd!=<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno"> 2889</span>        <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aca68c0d4ac8df0838e209fb5300f7be3">ASSERT</a>(nd!=0);</div>
 <div class="line"><span class="lineno"> 2890</span>        *resContext = nd;</div>
 <div class="line"><span class="lineno"> 2891</span>      }</div>
 <div class="line"><span class="lineno"> 2892</span>      <span class="keywordflow">return</span> <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
@@ -7943,12 +7943,12 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 2932</span> </div>
 <div class="line"><span class="lineno"> 2933</span>  <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a> scopeStr=scName;</div>
 <div class="line"><span class="lineno"> 2934</span> </div>
-<div class="line"><span class="lineno"> 2935</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../da/d09/class_member_def.html">MemberDef</a>    *md = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno"> 2936</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d1/dcf/class_class_def.html">ClassDef</a>     *cd = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno"> 2937</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../de/db0/class_file_def.html">FileDef</a>      *fd = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno"> 2938</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d0/d07/class_namespace_def.html">NamespaceDef</a> *nd = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno"> 2939</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d8/d09/class_group_def.html">GroupDef</a>     *gd = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno"> 2940</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d6/d8d/class_concept_def.html">ConceptDef</a>   *cnd = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 2935</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../da/d09/class_member_def.html">MemberDef</a>    *md = 0;</div>
+<div class="line"><span class="lineno"> 2936</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d1/dcf/class_class_def.html">ClassDef</a>     *cd = 0;</div>
+<div class="line"><span class="lineno"> 2937</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../de/db0/class_file_def.html">FileDef</a>      *fd = 0;</div>
+<div class="line"><span class="lineno"> 2938</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d0/d07/class_namespace_def.html">NamespaceDef</a> *nd = 0;</div>
+<div class="line"><span class="lineno"> 2939</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d8/d09/class_group_def.html">GroupDef</a>     *gd = 0;</div>
+<div class="line"><span class="lineno"> 2940</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d6/d8d/class_concept_def.html">ConceptDef</a>   *cnd = 0;</div>
 <div class="line"><span class="lineno"> 2941</span> </div>
 <div class="line"><span class="lineno"> 2942</span>  <span class="comment">// check if nameStr is a member or global.</span></div>
 <div class="line"><span class="lineno"> 2943</span>  <span class="comment">//printf(&quot;getDefs(scope=%s,name=%s,args=%s checkScope=%d)\n&quot;,</span></div>
@@ -7971,8 +7971,8 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 2960</span>      <span class="comment">// looking for a scoped variable. See bug 616387 for an example why this check is needed.</span></div>
 <div class="line"><span class="lineno"> 2961</span>      <span class="comment">// note we do need to support autolinking to &quot;::symbol&quot; hence the &gt;0</span></div>
 <div class="line"><span class="lineno"> 2962</span>      <span class="comment">//printf(&quot;not global member!\n&quot;);</span></div>
-<div class="line"><span class="lineno"> 2963</span>      *resContext=<span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno"> 2964</span>      *resMember=<span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 2963</span>      *resContext=0;</div>
+<div class="line"><span class="lineno"> 2964</span>      *resMember=0;</div>
 <div class="line"><span class="lineno"> 2965</span>      <span class="keywordflow">return</span> <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><span class="lineno"> 2966</span>    }</div>
 <div class="line"><span class="lineno"> 2967</span>    <span class="comment">//printf(&quot;after getDefs md=%p cd=%p fd=%p nd=%p gd=%p\n&quot;,md,cd,fd,nd,gd);</span></div>
@@ -7981,7 +7981,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 2970</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (nd) *resContext=nd;</div>
 <div class="line"><span class="lineno"> 2971</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (fd) *resContext=fd;</div>
 <div class="line"><span class="lineno"> 2972</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (gd) *resContext=gd;</div>
-<div class="line"><span class="lineno"> 2973</span>    <span class="keywordflow">else</span>         { *resContext=<span class="keyword">nullptr</span>; *resMember=<span class="keyword">nullptr</span>; <span class="keywordflow">return</span> <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>; }</div>
+<div class="line"><span class="lineno"> 2973</span>    <span class="keywordflow">else</span>         { *resContext=0; *resMember=0; <span class="keywordflow">return</span> <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>; }</div>
 <div class="line"><span class="lineno"> 2974</span>    <span class="comment">//printf(&quot;member=%s (md=%p) anchor=%s linkable()=%d context=%s\n&quot;,</span></div>
 <div class="line"><span class="lineno"> 2975</span>    <span class="comment">//    qPrint(md-&gt;name()), md, qPrint(md-&gt;anchor()), md-&gt;isLinkable(), qPrint((*resContext)-&gt;name()));</span></div>
 <div class="line"><span class="lineno"> 2976</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
@@ -8009,7 +8009,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 2998</span> </div>
 <div class="line"><span class="lineno"> 2999</span>  <span class="keywordflow">if</span> (tryUnspecializedVersion)</div>
 <div class="line"><span class="lineno"> 3000</span>  {</div>
-<div class="line"><span class="lineno"> 3001</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d2d/util_8cpp.html#a6aee1ec15ba34cf7ffde95867eaa59a3">resolveRef</a>(scName,name,inSeeBlock,resContext,resMember,<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>,<span class="keyword">nullptr</span>,checkScope);</div>
+<div class="line"><span class="lineno"> 3001</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d2d/util_8cpp.html#a6aee1ec15ba34cf7ffde95867eaa59a3">resolveRef</a>(scName,name,inSeeBlock,resContext,resMember,<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>,0,checkScope);</div>
 <div class="line"><span class="lineno"> 3002</span>  }</div>
 <div class="line"><span class="lineno"> 3003</span>  <span class="keywordflow">if</span> (bracePos!=-1) <span class="comment">// Try without parameters as well, could be a constructor invocation</span></div>
 <div class="line"><span class="lineno"> 3004</span>  {</div>
@@ -8102,8 +8102,8 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  394</span>      <span class="keywordflow">return</span> result;</div>
 <div class="line"><span class="lineno">  395</span>    }</div>
 <div class="line"><span class="lineno">  396</span>  }</div>
-<div class="line"><span class="lineno">  397</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../da/d09/class_member_def.html">MemberDef</a> *md=<span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  398</span>  <span class="keywordflow">while</span> (mContext &amp;&amp; md==<span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  397</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../da/d09/class_member_def.html">MemberDef</a> *md=0;</div>
+<div class="line"><span class="lineno">  398</span>  <span class="keywordflow">while</span> (mContext &amp;&amp; md==0)</div>
 <div class="line"><span class="lineno">  399</span>  {</div>
 <div class="line"><span class="lineno">  400</span>    <span class="comment">// step 1: get the right scope</span></div>
 <div class="line"><span class="lineno">  401</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d5/dcc/class_definition.html">Definition</a> *resScope=mContext;</div>
@@ -8123,7 +8123,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  415</span>        <span class="keywordflow">if</span> (!tmp.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a621c4090d69ad7d05ef8e5234376c3d8">isEmpty</a>()) qualScopePart=tmp;</div>
 <div class="line"><span class="lineno">  416</span>        resScope = resScope-&gt;<a class="code hl_function" href="../../d5/dcc/class_definition.html#a99240810ee50ab17c2cb21b56651cf09">findInnerCompound</a>(qualScopePart);</div>
 <div class="line"><span class="lineno">  417</span>        <span class="comment">//printf(&quot;qualScopePart=&#39;%s&#39; resScope=%p\n&quot;,qPrint(qualScopePart),resScope);</span></div>
-<div class="line"><span class="lineno">  418</span>        <span class="keywordflow">if</span> (resScope==<span class="keyword">nullptr</span>) <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  418</span>        <span class="keywordflow">if</span> (resScope==0) <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  419</span>        ps=is+l;</div>
 <div class="line"><span class="lineno">  420</span>      }</div>
 <div class="line"><span class="lineno">  421</span>    }</div>
@@ -8134,7 +8134,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  426</span>    {</div>
 <div class="line"><span class="lineno">  427</span>      <span class="comment">//printf(&quot;scope found: %s, look for typedef %s\n&quot;,</span></div>
 <div class="line"><span class="lineno">  428</span>      <span class="comment">//     qPrint(resScope-&gt;qualifiedName()),qPrint(resName));</span></div>
-<div class="line"><span class="lineno">  429</span>      <a class="code hl_class" href="../../da/d3d/class_member_name_linked_map.html">MemberNameLinkedMap</a> *mnd=<span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  429</span>      <a class="code hl_class" href="../../da/d3d/class_member_name_linked_map.html">MemberNameLinkedMap</a> *mnd=0;</div>
 <div class="line"><span class="lineno">  430</span>      <span class="keywordflow">if</span> (resScope-&gt;<a class="code hl_function" href="../../d5/dcc/class_definition.html#a526c39074637d4b17a3f67df56d961ff">definitionType</a>()==<a class="code hl_enumvalue" href="../../d5/dcc/class_definition.html#aa41b6bc53dcf93ecf745698aaf15ef8eafa4d5f6cdc4791da57411cbcc8fa7654">Definition::TypeClass</a>)</div>
 <div class="line"><span class="lineno">  431</span>      {</div>
 <div class="line"><span class="lineno">  432</span>        mnd=<a class="code hl_variable" href="../../de/d6a/class_doxygen.html#adc3a52f780a8b6a6f0653e357b09af6b">Doxygen::memberNameLinkedMap</a>;</div>
@@ -8157,7 +8157,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  449</span>          {</div>
 <div class="line"><span class="lineno">  450</span>            <a class="code hl_class" href="../../da/d0c/class_symbol_resolver.html">SymbolResolver</a> resolver;</div>
 <div class="line"><span class="lineno">  451</span>            <span class="keywordtype">int</span> dist=resolver.<a class="code hl_function" href="../../da/d0c/class_symbol_resolver.html#a2d50ab34b5f003b3ee4c1283a414eca0">isAccessibleFrom</a>(resScope,tmd);</div>
-<div class="line"><span class="lineno">  452</span>            <span class="keywordflow">if</span> (dist!=-1 &amp;&amp; (md==<span class="keyword">nullptr</span> || dist&lt;minDist))</div>
+<div class="line"><span class="lineno">  452</span>            <span class="keywordflow">if</span> (dist!=-1 &amp;&amp; (md==0 || dist&lt;minDist))</div>
 <div class="line"><span class="lineno">  453</span>            {</div>
 <div class="line"><span class="lineno">  454</span>              md = tmd;</div>
 <div class="line"><span class="lineno">  455</span>              minDist = dist;</div>
@@ -8635,7 +8635,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  242</span>  <span class="keywordflow">while</span> ((i=<a class="code hl_function" href="../../df/d2d/util_8cpp.html#afd249e264b966d05a54b740e3d43ad6e">getScopeFragment</a>(s,p,&amp;l))!=-1)</div>
 <div class="line"><span class="lineno">  243</span>  {</div>
 <div class="line"><span class="lineno">  244</span>    <span class="comment">//printf(&quot;Scope fragment %s\n&quot;,qPrint(s.mid(i,l)));</span></div>
-<div class="line"><span class="lineno">  245</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a033b4829afda05c5eef5cd54749b19bf">Doxygen::namespaceLinkedMap</a>-&gt;find(s.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#aecf8b66312c4e97333219cc344c11a4f">left</a>(i+l))!=<span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  245</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a033b4829afda05c5eef5cd54749b19bf">Doxygen::namespaceLinkedMap</a>-&gt;find(s.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#aecf8b66312c4e97333219cc344c11a4f">left</a>(i+l))!=0)</div>
 <div class="line"><span class="lineno">  246</span>    {</div>
 <div class="line"><span class="lineno">  247</span>      <span class="keywordflow">if</span> (s.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a4c8be5d062cc14919b53ff0a3c8f9a4f">at</a>(i)!=<span class="charliteral">&#39;@&#39;</span>)</div>
 <div class="line"><span class="lineno">  248</span>      {</div>
@@ -9253,7 +9253,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 4727</span> </div>
 <div class="line"><span class="lineno"> 4728</span>    result+=fullName.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a27136caf9c0bc4daca574cda6f113551">mid</a>(p,i-p);</div>
 <div class="line"><span class="lineno"> 4729</span>    <span class="comment">//printf(&quot;  trying %s\n&quot;,qPrint(result+fullName.mid(i,e-i)));</span></div>
-<div class="line"><span class="lineno"> 4730</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../de/d89/classdef_8cpp.html#a9682735bd2cf0656eaa944f8b3e364a2">getClass</a>(result+fullName.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a27136caf9c0bc4daca574cda6f113551">mid</a>(i,e-i))!=<span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno"> 4730</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../de/d89/classdef_8cpp.html#a9682735bd2cf0656eaa944f8b3e364a2">getClass</a>(result+fullName.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a27136caf9c0bc4daca574cda6f113551">mid</a>(i,e-i))!=0)</div>
 <div class="line"><span class="lineno"> 4731</span>    {</div>
 <div class="line"><span class="lineno"> 4732</span>      result+=fullName.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a27136caf9c0bc4daca574cda6f113551">mid</a>(i,e-i);</div>
 <div class="line"><span class="lineno"> 4733</span>      <span class="comment">//printf(&quot;  2:result+=%s\n&quot;,qPrint(fullName.mid(i,e-i-1)));</span></div>
@@ -10224,10 +10224,10 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 6184</span>    ol.<a class="code hl_function" href="../../df/dc8/class_output_list.html#adfdcf2ba925f05be8beb8cf43deb168a">parseText</a>(a.name);</div>
 <div class="line"><span class="lineno"> 6185</span>    ol.<a class="code hl_function" href="../../df/dc8/class_output_list.html#a9d50347ddbe39ce2328b87913c64bfdb">endConstraintParam</a>();</div>
 <div class="line"><span class="lineno"> 6186</span>    ol.<a class="code hl_function" href="../../df/dc8/class_output_list.html#a711c480e26d4492f5cd83fc4c9947105">startConstraintType</a>();</div>
-<div class="line"><span class="lineno"> 6187</span>    <a class="code hl_function" href="../../df/d2d/util_8cpp.html#ae61ca16879462ab6bd55475fa265b251">linkifyText</a>(<a class="code hl_class" href="../../db/d2b/class_text_generator_o_l_impl.html">TextGeneratorOLImpl</a>(ol),d,<span class="keyword">nullptr</span>,<span class="keyword">nullptr</span>,a.type);</div>
+<div class="line"><span class="lineno"> 6187</span>    <a class="code hl_function" href="../../df/d2d/util_8cpp.html#ae61ca16879462ab6bd55475fa265b251">linkifyText</a>(<a class="code hl_class" href="../../db/d2b/class_text_generator_o_l_impl.html">TextGeneratorOLImpl</a>(ol),d,0,0,a.type);</div>
 <div class="line"><span class="lineno"> 6188</span>    ol.<a class="code hl_function" href="../../df/dc8/class_output_list.html#a0a3b0e8b9a13d824c67f0ca04c5fed0d">endConstraintType</a>();</div>
 <div class="line"><span class="lineno"> 6189</span>    ol.<a class="code hl_function" href="../../df/dc8/class_output_list.html#a5e2a94bd45cf237f40a9a0e7eb1386d2">startConstraintDocs</a>();</div>
-<div class="line"><span class="lineno"> 6190</span>    ol.<a class="code hl_function" href="../../df/dc8/class_output_list.html#a877c62aba09007547061b82a62e8c6dd">generateDoc</a>(d-&gt;<a class="code hl_function" href="../../d5/dcc/class_definition.html#a00915f52f3b708bec07aab2b44f03d34">docFile</a>(),d-&gt;<a class="code hl_function" href="../../d5/dcc/class_definition.html#a26a4a6e3578aa6c81b2d6d77a1ce694f">docLine</a>(),d,<span class="keyword">nullptr</span>,a.docs,<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>,<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>,</div>
+<div class="line"><span class="lineno"> 6190</span>    ol.<a class="code hl_function" href="../../df/dc8/class_output_list.html#a877c62aba09007547061b82a62e8c6dd">generateDoc</a>(d-&gt;<a class="code hl_function" href="../../d5/dcc/class_definition.html#a00915f52f3b708bec07aab2b44f03d34">docFile</a>(),d-&gt;<a class="code hl_function" href="../../d5/dcc/class_definition.html#a26a4a6e3578aa6c81b2d6d77a1ce694f">docLine</a>(),d,0,a.docs,<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>,<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>,</div>
 <div class="line"><span class="lineno"> 6191</span>                   <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a>(),<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>,<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>,<a class="code hl_define" href="../../db/d16/config_8h.html#a5373d0332a31f16ad7a42037733e8c79">Config_getBool</a>(MARKDOWN_SUPPORT));</div>
 <div class="line"><span class="lineno"> 6192</span>    ol.<a class="code hl_function" href="../../df/dc8/class_output_list.html#a7f4d066d76f000ebeb4d810521573fdf">endConstraintDocs</a>();</div>
 <div class="line"><span class="lineno"> 6193</span>  }</div>

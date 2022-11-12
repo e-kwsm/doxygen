@@ -2883,7 +2883,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno"> 1005</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;cd : *<a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a5f4b7acdd27a42865b4832e4e7ffe82c">Doxygen::classLinkedMap</a>)</div>
 <div class="line"><span class="lineno"> 1006</span>        {</div>
 <div class="line"><span class="lineno"> 1007</span>          <span class="keywordflow">if</span> (cd-&gt;isLinkableInProject() &amp;&amp;</div>
-<div class="line"><span class="lineno"> 1008</span>              cd-&gt;templateMaster()==<span class="keyword">nullptr</span> &amp;&amp;</div>
+<div class="line"><span class="lineno"> 1008</span>              cd-&gt;templateMaster()==0 &amp;&amp;</div>
 <div class="line"><span class="lineno"> 1009</span>             !cd-&gt;isEmbeddedInOuterScope() &amp;&amp;</div>
 <div class="line"><span class="lineno"> 1010</span>             !cd-&gt;isAlias()</div>
 <div class="line"><span class="lineno"> 1011</span>             )</div>
@@ -6407,7 +6407,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  838</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;cd : *<a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a5f4b7acdd27a42865b4832e4e7ffe82c">Doxygen::classLinkedMap</a>)</div>
 <div class="line"><span class="lineno">  839</span>        {</div>
 <div class="line"><span class="lineno">  840</span>          <span class="keywordflow">if</span> (cd-&gt;isLinkableInProject() &amp;&amp;</div>
-<div class="line"><span class="lineno">  841</span>              cd-&gt;templateMaster()==<span class="keyword">nullptr</span> &amp;&amp;</div>
+<div class="line"><span class="lineno">  841</span>              cd-&gt;templateMaster()==0 &amp;&amp;</div>
 <div class="line"><span class="lineno">  842</span>              !cd-&gt;isEmbeddedInOuterScope() &amp;&amp;</div>
 <div class="line"><span class="lineno">  843</span>              !cd-&gt;isAlias()</div>
 <div class="line"><span class="lineno">  844</span>             )</div>

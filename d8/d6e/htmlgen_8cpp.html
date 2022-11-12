@@ -1033,7 +1033,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno"> 2594</span>  }</div>
 <div class="line"><span class="lineno"> 2595</span>  <span class="keywordflow">if</span> (hlEntry-&gt;<a class="code hl_function" href="../../df/de7/struct_layout_nav_entry.html#a61a2adf7ec0abb42e49fa07b77eb1690">parent</a>() &amp;&amp; !hlEntry-&gt;<a class="code hl_function" href="../../df/de7/struct_layout_nav_entry.html#a61a2adf7ec0abb42e49fa07b77eb1690">parent</a>()-&gt;<a class="code hl_function" href="../../df/de7/struct_layout_nav_entry.html#a2111e544a2355f2b2a6592819b21b232">children</a>().empty()) <span class="comment">// draw tabs for row containing hlEntry</span></div>
 <div class="line"><span class="lineno"> 2596</span>  {</div>
-<div class="line"><span class="lineno"> 2597</span>    <span class="keywordtype">bool</span> topLevel = hlEntry-&gt;<a class="code hl_function" href="../../df/de7/struct_layout_nav_entry.html#a61a2adf7ec0abb42e49fa07b77eb1690">parent</a>()-&gt;<a class="code hl_function" href="../../df/de7/struct_layout_nav_entry.html#a61a2adf7ec0abb42e49fa07b77eb1690">parent</a>()==<span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 2597</span>    <span class="keywordtype">bool</span> topLevel = hlEntry-&gt;<a class="code hl_function" href="../../df/de7/struct_layout_nav_entry.html#a61a2adf7ec0abb42e49fa07b77eb1690">parent</a>()-&gt;<a class="code hl_function" href="../../df/de7/struct_layout_nav_entry.html#a61a2adf7ec0abb42e49fa07b77eb1690">parent</a>()==0;</div>
 <div class="line"><span class="lineno"> 2598</span>    <span class="keywordtype">int</span> count=0;</div>
 <div class="line"><span class="lineno"> 2599</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;entry : hlEntry-&gt;<a class="code hl_function" href="../../df/de7/struct_layout_nav_entry.html#a61a2adf7ec0abb42e49fa07b77eb1690">parent</a>()-&gt;<a class="code hl_function" href="../../df/de7/struct_layout_nav_entry.html#a2111e544a2355f2b2a6592819b21b232">children</a>())</div>
 <div class="line"><span class="lineno"> 2600</span>    {</div>
@@ -2130,7 +2130,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno"> 2756</span>    {</div>
 <div class="line"><span class="lineno"> 2757</span>      highlightParent=<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><span class="lineno"> 2758</span>      hlEntry = root-&gt;<a class="code hl_function" href="../../df/de7/struct_layout_nav_entry.html#a2111e544a2355f2b2a6592819b21b232">children</a>().front().get();</div>
-<div class="line"><span class="lineno"> 2759</span>      <span class="keywordflow">if</span> (hlEntry==<span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno"> 2759</span>      <span class="keywordflow">if</span> (hlEntry==0)</div>
 <div class="line"><span class="lineno"> 2760</span>      {</div>
 <div class="line"><span class="lineno"> 2761</span>        <span class="keywordflow">return</span>; <span class="comment">// argl, empty index!</span></div>
 <div class="line"><span class="lineno"> 2762</span>      }</div>

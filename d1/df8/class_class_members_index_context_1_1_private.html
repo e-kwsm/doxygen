@@ -449,10 +449,10 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno"> 7214</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;md : *mn)</div>
 <div class="line"><span class="lineno"> 7215</span>        {</div>
 <div class="line"><span class="lineno"> 7216</span>          <span class="keyword">const</span> <a class="code hl_class" href="../../d1/dcf/class_class_def.html">ClassDef</a> *cd = md-&gt;getClassDef();</div>
-<div class="line"><span class="lineno"> 7217</span>          <span class="keywordflow">if</span> (cd &amp;&amp; cd-&gt;<a class="code hl_function" href="../../d1/dcf/class_class_def.html#ab44ea1cae6c5a0ff7ea797e355672e87">isLinkableInProject</a>() &amp;&amp; cd-&gt;<a class="code hl_function" href="../../d1/dcf/class_class_def.html#ae587759f556ea0d641b92a30e923a7c9">templateMaster</a>()==<span class="keyword">nullptr</span> &amp;&amp;</div>
+<div class="line"><span class="lineno"> 7217</span>          <span class="keywordflow">if</span> (cd &amp;&amp; cd-&gt;<a class="code hl_function" href="../../d1/dcf/class_class_def.html#ab44ea1cae6c5a0ff7ea797e355672e87">isLinkableInProject</a>() &amp;&amp; cd-&gt;<a class="code hl_function" href="../../d1/dcf/class_class_def.html#ae587759f556ea0d641b92a30e923a7c9">templateMaster</a>()==0 &amp;&amp;</div>
 <div class="line"><span class="lineno"> 7218</span>              md-&gt;<a class="code hl_function" href="../../d1/dcf/class_class_def.html#ab44ea1cae6c5a0ff7ea797e355672e87">isLinkableInProject</a>() &amp;&amp; !md-&gt;name().isEmpty())</div>
 <div class="line"><span class="lineno"> 7219</span>          {</div>
-<div class="line"><span class="lineno"> 7220</span>            <span class="keywordflow">if</span> (filter==<span class="keyword">nullptr</span> || (md.get()-&gt;*filter)())</div>
+<div class="line"><span class="lineno"> 7220</span>            <span class="keywordflow">if</span> (filter==0 || (md.get()-&gt;*filter)())</div>
 <div class="line"><span class="lineno"> 7221</span>            {</div>
 <div class="line"><span class="lineno"> 7222</span>              list.push_back(<a class="code hl_function" href="../../d5/d43/class_member_context.html#afc674588c2fd7f1acb9e5207d307ab57">MemberContext::alloc</a>(md.get()));</div>
 <div class="line"><span class="lineno"> 7223</span>            }</div>

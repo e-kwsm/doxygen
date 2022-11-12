@@ -273,7 +273,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../db/d12/context_8cpp_source.html#l07341">7341</a> of file <a class="el" href="../../db/d12/context_8cpp_source.html">context.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 7341</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/dba/class_namespace_members_index_context_1_1_private.html#aaa5e2fa1c19759514393bd278f044a0b">createMembersFiltered</a>(<span class="keyword">nullptr</span>); }</div>
+<div class="fragment"><div class="line"><span class="lineno"> 7341</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/dba/class_namespace_members_index_context_1_1_private.html#aaa5e2fa1c19759514393bd278f044a0b">createMembersFiltered</a>(0); }</div>
 <div class="ttc" id="aclass_namespace_members_index_context_1_1_private_html_aaa5e2fa1c19759514393bd278f044a0b"><div class="ttname"><a href="../../df/dba/class_namespace_members_index_context_1_1_private.html#aaa5e2fa1c19759514393bd278f044a0b">NamespaceMembersIndexContext::Private::createMembersFiltered</a></div><div class="ttdeci">TemplateVariant createMembersFiltered(MemberFilter filter) const</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d12/context_8cpp_source.html#l07320">context.cpp:7320</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../db/d12/context_8cpp_source.html#l07320">createMembersFiltered()</a>.</p>
@@ -408,7 +408,7 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno"> 7328</span>          <span class="keywordflow">if</span> (nd &amp;&amp; nd-&gt;<a class="code hl_function" href="../../d0/d07/class_namespace_def.html#a3ea579572195bbcf53f2ffeec6f341a0">isLinkableInProject</a>() &amp;&amp;</div>
 <div class="line"><span class="lineno"> 7329</span>              !md-&gt;name().isEmpty() &amp;&amp; md-&gt;isLinkableInProject())</div>
 <div class="line"><span class="lineno"> 7330</span>          {</div>
-<div class="line"><span class="lineno"> 7331</span>            <span class="keywordflow">if</span> (filter==<span class="keyword">nullptr</span> || (md.get()-&gt;*filter)())</div>
+<div class="line"><span class="lineno"> 7331</span>            <span class="keywordflow">if</span> (filter==0 || (md.get()-&gt;*filter)())</div>
 <div class="line"><span class="lineno"> 7332</span>            {</div>
 <div class="line"><span class="lineno"> 7333</span>              list.push_back(<a class="code hl_function" href="../../d5/d43/class_member_context.html#afc674588c2fd7f1acb9e5207d307ab57">MemberContext::alloc</a>(md.get()));</div>
 <div class="line"><span class="lineno"> 7334</span>            }</div>

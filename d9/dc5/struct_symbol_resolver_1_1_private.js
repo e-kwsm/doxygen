@@ -14,7 +14,7 @@ var struct_symbol_resolver_1_1_private =
     [ "newResolveTypedef", "d9/dc5/struct_symbol_resolver_1_1_private.html#a0156c26365a13a5ad6c5ad5ffc2d8f47", null ],
     [ "reset", "d9/dc5/struct_symbol_resolver_1_1_private.html#ab01c8bb71a27205b862142b2c049f9a6", null ],
     [ "setFileScope", "d9/dc5/struct_symbol_resolver_1_1_private.html#aa553c3d55ea82c85ce0f8a65861f32f7", null ],
-    [ "substTypedef", "d9/dc5/struct_symbol_resolver_1_1_private.html#a915cf861caed306f2eeb597dc545c0fd", null ],
+    [ "substTypedef", "d9/dc5/struct_symbol_resolver_1_1_private.html#af9feb0ab3fa6f4f68ea9eddfbd6bbf6d", null ],
     [ "m_fileScope", "d9/dc5/struct_symbol_resolver_1_1_private.html#a3980fdf8be8cde16e3e9ef5d6b5e8498", null ],
     [ "m_resolvedTypedefs", "d9/dc5/struct_symbol_resolver_1_1_private.html#ae906eac3154529faa0b02dabaa1b54b1", null ],
     [ "resolvedType", "d9/dc5/struct_symbol_resolver_1_1_private.html#ad7af4e916211ea5af0a6d86560c7216e", null ],

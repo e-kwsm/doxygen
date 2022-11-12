@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('d4/d42/latexgen_8cpp_source.html','../
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">//char cs[5];</span></div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">int</span> spacesToNextTabStop;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">int</span> tabSize = <a class="code hl_define" href="../../db/d16/config_8h.html#a06b59c3720174e9078f613095a89b295">Config_getInt</a>(TAB_SIZE);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">static</span> <a class="code hl_define" href="../../d1/da1/doxygen_8h.html#af8556c37f3acfa45992b8697930c501b">THREAD_LOCAL</a> <span class="keywordtype">char</span> *result = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">static</span> <a class="code hl_define" href="../../d1/da1/doxygen_8h.html#af8556c37f3acfa45992b8697930c501b">THREAD_LOCAL</a> <span class="keywordtype">char</span> *result = NULL;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">static</span> <a class="code hl_define" href="../../d1/da1/doxygen_8h.html#af8556c37f3acfa45992b8697930c501b">THREAD_LOCAL</a> <span class="keywordtype">int</span> lresult = 0;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">while</span> ((c=*p))</div>
@@ -934,7 +934,7 @@ $(document).ready(function(){initNavTree('d4/d42/latexgen_8cpp_source.html','../
 <div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;cd : *<a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a5f4b7acdd27a42865b4832e4e7ffe82c">Doxygen::classLinkedMap</a>)</div>
 <div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>        {</div>
 <div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>          <span class="keywordflow">if</span> (cd-&gt;isLinkableInProject() &amp;&amp;</div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>              cd-&gt;templateMaster()==<span class="keyword">nullptr</span> &amp;&amp;</div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>              cd-&gt;templateMaster()==0 &amp;&amp;</div>
 <div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>              !cd-&gt;isEmbeddedInOuterScope() &amp;&amp;</div>
 <div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>              !cd-&gt;isAlias()</div>
 <div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>             )</div>
@@ -1101,7 +1101,7 @@ $(document).ready(function(){initNavTree('d4/d42/latexgen_8cpp_source.html','../
 <div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;cd : *<a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a5f4b7acdd27a42865b4832e4e7ffe82c">Doxygen::classLinkedMap</a>)</div>
 <div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>        {</div>
 <div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>          <span class="keywordflow">if</span> (cd-&gt;isLinkableInProject() &amp;&amp;</div>
-<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>              cd-&gt;templateMaster()==<span class="keyword">nullptr</span> &amp;&amp;</div>
+<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>              cd-&gt;templateMaster()==0 &amp;&amp;</div>
 <div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>             !cd-&gt;isEmbeddedInOuterScope() &amp;&amp;</div>
 <div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>             !cd-&gt;isAlias()</div>
 <div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>             )</div>

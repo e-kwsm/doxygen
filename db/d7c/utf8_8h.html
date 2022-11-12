@@ -487,7 +487,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/db5/utf8_8cpp_source.html#l00197">197</a> of file <a class="el" href="../../d2/db5/utf8_8cpp_source.html">utf8.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  198</span>{</div>
-<div class="line"><span class="lineno">  199</span>  <span class="keywordflow">if</span> (s==<span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  199</span>  <span class="keywordflow">if</span> (s==0) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  200</span>  uint8_t len = <a class="code hl_function" href="../../d2/db5/utf8_8cpp.html#aaca02fb609a02d6006c4ae5d02a20b9b">getUTF8CharNumBytes</a>(*s);</div>
 <div class="line"><span class="lineno">  201</span>  <span class="keywordflow">for</span> (uint8_t i=0;i&lt;len;i++)</div>
 <div class="line"><span class="lineno">  202</span>  {</div>

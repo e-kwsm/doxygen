@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('d2/db5/utf8_8cpp_source.html','../../'
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../d2/db5/utf8_8cpp.html#a62db715498978c35a035b241e6ebdafb">   69</a></span><span class="keyword">static</span> <span class="keyword">inline</span> uint32_t <a class="code hl_function" href="../../d2/db5/utf8_8cpp.html#a62db715498978c35a035b241e6ebdafb">convertUTF8CharToUnicode</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *s,<span class="keywordtype">size_t</span> bytesLeft,<span class="keywordtype">int</span> &amp;len)</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>{</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordflow">if</span> (s==<span class="keyword">nullptr</span> || bytesLeft==0)</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordflow">if</span> (s==0 || bytesLeft==0)</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  {</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    len=0;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">return</span> 0;</div>
@@ -292,7 +292,7 @@ $(document).ready(function(){initNavTree('d2/db5/utf8_8cpp_source.html','../../'
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="../../d2/db5/utf8_8cpp.html#ae9de248ba9e19731fb682352dcbc1b3c">  197</a></span><span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_function" href="../../d2/db5/utf8_8cpp.html#ae9de248ba9e19731fb682352dcbc1b3c">writeUTF8Char</a>(<a class="code hl_class" href="../../d3/d30/class_text_stream.html">TextStream</a> &amp;t,<span class="keyword">const</span> <span class="keywordtype">char</span> *s)</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>{</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <span class="keywordflow">if</span> (s==<span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <span class="keywordflow">if</span> (s==0) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  uint8_t len = <a class="code hl_function" href="../../d2/db5/utf8_8cpp.html#aaca02fb609a02d6006c4ae5d02a20b9b">getUTF8CharNumBytes</a>(*s);</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="keywordflow">for</span> (uint8_t i=0;i&lt;len;i++)</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  {</div>

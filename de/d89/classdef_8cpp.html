@@ -503,7 +503,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../de/d89/classdef_8cpp_source.html#l05030">5030</a> of file <a class="el" href="../../de/d89/classdef_8cpp_source.html">classdef.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 5031</span>{</div>
-<div class="line"><span class="lineno"> 5032</span>  <span class="keywordflow">if</span> (n.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a621c4090d69ad7d05ef8e5234376c3d8">isEmpty</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 5032</span>  <span class="keywordflow">if</span> (n.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a621c4090d69ad7d05ef8e5234376c3d8">isEmpty</a>()) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno"> 5033</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a5f4b7acdd27a42865b4832e4e7ffe82c">Doxygen::classLinkedMap</a>-&gt;<a class="code hl_function" href="../../d0/d2c/class_linked_map.html#ad7659775b7de962b4fe0921456baf4f4">find</a>(n);</div>
 <div class="line"><span class="lineno"> 5034</span>}</div>
 <div class="ttc" id="aclass_doxygen_html_a5f4b7acdd27a42865b4832e4e7ffe82c"><div class="ttname"><a href="../../de/d6a/class_doxygen.html#a5f4b7acdd27a42865b4832e4e7ffe82c">Doxygen::classLinkedMap</a></div><div class="ttdeci">static ClassLinkedMap * classLinkedMap</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/da1/doxygen_8h_source.html#l00088">doxygen.h:88</a></div></div>
@@ -1047,7 +1047,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 4993</span>  }</div>
 <div class="line"><span class="lineno"> 4994</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 4995</span>  {</div>
-<div class="line"><span class="lineno"> 4996</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 4996</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno"> 4997</span>  }</div>
 <div class="line"><span class="lineno"> 4998</span>}</div>
 </div><!-- fragment -->
@@ -1077,7 +1077,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 4968</span>  }</div>
 <div class="line"><span class="lineno"> 4969</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 4970</span>  {</div>
-<div class="line"><span class="lineno"> 4971</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 4971</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno"> 4972</span>  }</div>
 <div class="line"><span class="lineno"> 4973</span>}</div>
 </div><!-- fragment -->
@@ -1110,7 +1110,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 4981</span>  }</div>
 <div class="line"><span class="lineno"> 4982</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 4983</span>  {</div>
-<div class="line"><span class="lineno"> 4984</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 4984</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno"> 4985</span>  }</div>
 <div class="line"><span class="lineno"> 4986</span>}</div>
 <div class="ttc" id="adefinition_8cpp_html_ab43e817b86eeee8909980167d1a140c8"><div class="ttname"><a href="../../d3/dea/definition_8cpp.html#ab43e817b86eeee8909980167d1a140c8">toDefinition</a></div><div class="ttdeci">Definition * toDefinition(DefinitionMutable *dm)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dea/definition_8cpp_source.html#l01952">definition.cpp:1952</a></div></div>
@@ -1143,7 +1143,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 5017</span>  }</div>
 <div class="line"><span class="lineno"> 5018</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 5019</span>  {</div>
-<div class="line"><span class="lineno"> 5020</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 5020</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno"> 5021</span>  }</div>
 <div class="line"><span class="lineno"> 5022</span>}</div>
 <div class="ttc" id="aclass_class_def_mutable_html"><div class="ttname"><a href="../../d0/dc2/class_class_def_mutable.html">ClassDefMutable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/da6/classdef_8h_source.html#l00380">classdef.h:381</a></div></div>
@@ -1174,7 +1174,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 5005</span>  }</div>
 <div class="line"><span class="lineno"> 5006</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 5007</span>  {</div>
-<div class="line"><span class="lineno"> 5008</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 5008</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno"> 5009</span>  }</div>
 <div class="line"><span class="lineno"> 5010</span>}</div>
 </div><!-- fragment -->
