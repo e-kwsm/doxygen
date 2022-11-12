@@ -343,7 +343,7 @@ Public Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  448</span>    }</div>
 <div class="line"><span class="lineno">  449</span>    <span class="keywordflow">else</span> <span class="comment">// leaf node</span></div>
 <div class="line"><span class="lineno">  450</span>    {</div>
-<div class="line"><span class="lineno">  451</span>      <span class="keyword">const</span> <a class="code hl_class" href="../../de/db0/class_file_def.html">FileDef</a> *srcRef=0;</div>
+<div class="line"><span class="lineno">  451</span>      <span class="keyword">const</span> <a class="code hl_class" href="../../de/db0/class_file_def.html">FileDef</a> *srcRef=<span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  452</span>      <span class="keywordflow">if</span> (n-&gt;def &amp;&amp; n-&gt;def-&gt;definitionType()==<a class="code hl_enumvalue" href="../../d5/dcc/class_definition.html#aa41b6bc53dcf93ecf745698aaf15ef8ea203462c7d34ced15beac624562c2708e">Definition::TypeFile</a> &amp;&amp;</div>
 <div class="line"><span class="lineno">  453</span>          (<a class="code hl_function" href="../../d6/ddc/filedef_8cpp.html#a4114c484f3ccea1048608b9caa9f51de">toFileDef</a>(n-&gt;def))-&gt;generateSourceFile())</div>
 <div class="line"><span class="lineno">  454</span>      {</div>

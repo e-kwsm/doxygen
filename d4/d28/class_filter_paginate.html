@@ -159,7 +159,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 1252</span>        <span class="keywordtype">int</span> i = 0;</div>
 <div class="line"><span class="lineno"> 1253</span>        <span class="keywordflow">for</span> (it-&gt;toFirst();(it-&gt;current(item));it-&gt;toNext())</div>
 <div class="line"><span class="lineno"> 1254</span>        {</div>
-<div class="line"><span class="lineno"> 1255</span>          <span class="keywordflow">if</span> (pageList==0)</div>
+<div class="line"><span class="lineno"> 1255</span>          <span class="keywordflow">if</span> (pageList==<span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno"> 1256</span>          {</div>
 <div class="line"><span class="lineno"> 1257</span>            pageList = <a class="code hl_function" href="../../de/dab/class_template_list.html#a6840730b8664bc08ef26924fa1cd76b9">TemplateList::alloc</a>();</div>
 <div class="line"><span class="lineno"> 1258</span>            result-&gt;append(std::static_pointer_cast&lt;TemplateListIntf&gt;(pageList));</div>
@@ -168,7 +168,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 1261</span>          i++;</div>
 <div class="line"><span class="lineno"> 1262</span>          <span class="keywordflow">if</span> (i==pageSize) <span class="comment">// page is full start a new one</span></div>
 <div class="line"><span class="lineno"> 1263</span>          {</div>
-<div class="line"><span class="lineno"> 1264</span>            pageList=0;</div>
+<div class="line"><span class="lineno"> 1264</span>            pageList=<span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno"> 1265</span>            i=0;</div>
 <div class="line"><span class="lineno"> 1266</span>          }</div>
 <div class="line"><span class="lineno"> 1267</span>        }</div>

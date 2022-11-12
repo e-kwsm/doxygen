@@ -189,7 +189,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a03ed81aca66391771e47ecaad3b4302a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeca69df11998a1fa5043e1de0387b56f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d1d/class_layout_doc_manager.html#aee13a925ea1f915c542ecd7f579ebc94">LayoutDocManager::LayoutPart</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/class_layout_parser.html#aeca69df11998a1fa5043e1de0387b56f">m_part</a> = <a class="el" href="../../dc/d1d/class_layout_doc_manager.html#aee13a925ea1f915c542ecd7f579ebc94af04aaf5f50f41b63cb93aaaee57d8d03">LayoutDocManager::Undefined</a></td></tr>
 <tr class="separator:aeca69df11998a1fa5043e1de0387b56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0622ae2c94c9380801ebabe0248c6b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/de7/struct_layout_nav_entry.html">LayoutNavEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/class_layout_parser.html#ae0622ae2c94c9380801ebabe0248c6b3">m_rootNav</a> = 0</td></tr>
+<tr class="memitem:ae0622ae2c94c9380801ebabe0248c6b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/de7/struct_layout_nav_entry.html">LayoutNavEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/class_layout_parser.html#ae0622ae2c94c9380801ebabe0248c6b3">m_rootNav</a> = nullptr</td></tr>
 <tr class="separator:ae0622ae2c94c9380801ebabe0248c6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9da971c25670c1827d1a08877fb091c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/class_layout_parser.html#a9da971c25670c1827d1a08877fb091c1">m_invalidEntry</a> = false</td></tr>
 <tr class="separator:a9da971c25670c1827d1a08877fb091c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1560,7 +1560,7 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  495</span>          <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a>(),</div>
 <div class="line"><span class="lineno">  496</span>          <span class="stringliteral">&quot;usergroup&quot;</span></div>
 <div class="line"><span class="lineno">  497</span>        },</div>
-<div class="line"><span class="lineno">  498</span>        { 0, <span class="comment">// end of list</span></div>
+<div class="line"><span class="lineno">  498</span>        { <span class="keyword">nullptr</span>, <span class="comment">// end of list</span></div>
 <div class="line"><span class="lineno">  499</span>          <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="../../df/de7/struct_layout_nav_entry.html#aef36305dd829f7cde87ca203ae647c7c">LayoutNavEntry::Kind</a><span class="keyword">&gt;</span>(0),</div>
 <div class="line"><span class="lineno">  500</span>          <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a>(),</div>
 <div class="line"><span class="lineno">  501</span>          <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a>(),</div>
@@ -1577,7 +1577,7 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  512</span>          <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  513</span>        i++;</div>
 <div class="line"><span class="lineno">  514</span>      }</div>
-<div class="line"><span class="lineno">  515</span>      <span class="keywordflow">if</span> (mapping[i].typeStr==0)</div>
+<div class="line"><span class="lineno">  515</span>      <span class="keywordflow">if</span> (mapping[i].typeStr==<span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">  516</span>      {</div>
 <div class="line"><span class="lineno">  517</span>        std::string fileName = <a class="code hl_variable" href="../../d3/de9/class_layout_parser.html#a64bbc5fb3177a7eaf9cf83b29a662aeb">m_locator</a>-&gt;<a class="code hl_function" href="../../d3/d7e/class_x_m_l_locator.html#ae954de1ced00d872ef120497ad02a4e1">fileName</a>();</div>
 <div class="line"><span class="lineno">  518</span>        <span class="keywordflow">if</span> (type.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a621c4090d69ad7d05ef8e5234376c3d8">isEmpty</a>())</div>
@@ -1971,7 +1971,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../df/de7/struct_layout_nav_entry.html">LayoutNavEntry</a>* LayoutParser::m_rootNav = 0</td>
+          <td class="memname"><a class="el" href="../../df/de7/struct_layout_nav_entry.html">LayoutNavEntry</a>* LayoutParser::m_rootNav = nullptr</td>
         </tr>
       </table>
   </td>

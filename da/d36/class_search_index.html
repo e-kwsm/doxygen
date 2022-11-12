@@ -345,7 +345,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d79/searchindex_8cpp_source.html#l00072">72</a> of file <a class="el" href="../../d7/d79/searchindex_8cpp_source.html">searchindex.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   73</span>{</div>
-<div class="line"><span class="lineno">   74</span>  <span class="keywordflow">if</span> (ctx==0) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   74</span>  <span class="keywordflow">if</span> (ctx==<span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   75</span>  assert(!isSourceFile || ctx-&gt;<a class="code hl_function" href="../../d5/dcc/class_definition.html#a526c39074637d4b17a3f67df56d961ff">definitionType</a>()==<a class="code hl_enumvalue" href="../../d5/dcc/class_definition.html#aa41b6bc53dcf93ecf745698aaf15ef8ea203462c7d34ced15beac624562c2708e">Definition::TypeFile</a>);</div>
 <div class="line"><span class="lineno">   76</span>  <span class="comment">//printf(&quot;SearchIndex::setCurrentDoc(%s,%s,%s)\n&quot;,name,baseName,anchor);</span></div>
 <div class="line"><span class="lineno">   77</span>  <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a> url=isSourceFile ? (<a class="code hl_function" href="../../d6/ddc/filedef_8cpp.html#a4114c484f3ccea1048608b9caa9f51de">toFileDef</a>(ctx))-&gt;getSourceFileBase() : ctx-&gt;getOutputFileBase();</div>

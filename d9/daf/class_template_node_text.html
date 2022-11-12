@@ -245,7 +245,7 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="../../df/d54/template_8cpp_source.html#l02935">2935</a> of file <a class="el" href="../../df/d54/template_8cpp_source.html">template.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 2936</span>    {</div>
 <div class="line"><span class="lineno"> 2937</span>      <a class="code hl_class" href="../../da/dbf/class_template_context_impl.html">TemplateContextImpl</a>* ci = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="../../da/dbf/class_template_context_impl.html">TemplateContextImpl</a>*<span class="keyword">&gt;</span>(c);</div>
-<div class="line"><span class="lineno"> 2938</span>      <span class="keywordflow">if</span> (ci==0) <span class="keywordflow">return</span>; <span class="comment">// should not happen</span></div>
+<div class="line"><span class="lineno"> 2938</span>      <span class="keywordflow">if</span> (ci==<span class="keyword">nullptr</span>) <span class="keywordflow">return</span>; <span class="comment">// should not happen</span></div>
 <div class="line"><span class="lineno"> 2939</span>      <span class="comment">//printf(&quot;TemplateNodeText::render(%s) needsRecoding=%d ci=%p\n&quot;,qPrint(m_data),ci-&gt;needsRecoding(),ci);</span></div>
 <div class="line"><span class="lineno"> 2940</span>      <span class="keywordflow">if</span> (ci-&gt;<a class="code hl_function" href="../../da/dbf/class_template_context_impl.html#a51ef260b5ad8e51f4d1c0946211d4504">spacelessEnabled</a>())</div>
 <div class="line"><span class="lineno"> 2941</span>      {</div>

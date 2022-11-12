@@ -190,7 +190,7 @@ var class_member_def_alias_impl =
     [ "visibleInIndex", "d7/d70/class_member_def_alias_impl.html#adf1c488a4f861d5f62d0390df5beeddf", null ],
     [ "warnIfUndocumented", "d7/d70/class_member_def_alias_impl.html#a3a029977162c2c012aa96120be36deaa", null ],
     [ "warnIfUndocumentedParams", "d7/d70/class_member_def_alias_impl.html#afbd423ecacfa5d2183239419fc475b46", null ],
-    [ "writeDeclaration", "d7/d70/class_member_def_alias_impl.html#a00a7b2660722ee66cef5f315859e0550", null ],
+    [ "writeDeclaration", "d7/d70/class_member_def_alias_impl.html#ad3b414eb2c558cf4f6bcc332948bed9b", null ],
     [ "writeEnumDeclaration", "d7/d70/class_member_def_alias_impl.html#a3d744e603edf49df5a230110473de24b", null ],
     [ "m_memberGroup", "d7/d70/class_member_def_alias_impl.html#af0580c92f90390b7c815b4ef15aae072", null ]
 ];

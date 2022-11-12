@@ -444,7 +444,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  187</span>    <a class="code hl_class" href="../../dd/d7e/class_dot_node.html">DotNode</a>* nnode = it!=<a class="code hl_variable" href="../../d1/d5f/class_dot_group_collaboration.html#a56c5879b481a9e2df4bce580767176ee">m_usedNodes</a>.end() ? it-&gt;second : 0;</div>
 <div class="line"><span class="lineno">  188</span>    <span class="keywordflow">if</span> ( nnode != <a class="code hl_variable" href="../../d1/d5f/class_dot_group_collaboration.html#a082a33c662fd404a5fb5073c34863af7">m_rootNode</a> )</div>
 <div class="line"><span class="lineno">  189</span>    {</div>
-<div class="line"><span class="lineno">  190</span>      <span class="keywordflow">if</span> ( nnode==0 )</div>
+<div class="line"><span class="lineno">  190</span>      <span class="keywordflow">if</span> ( nnode==<span class="keyword">nullptr</span> )</div>
 <div class="line"><span class="lineno">  191</span>      { <span class="comment">// add node</span></div>
 <div class="line"><span class="lineno">  192</span>        tmp_str = d-&gt;getReference()+<span class="stringliteral">&quot;$&quot;</span>+d-&gt;getOutputFileBase();</div>
 <div class="line"><span class="lineno">  193</span>        <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a> tooltip = d-&gt;briefDescriptionAsTooltip();</div>
@@ -575,7 +575,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d86/dotgroupcollaboration_8cpp_source.html#l00144">144</a> of file <a class="el" href="../../d1/d86/dotgroupcollaboration_8cpp_source.html">dotgroupcollaboration.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  145</span>{</div>
-<div class="line"><span class="lineno">  146</span>  <span class="keywordflow">if</span> ( ml==0 || ml-&gt;empty() ) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  146</span>  <span class="keywordflow">if</span> ( ml==<span class="keyword">nullptr</span> || ml-&gt;empty() ) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  147</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;def : *ml)</div>
 <div class="line"><span class="lineno">  148</span>  {</div>
 <div class="line"><span class="lineno">  149</span>    <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a> tmp_url = def-&gt;getReference()+<span class="stringliteral">&quot;$&quot;</span>+<a class="code hl_function" href="../../df/d2d/util_8cpp.html#a36c74291c5a9adc05d5cb6c0932f6b82">addHtmlExtensionIfMissing</a>(def-&gt;getOutputFileBase());</div>
@@ -625,7 +625,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   53</span>  <span class="comment">// Write parents</span></div>
 <div class="line"><span class="lineno">   54</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;d : gd-&gt;<a class="code hl_function" href="../../d5/dcc/class_definition.html#ab91d34cb9d5a993d3cae3356bc97232e">partOfGroups</a>())</div>
 <div class="line"><span class="lineno">   55</span>  {</div>
-<div class="line"><span class="lineno">   56</span>    <a class="code hl_class" href="../../dd/d7e/class_dot_node.html">DotNode</a> *nnode = 0;</div>
+<div class="line"><span class="lineno">   56</span>    <a class="code hl_class" href="../../dd/d7e/class_dot_node.html">DotNode</a> *nnode = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">   57</span>    <span class="keyword">auto</span> it = <a class="code hl_variable" href="../../d1/d5f/class_dot_group_collaboration.html#a56c5879b481a9e2df4bce580767176ee">m_usedNodes</a>.find(d-&gt;name().str());</div>
 <div class="line"><span class="lineno">   58</span>    <span class="keywordflow">if</span> ( it==<a class="code hl_variable" href="../../d1/d5f/class_dot_group_collaboration.html#a56c5879b481a9e2df4bce580767176ee">m_usedNodes</a>.end())</div>
 <div class="line"><span class="lineno">   59</span>    { <span class="comment">// add node</span></div>
@@ -646,7 +646,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   74</span>  <span class="comment">// Add subgroups</span></div>
 <div class="line"><span class="lineno">   75</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;def : gd-&gt;<a class="code hl_function" href="../../d8/d09/class_group_def.html#a29954976b38072020da6c0c0dbde6520">getSubGroups</a>())</div>
 <div class="line"><span class="lineno">   76</span>  {</div>
-<div class="line"><span class="lineno">   77</span>    <a class="code hl_class" href="../../dd/d7e/class_dot_node.html">DotNode</a> *nnode = 0;</div>
+<div class="line"><span class="lineno">   77</span>    <a class="code hl_class" href="../../dd/d7e/class_dot_node.html">DotNode</a> *nnode = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">   78</span>    <span class="keyword">auto</span> it = <a class="code hl_variable" href="../../d1/d5f/class_dot_group_collaboration.html#a56c5879b481a9e2df4bce580767176ee">m_usedNodes</a>.find(def-&gt;name().str());</div>
 <div class="line"><span class="lineno">   79</span>    <span class="keywordflow">if</span> ( it==<a class="code hl_variable" href="../../d1/d5f/class_dot_group_collaboration.html#a56c5879b481a9e2df4bce580767176ee">m_usedNodes</a>.end())</div>
 <div class="line"><span class="lineno">   80</span>    { <span class="comment">// add node</span></div>

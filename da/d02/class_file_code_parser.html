@@ -281,8 +281,8 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   40</span>    <span class="keywordtype">int</span> j=i;</div>
 <div class="line"><span class="lineno">   41</span>    <span class="keywordflow">while</span> (j&lt;length &amp;&amp; input[j]!=<span class="charliteral">&#39;\n&#39;</span>) j++;</div>
 <div class="line"><span class="lineno">   42</span>    <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a> lineStr = input.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a27136caf9c0bc4daca574cda6f113551">mid</a>(i,j-i);</div>
-<div class="line"><span class="lineno">   43</span>    codeOutIntf.<a class="code hl_function" href="../../d5/d9c/class_code_output_interface.html#a080d71d457de084ce2b3245bca5a0d68">startCodeLine</a>(fileDef != 0 &amp;&amp; showLineNumbers);</div>
-<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">if</span> (fileDef != 0 &amp;&amp; showLineNumbers)</div>
+<div class="line"><span class="lineno">   43</span>    codeOutIntf.<a class="code hl_function" href="../../d5/d9c/class_code_output_interface.html#a080d71d457de084ce2b3245bca5a0d68">startCodeLine</a>(fileDef != <span class="keyword">nullptr</span> &amp;&amp; showLineNumbers);</div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">if</span> (fileDef != <span class="keyword">nullptr</span> &amp;&amp; showLineNumbers)</div>
 <div class="line"><span class="lineno">   45</span>    {</div>
 <div class="line"><span class="lineno">   46</span>      codeOutIntf.<a class="code hl_function" href="../../d5/d9c/class_code_output_interface.html#a483573b9884f249316728fc85ee413b0">writeLineNumber</a>(<a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a>(),<a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a>(),<a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a>(),lineNr,!inlineFragment);</div>
 <div class="line"><span class="lineno">   47</span>    }</div>

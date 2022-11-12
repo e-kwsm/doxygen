@@ -300,7 +300,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d1c/namespacedef_8cpp_source.html#l01599">1599</a> of file <a class="el" href="../../d7/d1c/namespacedef_8cpp_source.html">namespacedef.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1600</span>{</div>
-<div class="line"><span class="lineno"> 1601</span>  <span class="keywordflow">if</span> (name.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a621c4090d69ad7d05ef8e5234376c3d8">isEmpty</a>()) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno"> 1601</span>  <span class="keywordflow">if</span> (name.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a621c4090d69ad7d05ef8e5234376c3d8">isEmpty</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno"> 1602</span>  <span class="keyword">auto</span> it = <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#af38512474f6a7cc0e1e4dcb6f38bda86">Doxygen::namespaceAliasMap</a>.find(name.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a875e9ad762554ef12f3ed69b015bb245">str</a>());</div>
 <div class="line"><span class="lineno"> 1603</span>  <span class="keywordflow">if</span> (it!=<a class="code hl_variable" href="../../de/d6a/class_doxygen.html#af38512474f6a7cc0e1e4dcb6f38bda86">Doxygen::namespaceAliasMap</a>.<a class="code hl_function" href="../../d3/d48/dir_8cpp.html#abb4720f72b574f81dc4f7aea0e653a64">end</a>())</div>
 <div class="line"><span class="lineno"> 1604</span>  {</div>
@@ -461,7 +461,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 1687</span> </div>
 <div class="line"><span class="lineno"> 1688</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;cd : list)</div>
 <div class="line"><span class="lineno"> 1689</span>  {</div>
-<div class="line"><span class="lineno"> 1690</span>    <span class="keywordflow">if</span> (cd-&gt;isLinkableInProject() &amp;&amp; cd-&gt;templateMaster()==0)</div>
+<div class="line"><span class="lineno"> 1690</span>    <span class="keywordflow">if</span> (cd-&gt;isLinkableInProject() &amp;&amp; cd-&gt;templateMaster()==<span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno"> 1691</span>    {</div>
 <div class="line"><span class="lineno"> 1692</span>      <span class="comment">//printf(&quot;&lt;namespaceHasVisibleChild(%s,includeClasses=%d): case3\n&quot;,qPrint(nd-&gt;name()),includeClasses);</span></div>
 <div class="line"><span class="lineno"> 1693</span>      <span class="keywordflow">return</span> <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
@@ -590,7 +590,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 1565</span>  }</div>
 <div class="line"><span class="lineno"> 1566</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 1567</span>  {</div>
-<div class="line"><span class="lineno"> 1568</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno"> 1568</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno"> 1569</span>  }</div>
 <div class="line"><span class="lineno"> 1570</span>}</div>
 </div><!-- fragment -->
@@ -620,7 +620,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 1539</span>  }</div>
 <div class="line"><span class="lineno"> 1540</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 1541</span>  {</div>
-<div class="line"><span class="lineno"> 1542</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno"> 1542</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno"> 1543</span>  }</div>
 <div class="line"><span class="lineno"> 1544</span>}</div>
 </div><!-- fragment -->
@@ -653,7 +653,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 1552</span>  }</div>
 <div class="line"><span class="lineno"> 1553</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 1554</span>  {</div>
-<div class="line"><span class="lineno"> 1555</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno"> 1555</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno"> 1556</span>  }</div>
 <div class="line"><span class="lineno"> 1557</span>}</div>
 <div class="ttc" id="aclass_definition_html"><div class="ttname"><a href="../../d5/dcc/class_definition.html">Definition</a></div><div class="ttdoc">The common base class of all entity definitions found in the sources.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/da1/definition_8h_source.html#l00076">definition.h:77</a></div></div>
@@ -687,7 +687,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 1589</span>  }</div>
 <div class="line"><span class="lineno"> 1590</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 1591</span>  {</div>
-<div class="line"><span class="lineno"> 1592</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno"> 1592</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno"> 1593</span>  }</div>
 <div class="line"><span class="lineno"> 1594</span>}</div>
 <div class="ttc" id="aclass_namespace_def_mutable_html"><div class="ttname"><a href="../../dd/dd5/class_namespace_def_mutable.html">NamespaceDefMutable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d97/namespacedef_8h_source.html#l00105">namespacedef.h:106</a></div></div>
@@ -718,7 +718,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 1577</span>  }</div>
 <div class="line"><span class="lineno"> 1578</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 1579</span>  {</div>
-<div class="line"><span class="lineno"> 1580</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno"> 1580</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno"> 1581</span>  }</div>
 <div class="line"><span class="lineno"> 1582</span>}</div>
 </div><!-- fragment -->

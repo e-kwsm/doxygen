@@ -218,7 +218,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../de/dd0/perlmodgen_8cpp_source.html#l00103">103</a> of file <a class="el" href="../../de/dd0/perlmodgen_8cpp_source.html">perlmodgen.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  104</span>    : <a class="code hl_variable" href="../../d5/d6c/class_perl_mod_output.html#a814c200c15b3842ff2671f28a69db498">m_pretty</a>(pretty), <a class="code hl_variable" href="../../d5/d6c/class_perl_mod_output.html#a54db51bb1b250e403a16c824f66045e5">m_stream</a>(0), <a class="code hl_variable" href="../../d5/d6c/class_perl_mod_output.html#a06b8ab87fd8887a453adef8dfa73bfb7">m_indentation</a>(<span class="keyword">false</span>), <a class="code hl_variable" href="../../d5/d6c/class_perl_mod_output.html#abd4d86b077ee6124f32e9ff75f4b08a7">m_blockstart</a>(<span class="keyword">true</span>)</div>
+<div class="fragment"><div class="line"><span class="lineno">  104</span>    : <a class="code hl_variable" href="../../d5/d6c/class_perl_mod_output.html#a814c200c15b3842ff2671f28a69db498">m_pretty</a>(pretty), <a class="code hl_variable" href="../../d5/d6c/class_perl_mod_output.html#a54db51bb1b250e403a16c824f66045e5">m_stream</a>(<span class="keyword">nullptr</span>), <a class="code hl_variable" href="../../d5/d6c/class_perl_mod_output.html#a06b8ab87fd8887a453adef8dfa73bfb7">m_indentation</a>(<span class="keyword">false</span>), <a class="code hl_variable" href="../../d5/d6c/class_perl_mod_output.html#abd4d86b077ee6124f32e9ff75f4b08a7">m_blockstart</a>(<span class="keyword">true</span>)</div>
 <div class="line"><span class="lineno">  105</span>  {</div>
 <div class="line"><span class="lineno">  106</span>    <a class="code hl_variable" href="../../d5/d6c/class_perl_mod_output.html#a13733f6b22eba5234e2049924f23c4eb">m_spaces</a>[0] = 0;</div>
 <div class="line"><span class="lineno">  107</span>  }</div>
@@ -925,7 +925,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../de/dd0/perlmodgen_8cpp_source.html#l00253">253</a> of file <a class="el" href="../../de/dd0/perlmodgen_8cpp_source.html">perlmodgen.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  254</span>{</div>
-<div class="line"><span class="lineno">  255</span>  <span class="keywordflow">if</span> (content == 0)</div>
+<div class="line"><span class="lineno">  255</span>  <span class="keywordflow">if</span> (content == <span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">  256</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  257</span>  <a class="code hl_function" href="../../d5/d6c/class_perl_mod_output.html#ae838ac98312b8422c5f11b92bbc9b1f0">iaddField</a>(field);</div>
 <div class="line"><span class="lineno">  258</span>  <a class="code hl_variable" href="../../d5/d6c/class_perl_mod_output.html#a54db51bb1b250e403a16c824f66045e5">m_stream</a>-&gt;<a class="code hl_function" href="../../d4/de6/class_perl_mod_output_stream.html#a6970acf3298a0e408427b54d1b876cd5">add</a>(<span class="charliteral">&#39;\&#39;&#39;</span>);</div>
@@ -1139,7 +1139,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../de/dd0/perlmodgen_8cpp_source.html#l00263">263</a> of file <a class="el" href="../../de/dd0/perlmodgen_8cpp_source.html">perlmodgen.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  264</span>{</div>
-<div class="line"><span class="lineno">  265</span>  <span class="keywordflow">if</span> (s != 0)</div>
+<div class="line"><span class="lineno">  265</span>  <span class="keywordflow">if</span> (s != <span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">  266</span>    <a class="code hl_function" href="../../d5/d6c/class_perl_mod_output.html#ae838ac98312b8422c5f11b92bbc9b1f0">iaddField</a>(s);</div>
 <div class="line"><span class="lineno">  267</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  268</span>    <a class="code hl_function" href="../../d5/d6c/class_perl_mod_output.html#a5992ddeb6dcd259a796fca5cbe6d65dc">continueBlock</a>();</div>

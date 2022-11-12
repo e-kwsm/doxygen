@@ -195,7 +195,7 @@ Static Private Member Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 1191</span>          <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a> prevKey;</div>
 <div class="line"><span class="lineno"> 1192</span>          <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;elem : sortList)</div>
 <div class="line"><span class="lineno"> 1193</span>          {</div>
-<div class="line"><span class="lineno"> 1194</span>            <span class="keywordflow">if</span> (groupList==0 || elem.key!=prevKey)</div>
+<div class="line"><span class="lineno"> 1194</span>            <span class="keywordflow">if</span> (groupList==<span class="keyword">nullptr</span> || elem.key!=prevKey)</div>
 <div class="line"><span class="lineno"> 1195</span>            {</div>
 <div class="line"><span class="lineno"> 1196</span>              groupList = <a class="code hl_function" href="../../de/dab/class_template_list.html#a6840730b8664bc08ef26924fa1cd76b9">TemplateList::alloc</a>();</div>
 <div class="line"><span class="lineno"> 1197</span>              result-&gt;append(std::static_pointer_cast&lt;TemplateListIntf&gt;(groupList));</div>

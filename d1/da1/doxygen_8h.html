@@ -1137,14 +1137,14 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">10871</span> </div>
 <div class="line"><span class="lineno">10872</span>  <span class="comment">// initialisation of these globals depends on</span></div>
 <div class="line"><span class="lineno">10873</span>  <span class="comment">// configuration switches so we need to postpone these</span></div>
-<div class="line"><span class="lineno">10874</span>  <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a70414f815dfe6f9b6605380312f0dbc2">Doxygen::globalScope</a>     = 0;</div>
-<div class="line"><span class="lineno">10875</span>  <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a31a5a5856417ba3f05eccaf1f85e9958">Doxygen::inputNameLinkedMap</a>   = 0;</div>
-<div class="line"><span class="lineno">10876</span>  <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#adf89ce3e8f07b60c5344d0b24f6fe28d">Doxygen::includeNameLinkedMap</a> = 0;</div>
-<div class="line"><span class="lineno">10877</span>  <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#ae1bf779155bea73ec696cba27e640e66">Doxygen::exampleNameLinkedMap</a> = 0;</div>
-<div class="line"><span class="lineno">10878</span>  <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a7062fae1e1507b5c093fe5b71a866371">Doxygen::imageNameLinkedMap</a>   = 0;</div>
-<div class="line"><span class="lineno">10879</span>  <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a6f249e6dd71a6676bc83208245fd141e">Doxygen::dotFileNameLinkedMap</a> = 0;</div>
-<div class="line"><span class="lineno">10880</span>  <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a7803b98b056d6e21a7466729671af103">Doxygen::mscFileNameLinkedMap</a> = 0;</div>
-<div class="line"><span class="lineno">10881</span>  <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#aa57c01a474ac221e7ad9222ecd0aa68f">Doxygen::diaFileNameLinkedMap</a> = 0;</div>
+<div class="line"><span class="lineno">10874</span>  <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a70414f815dfe6f9b6605380312f0dbc2">Doxygen::globalScope</a>     = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">10875</span>  <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a31a5a5856417ba3f05eccaf1f85e9958">Doxygen::inputNameLinkedMap</a>   = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">10876</span>  <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#adf89ce3e8f07b60c5344d0b24f6fe28d">Doxygen::includeNameLinkedMap</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">10877</span>  <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#ae1bf779155bea73ec696cba27e640e66">Doxygen::exampleNameLinkedMap</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">10878</span>  <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a7062fae1e1507b5c093fe5b71a866371">Doxygen::imageNameLinkedMap</a>   = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">10879</span>  <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a6f249e6dd71a6676bc83208245fd141e">Doxygen::dotFileNameLinkedMap</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">10880</span>  <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a7803b98b056d6e21a7466729671af103">Doxygen::mscFileNameLinkedMap</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">10881</span>  <a class="code hl_variable" href="../../de/d6a/class_doxygen.html#aa57c01a474ac221e7ad9222ecd0aa68f">Doxygen::diaFileNameLinkedMap</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">10882</span> </div>
 <div class="line"><span class="lineno">10883</span><span class="comment">  /**************************************************************************</span></div>
 <div class="line"><span class="lineno">10884</span><span class="comment">   *            Initialize some global constants</span></div>
@@ -2320,7 +2320,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">11240</span>        }</div>
 <div class="line"><span class="lineno">11241</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">11242</span>      <span class="keywordflow">case</span> <span class="charliteral">&#39;b&#39;</span>:</div>
-<div class="line"><span class="lineno">11243</span>        setvbuf(stdout,NULL,_IONBF,0);</div>
+<div class="line"><span class="lineno">11243</span>        setvbuf(stdout,<span class="keyword">nullptr</span>,_IONBF,0);</div>
 <div class="line"><span class="lineno">11244</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">11245</span>      <span class="keywordflow">case</span> <span class="charliteral">&#39;q&#39;</span>:</div>
 <div class="line"><span class="lineno">11246</span>        quiet = <span class="keyword">true</span>;</div>
@@ -2559,7 +2559,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">10515</span>  <a class="code hl_class" href="../../d0/da1/class_file_info.html">FileInfo</a> fi(s.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a875e9ad762554ef12f3ed69b015bb245">str</a>());</div>
 <div class="line"><span class="lineno">10516</span>  <span class="comment">//printf(&quot;readFileOrDirectory(%s)\n&quot;,s);</span></div>
 <div class="line"><span class="lineno">10517</span>  {</div>
-<div class="line"><span class="lineno">10518</span>    <span class="keywordflow">if</span> (exclSet==0 || exclSet-&gt;find(fi.absFilePath())==exclSet-&gt;end())</div>
+<div class="line"><span class="lineno">10518</span>    <span class="keywordflow">if</span> (exclSet==<span class="keyword">nullptr</span> || exclSet-&gt;find(fi.absFilePath())==exclSet-&gt;end())</div>
 <div class="line"><span class="lineno">10519</span>    {</div>
 <div class="line"><span class="lineno">10520</span>      <span class="keywordflow">if</span> (<a class="code hl_define" href="../../db/d16/config_8h.html#a5373d0332a31f16ad7a42037733e8c79">Config_getBool</a>(EXCLUDE_SYMLINKS) &amp;&amp; fi.isSymLink())</div>
 <div class="line"><span class="lineno">10521</span>      {</div>
@@ -2580,7 +2580,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">10536</span>          paths-&gt;insert(dirPath);</div>
 <div class="line"><span class="lineno">10537</span>        }</div>
 <div class="line"><span class="lineno">10538</span>        <span class="comment">//printf(&quot;killSet.find(%s)=%d\n&quot;,qPrint(fi.absFilePath()),killSet.find(fi.absFilePath())!=killSet.end());</span></div>
-<div class="line"><span class="lineno">10539</span>        <span class="keywordflow">if</span> (killSet==0 || killSet-&gt;find(filePath)==killSet-&gt;end())</div>
+<div class="line"><span class="lineno">10539</span>        <span class="keywordflow">if</span> (killSet==<span class="keyword">nullptr</span> || killSet-&gt;find(filePath)==killSet-&gt;end())</div>
 <div class="line"><span class="lineno">10540</span>        {</div>
 <div class="line"><span class="lineno">10541</span>          std::string name=fi.fileName();</div>
 <div class="line"><span class="lineno">10542</span>          <span class="keywordflow">if</span> (fnMap)</div>
