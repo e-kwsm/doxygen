@@ -334,8 +334,8 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  113</span>          images[0].<a class="code hl_variable" href="../../da/d06/struct_colored_img_data_item.html#aebc8ef167c7bbdf928fcc59b3c9d436b">width</a>   = width;</div>
 <div class="line"><span class="lineno">  114</span>          images[0].<a class="code hl_variable" href="../../da/d06/struct_colored_img_data_item.html#acfac94346e3f7837df12c487bce866f2">height</a>  = height;</div>
 <div class="line"><span class="lineno">  115</span>          images[0].<a class="code hl_variable" href="../../da/d06/struct_colored_img_data_item.html#a393187fce3a934e036b74d8c21b3f8e8">content</a> = &amp;data[4];</div>
-<div class="line"><span class="lineno">  116</span>          images[0].<a class="code hl_variable" href="../../da/d06/struct_colored_img_data_item.html#ae5969908badee95ed37c414a3d1134c9">alpha</a>   = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  117</span>          images[1].<a class="code hl_variable" href="../../da/d06/struct_colored_img_data_item.html#afed2ef0f30516caf6b81a9d41033c8f3">name</a>    = <span class="keyword">nullptr</span>; <span class="comment">// terminator</span></div>
+<div class="line"><span class="lineno">  116</span>          images[0].<a class="code hl_variable" href="../../da/d06/struct_colored_img_data_item.html#ae5969908badee95ed37c414a3d1134c9">alpha</a>   = 0;</div>
+<div class="line"><span class="lineno">  117</span>          images[1].<a class="code hl_variable" href="../../da/d06/struct_colored_img_data_item.html#afed2ef0f30516caf6b81a9d41033c8f3">name</a>    = 0; <span class="comment">// terminator</span></div>
 <div class="line"><span class="lineno">  118</span>          <a class="code hl_function" href="../../df/d2d/util_8cpp.html#af543a98b46249a2b115f47f0166e9a81">writeColoredImgData</a>(targetDir,images);</div>
 <div class="line"><span class="lineno">  119</span>          <span class="keywordflow">return</span> <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><span class="lineno">  120</span>        }</div>
@@ -353,7 +353,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  132</span>          images[0].<a class="code hl_variable" href="../../da/d06/struct_colored_img_data_item.html#acfac94346e3f7837df12c487bce866f2">height</a>  = height;</div>
 <div class="line"><span class="lineno">  133</span>          images[0].<a class="code hl_variable" href="../../da/d06/struct_colored_img_data_item.html#a393187fce3a934e036b74d8c21b3f8e8">content</a> = &amp;data[4];</div>
 <div class="line"><span class="lineno">  134</span>          images[0].<a class="code hl_variable" href="../../da/d06/struct_colored_img_data_item.html#ae5969908badee95ed37c414a3d1134c9">alpha</a>   = &amp;data[4+width*height];</div>
-<div class="line"><span class="lineno">  135</span>          images[1].<a class="code hl_variable" href="../../da/d06/struct_colored_img_data_item.html#afed2ef0f30516caf6b81a9d41033c8f3">name</a>    = <span class="keyword">nullptr</span>; <span class="comment">// terminator</span></div>
+<div class="line"><span class="lineno">  135</span>          images[1].<a class="code hl_variable" href="../../da/d06/struct_colored_img_data_item.html#afed2ef0f30516caf6b81a9d41033c8f3">name</a>    = 0; <span class="comment">// terminator</span></div>
 <div class="line"><span class="lineno">  136</span>          <a class="code hl_function" href="../../df/d2d/util_8cpp.html#af543a98b46249a2b115f47f0166e9a81">writeColoredImgData</a>(targetDir,images);</div>
 <div class="line"><span class="lineno">  137</span>          <span class="keywordflow">return</span> <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><span class="lineno">  138</span>        }</div>
@@ -465,7 +465,7 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">  186</span>{</div>
 <div class="line"><span class="lineno">  187</span>  <span class="keyword">auto</span> it = <a class="code hl_variable" href="../../d6/d12/class_resource_mgr.html#aeef2c9c2c3f080afd3ec70e6084b0af8">p</a>-&gt;resources.find(name.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a875e9ad762554ef12f3ed69b015bb245">str</a>());</div>
 <div class="line"><span class="lineno">  188</span>  <span class="keywordflow">if</span> (it!=<a class="code hl_variable" href="../../d6/d12/class_resource_mgr.html#aeef2c9c2c3f080afd3ec70e6084b0af8">p</a>-&gt;resources.end()) <span class="keywordflow">return</span> &amp;it-&gt;second;</div>
-<div class="line"><span class="lineno">  189</span>  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  189</span>  <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  190</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d6/d07/resourcemgr_8h_source.html#l00063">p</a>, and <a class="el" href="../../d7/d5c/qcstring_8h_source.html#l00480">QCString::str()</a>.</p>

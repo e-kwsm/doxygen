@@ -727,7 +727,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  364</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (s-&gt;<a class="code hl_variable" href="../../d9/da2/structvhdl_1_1parser_1_1_vhdl_parser_1_1_shared_state.html#a1429ecf0ba26773a2dbdb521c3268644">lastCompound</a>)</div>
 <div class="line"><span class="lineno">  365</span>    compound = s-&gt;<a class="code hl_variable" href="../../d9/da2/structvhdl_1_1parser_1_1_vhdl_parser_1_1_shared_state.html#a1429ecf0ba26773a2dbdb521c3268644">lastCompound</a>;</div>
 <div class="line"><span class="lineno">  366</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  367</span>    compound = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  367</span>    compound = 0;</div>
 <div class="line"><span class="lineno">  368</span> </div>
 <div class="line"><span class="lineno">  369</span>  <span class="keywordflow">if</span> (compound)</div>
 <div class="line"><span class="lineno">  370</span>  {</div>
@@ -1016,7 +1016,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  847</span>  {</div>
 <div class="line"><span class="lineno">  848</span>    <a class="code hl_variable" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a56aca27d40e4179f6c55664f4d9c9c0a">p</a>-&gt;vhdlParser-&gt;getNextToken();  <span class="comment">// step to next token</span></div>
 <div class="line"><span class="lineno">  849</span>    op=<a class="code hl_variable" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a56aca27d40e4179f6c55664f4d9c9c0a">p</a>-&gt;vhdlParser-&gt;getToken(1);  <span class="comment">// get first token</span></div>
-<div class="line"><span class="lineno">  850</span>    <span class="keywordflow">if</span> (op==<span class="keyword">nullptr</span>) <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  850</span>    <span class="keywordflow">if</span> (op==0) <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  851</span>    <span class="comment">//fprintf(stderr,&quot;\n %s&quot;,qPrint(t-&gt;image));</span></div>
 <div class="line"><span class="lineno">  852</span>  } <span class="keywordflow">while</span> (op-&gt;<a class="code hl_variable" href="../../dc/de7/classvhdl_1_1parser_1_1_token.html#a021bfae89b9eec39a87db9577508916c">kind</a> != kind);</div>
 <div class="line"><span class="lineno">  853</span>  <a class="code hl_variable" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a56aca27d40e4179f6c55664f4d9c9c0a">p</a>-&gt;vhdlParser-&gt;clearError();</div>
@@ -1293,7 +1293,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  198</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a56aca27d40e4179f6c55664f4d9c9c0a">p</a>-&gt;str_doc.pending)</div>
 <div class="line"><span class="lineno">  199</span>  {</div>
 <div class="line"><span class="lineno">  200</span>    <a class="code hl_variable" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a56aca27d40e4179f6c55664f4d9c9c0a">p</a>-&gt;str_doc.pending=<a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><span class="lineno">  201</span>    <a class="code hl_variable" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a56aca27d40e4179f6c55664f4d9c9c0a">p</a>-&gt;oldEntry=<span class="keyword">nullptr</span>; <span class="comment">// prevents endless recursion</span></div>
+<div class="line"><span class="lineno">  201</span>    <a class="code hl_variable" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a56aca27d40e4179f6c55664f4d9c9c0a">p</a>-&gt;oldEntry=0; <span class="comment">// prevents endless recursion</span></div>
 <div class="line"><span class="lineno">  202</span>    <a class="code hl_variable" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a56aca27d40e4179f6c55664f4d9c9c0a">p</a>-&gt;iDocLine=<a class="code hl_variable" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a56aca27d40e4179f6c55664f4d9c9c0a">p</a>-&gt;str_doc.iDocLine;</div>
 <div class="line"><span class="lineno">  203</span>    <a class="code hl_function" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a3df5816f7dcd092e39a99ebaf9b983cf">handleCommentBlock</a>(<a class="code hl_variable" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a56aca27d40e4179f6c55664f4d9c9c0a">p</a>-&gt;str_doc.doc,<a class="code hl_variable" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a56aca27d40e4179f6c55664f4d9c9c0a">p</a>-&gt;str_doc.brief);</div>
 <div class="line"><span class="lineno">  204</span>    <a class="code hl_variable" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a56aca27d40e4179f6c55664f4d9c9c0a">p</a>-&gt;iDocLine=-1;</div>
@@ -1705,10 +1705,10 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  158</span>  }</div>
 <div class="line"><span class="lineno">  159</span>  <a class="code hl_variable" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a56aca27d40e4179f6c55664f4d9c9c0a">p</a>-&gt;yyLineNr=1;</div>
 <div class="line"><span class="lineno">  160</span>  s-&gt;<a class="code hl_variable" href="../../d9/da2/structvhdl_1_1parser_1_1_vhdl_parser_1_1_shared_state.html#a1943eaf985ae6ae0a3316b65f2810ac1">current_root</a>=root;</div>
-<div class="line"><span class="lineno">  161</span>  s-&gt;<a class="code hl_variable" href="../../d9/da2/structvhdl_1_1parser_1_1_vhdl_parser_1_1_shared_state.html#a1429ecf0ba26773a2dbdb521c3268644">lastCompound</a>=<span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  162</span>  s-&gt;<a class="code hl_variable" href="../../d9/da2/structvhdl_1_1parser_1_1_vhdl_parser_1_1_shared_state.html#a04773fa91cfdf6d65710f84b2c35417f">lastEntity</a>=<span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  163</span>  s-&gt;<a class="code hl_variable" href="../../d9/da2/structvhdl_1_1parser_1_1_vhdl_parser_1_1_shared_state.html#a04773fa91cfdf6d65710f84b2c35417f">lastEntity</a>=<span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  164</span>  <a class="code hl_variable" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a56aca27d40e4179f6c55664f4d9c9c0a">p</a>-&gt;oldEntry = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  161</span>  s-&gt;<a class="code hl_variable" href="../../d9/da2/structvhdl_1_1parser_1_1_vhdl_parser_1_1_shared_state.html#a1429ecf0ba26773a2dbdb521c3268644">lastCompound</a>=0;</div>
+<div class="line"><span class="lineno">  162</span>  s-&gt;<a class="code hl_variable" href="../../d9/da2/structvhdl_1_1parser_1_1_vhdl_parser_1_1_shared_state.html#a04773fa91cfdf6d65710f84b2c35417f">lastEntity</a>=0;</div>
+<div class="line"><span class="lineno">  163</span>  s-&gt;<a class="code hl_variable" href="../../d9/da2/structvhdl_1_1parser_1_1_vhdl_parser_1_1_shared_state.html#a04773fa91cfdf6d65710f84b2c35417f">lastEntity</a>=0;</div>
+<div class="line"><span class="lineno">  164</span>  <a class="code hl_variable" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a56aca27d40e4179f6c55664f4d9c9c0a">p</a>-&gt;oldEntry = 0;</div>
 <div class="line"><span class="lineno">  165</span>  s-&gt;<a class="code hl_variable" href="../../d9/da2/structvhdl_1_1parser_1_1_vhdl_parser_1_1_shared_state.html#a979f96c7f7352e14296f8d49e701ee47">current</a>=std::make_shared&lt;Entry&gt;();</div>
 <div class="line"><span class="lineno">  166</span>  <a class="code hl_function" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a9ecb445c39b769e5602ca96de2e93323">initEntry</a>(s-&gt;<a class="code hl_variable" href="../../d9/da2/structvhdl_1_1parser_1_1_vhdl_parser_1_1_shared_state.html#a979f96c7f7352e14296f8d49e701ee47">current</a>.get());</div>
 <div class="line"><span class="lineno">  167</span>  <a class="code hl_variable" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a56aca27d40e4179f6c55664f4d9c9c0a">p</a>-&gt;commentScanner.enterFile(fileName,<a class="code hl_variable" href="../../df/d4b/class_v_h_d_l_outline_parser.html#a56aca27d40e4179f6c55664f4d9c9c0a">p</a>-&gt;yyLineNr);</div>

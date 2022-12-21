@@ -167,8 +167,8 @@ Functions</h2></td></tr>
 <tr class="separator:a021de5017c6965ebf393d509ded08502"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b7c1530a097c690972b0202744a41b4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db0/htmldocvisitor_8cpp.html#a8b7c1530a097c690972b0202744a41b4">mergeHtmlAttributes</a> (const <a class="el" href="../../db/d4d/class_html_attrib_list.html">HtmlAttribList</a> &amp;attribs, <a class="el" href="../../db/d4d/class_html_attrib_list.html">HtmlAttribList</a> &amp;mergeInto)</td></tr>
 <tr class="separator:a8b7c1530a097c690972b0202744a41b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25bc0130325065e702ebc7b3c7b6e52f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d45/class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db0/htmldocvisitor_8cpp.html#a25bc0130325065e702ebc7b3c7b6e52f">htmlAttribsToString</a> (const <a class="el" href="../../db/d4d/class_html_attrib_list.html">HtmlAttribList</a> &amp;attribs, <a class="el" href="../../d9/d45/class_q_c_string.html">QCString</a> *pAltValue=nullptr)</td></tr>
-<tr class="separator:a25bc0130325065e702ebc7b3c7b6e52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf5f3ce01f67df744d390e1991bd856"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d45/class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db0/htmldocvisitor_8cpp.html#a5bf5f3ce01f67df744d390e1991bd856">htmlAttribsToString</a> (const <a class="el" href="../../db/d4d/class_html_attrib_list.html">HtmlAttribList</a> &amp;attribs, <a class="el" href="../../d9/d45/class_q_c_string.html">QCString</a> *pAltValue=0)</td></tr>
+<tr class="separator:a5bf5f3ce01f67df744d390e1991bd856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae7f2f75c9734a361d01219eb092830d"><td class="memTemplParams" colspan="2">template&lt;class Node &gt; </td></tr>
 <tr class="memitem:aae7f2f75c9734a361d01219eb092830d"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/db0/htmldocvisitor_8cpp.html#aae7f2f75c9734a361d01219eb092830d">holds_value</a> (const Node *val, const <a class="el" href="../../de/d2b/docnode_8h.html#afad5b9fbe2e475f242fe258914b6a4a0">DocNodeVariant</a> &amp;v)</td></tr>
 <tr class="separator:aae7f2f75c9734a361d01219eb092830d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -452,16 +452,16 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno"> 1137</span>    {</div>
 <div class="line"><span class="lineno"> 1138</span>      <span class="comment">// hierarchy: node N -&gt; para -&gt; parblock -&gt; para</span></div>
 <div class="line"><span class="lineno"> 1139</span>      <span class="comment">// adapt return value to kind of N</span></div>
-<div class="line"><span class="lineno"> 1140</span>      <span class="keyword">const</span> <a class="code hl_typedef" href="../../de/d2b/docnode_8h.html#afad5b9fbe2e475f242fe258914b6a4a0">DocNodeVariant</a> *p3 = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 1140</span>      <span class="keyword">const</span> <a class="code hl_typedef" href="../../de/d2b/docnode_8h.html#afad5b9fbe2e475f242fe258914b6a4a0">DocNodeVariant</a> *p3 = 0;</div>
 <div class="line"><span class="lineno"> 1141</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../de/d2b/docnode_8h.html#aa08872da61afee56859056e5a0612633">::parent</a>(p.<a class="code hl_function" href="../../d9/d0e/class_doc_node.html#a9217c40d6d74f2b78928b3d8131dd7f0">parent</a>()) &amp;&amp; <a class="code hl_function" href="../../de/d2b/docnode_8h.html#aa08872da61afee56859056e5a0612633">::parent</a>(<a class="code hl_function" href="../../de/d2b/docnode_8h.html#aa08872da61afee56859056e5a0612633">::parent</a>(p.<a class="code hl_function" href="../../d9/d0e/class_doc_node.html#a9217c40d6d74f2b78928b3d8131dd7f0">parent</a>())) )</div>
 <div class="line"><span class="lineno"> 1142</span>      {</div>
 <div class="line"><span class="lineno"> 1143</span>        p3 = <a class="code hl_function" href="../../de/d2b/docnode_8h.html#aa08872da61afee56859056e5a0612633">::parent</a>(<a class="code hl_function" href="../../de/d2b/docnode_8h.html#aa08872da61afee56859056e5a0612633">::parent</a>(p.<a class="code hl_function" href="../../d9/d0e/class_doc_node.html#a9217c40d6d74f2b78928b3d8131dd7f0">parent</a>()));</div>
 <div class="line"><span class="lineno"> 1144</span>      }</div>
 <div class="line"><span class="lineno"> 1145</span>      isFirst=<a class="code hl_function" href="../../da/db0/htmldocvisitor_8cpp.html#a520aa4c3a57667d69b67c176e4828d14">isFirstChildNode</a>(parBlock,p);</div>
 <div class="line"><span class="lineno"> 1146</span>      isLast =<a class="code hl_function" href="../../da/db0/htmldocvisitor_8cpp.html#abe2e2b94699822e58607ee92aa93cfc1">isLastChildNode</a> (parBlock,p);</div>
-<div class="line"><span class="lineno"> 1147</span>      <span class="keywordtype">bool</span> isLI = p3!=<span class="keyword">nullptr</span> &amp;&amp; holds_one_of_alternatives&lt;DocHtmlListItem,DocSecRefItem&gt;(*p3);</div>
-<div class="line"><span class="lineno"> 1148</span>      <span class="keywordtype">bool</span> isDD = p3!=<span class="keyword">nullptr</span> &amp;&amp; holds_one_of_alternatives&lt;DocHtmlDescData,DocXRefItem,DocSimpleSect&gt;(*p3);</div>
-<div class="line"><span class="lineno"> 1149</span>      <span class="keywordtype">bool</span> isTD = p3!=<span class="keyword">nullptr</span> &amp;&amp; holds_one_of_alternatives&lt;DocHtmlCell,DocParamList&gt;(*p3);</div>
+<div class="line"><span class="lineno"> 1147</span>      <span class="keywordtype">bool</span> isLI = p3!=0 &amp;&amp; holds_one_of_alternatives&lt;DocHtmlListItem,DocSecRefItem&gt;(*p3);</div>
+<div class="line"><span class="lineno"> 1148</span>      <span class="keywordtype">bool</span> isDD = p3!=0 &amp;&amp; holds_one_of_alternatives&lt;DocHtmlDescData,DocXRefItem,DocSimpleSect&gt;(*p3);</div>
+<div class="line"><span class="lineno"> 1149</span>      <span class="keywordtype">bool</span> isTD = p3!=0 &amp;&amp; holds_one_of_alternatives&lt;DocHtmlCell,DocParamList&gt;(*p3);</div>
 <div class="line"><span class="lineno"> 1150</span>      t=<a class="code hl_enumvalue" href="../../da/db0/htmldocvisitor_8cpp.html#a4e6b0f73c140aef7a763d17e638acffaac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a>;</div>
 <div class="line"><span class="lineno"> 1151</span>      <span class="keywordflow">if</span> (isFirst)</div>
 <div class="line"><span class="lineno"> 1152</span>      {</div>
@@ -634,8 +634,8 @@ template&lt;class Node &gt; </div>
 
 </div>
 </div>
-<a id="a25bc0130325065e702ebc7b3c7b6e52f" name="a25bc0130325065e702ebc7b3c7b6e52f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25bc0130325065e702ebc7b3c7b6e52f">&#9670;&#160;</a></span>htmlAttribsToString()</h2>
+<a id="a5bf5f3ce01f67df744d390e1991bd856" name="a5bf5f3ce01f67df744d390e1991bd856"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bf5f3ce01f67df744d390e1991bd856">&#9670;&#160;</a></span>htmlAttribsToString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -653,7 +653,7 @@ template&lt;class Node &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../d9/d45/class_q_c_string.html">QCString</a> *&#160;</td>
-          <td class="paramname"><em>pAltValue</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramname"><em>pAltValue</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1123,7 +1123,7 @@ template&lt;class T &gt; </div>
 <div class="line"><span class="lineno"> 1109</span>  <span class="keyword">auto</span> it = std::find_if(std::begin(nodes),std::end(nodes),[&amp;par](<span class="keyword">const</span> <span class="keyword">auto</span> &amp;n) { <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/db0/htmldocvisitor_8cpp.html#aae7f2f75c9734a361d01219eb092830d">holds_value</a>(&amp;par,n); });</div>
 <div class="line"><span class="lineno"> 1110</span>  <span class="keywordflow">if</span> (it==std::end(nodes)) <span class="keywordflow">return</span> <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><span class="lineno"> 1111</span>  <span class="keywordtype">size_t</span> count = <a class="code hl_function" href="../../de/d2b/docnode_8h.html#aa08872da61afee56859056e5a0612633">parent</a>.children().size();</div>
-<div class="line"><span class="lineno"> 1112</span>  <span class="keyword">auto</span> isSeparator = [](<span class="keyword">auto</span> &amp;&amp;it_) { <span class="keywordflow">return</span> std::get_if&lt;DocSimpleSectSep&gt;(&amp;(*it_))!=<span class="keyword">nullptr</span>; };</div>
+<div class="line"><span class="lineno"> 1112</span>  <span class="keyword">auto</span> isSeparator = [](<span class="keyword">auto</span> &amp;&amp;it_) { <span class="keywordflow">return</span> std::get_if&lt;DocSimpleSectSep&gt;(&amp;(*it_))!=0; };</div>
 <div class="line"><span class="lineno"> 1113</span>  <span class="keywordflow">if</span> (count&gt;1 &amp;&amp; it==std::begin(nodes)) <span class="comment">// it points to first node</span></div>
 <div class="line"><span class="lineno"> 1114</span>  {</div>
 <div class="line"><span class="lineno"> 1115</span>    <span class="keywordflow">return</span> isSeparator(std::next(it));</div>

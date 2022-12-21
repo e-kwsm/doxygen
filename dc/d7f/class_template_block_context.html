@@ -289,7 +289,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno"> 4738</span>  <span class="keyword">auto</span> it = <a class="code hl_variable" href="../../dc/d7f/class_template_block_context.html#a5ff7188cb7c4eeab5cfffe6911be9cd3">m_blocks</a>.find(name.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a875e9ad762554ef12f3ed69b015bb245">str</a>());</div>
 <div class="line"><span class="lineno"> 4739</span>  <span class="keywordflow">if</span> (it==<a class="code hl_variable" href="../../dc/d7f/class_template_block_context.html#a5ff7188cb7c4eeab5cfffe6911be9cd3">m_blocks</a>.end() || it-&gt;second.empty())</div>
 <div class="line"><span class="lineno"> 4740</span>  {</div>
-<div class="line"><span class="lineno"> 4741</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 4741</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno"> 4742</span>  }</div>
 <div class="line"><span class="lineno"> 4743</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 4744</span>  {</div>
@@ -324,7 +324,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno"> 4751</span>  <span class="keyword">auto</span> it = <a class="code hl_variable" href="../../dc/d7f/class_template_block_context.html#a5ff7188cb7c4eeab5cfffe6911be9cd3">m_blocks</a>.find(name.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a875e9ad762554ef12f3ed69b015bb245">str</a>());</div>
 <div class="line"><span class="lineno"> 4752</span>  <span class="keywordflow">if</span> (it==<a class="code hl_variable" href="../../dc/d7f/class_template_block_context.html#a5ff7188cb7c4eeab5cfffe6911be9cd3">m_blocks</a>.end() || it-&gt;second.empty())</div>
 <div class="line"><span class="lineno"> 4753</span>  {</div>
-<div class="line"><span class="lineno"> 4754</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 4754</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno"> 4755</span>  }</div>
 <div class="line"><span class="lineno"> 4756</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 4757</span>  {</div>

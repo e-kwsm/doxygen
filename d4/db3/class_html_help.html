@@ -664,14 +664,14 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  574</span>  <span class="keywordflow">if</span> (md)</div>
 <div class="line"><span class="lineno">  575</span>  {</div>
 <div class="line"><span class="lineno">  576</span>    <span class="keywordtype">bool</span> separateMemberPages = <a class="code hl_define" href="../../db/d16/config_8h.html#a5373d0332a31f16ad7a42037733e8c79">Config_getBool</a>(SEPARATE_MEMBER_PAGES);</div>
-<div class="line"><span class="lineno">  577</span>    <span class="keywordflow">if</span> (context==<span class="keyword">nullptr</span>) <span class="comment">// global member</span></div>
+<div class="line"><span class="lineno">  577</span>    <span class="keywordflow">if</span> (context==0) <span class="comment">// global member</span></div>
 <div class="line"><span class="lineno">  578</span>    {</div>
 <div class="line"><span class="lineno">  579</span>      <span class="keywordflow">if</span> (md-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a43ef09743c900283a46b2e0ecd81e486">getGroupDef</a>())</div>
 <div class="line"><span class="lineno">  580</span>        context = md-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a43ef09743c900283a46b2e0ecd81e486">getGroupDef</a>();</div>
 <div class="line"><span class="lineno">  581</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (md-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a5036fd8ee16b186925236105029ee823">getFileDef</a>())</div>
 <div class="line"><span class="lineno">  582</span>        context = md-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a5036fd8ee16b186925236105029ee823">getFileDef</a>();</div>
 <div class="line"><span class="lineno">  583</span>    }</div>
-<div class="line"><span class="lineno">  584</span>    <span class="keywordflow">if</span> (context==<span class="keyword">nullptr</span>) <span class="keywordflow">return</span>; <span class="comment">// should not happen</span></div>
+<div class="line"><span class="lineno">  584</span>    <span class="keywordflow">if</span> (context==0) <span class="keywordflow">return</span>; <span class="comment">// should not happen</span></div>
 <div class="line"><span class="lineno">  585</span> </div>
 <div class="line"><span class="lineno">  586</span>    <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a> cfname  = md-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a1691f8cc2d90978d091a7d7aae11dd8d">getOutputFileBase</a>();</div>
 <div class="line"><span class="lineno">  587</span>    <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a> argStr  = md-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#adfae3b8f49644ba27669daa9412e14a3">argsString</a>();</div>

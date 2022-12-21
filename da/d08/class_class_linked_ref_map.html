@@ -225,7 +225,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   33</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;cd : *<span class="keyword">this</span>)</div>
 <div class="line"><span class="lineno">   34</span>  {</div>
 <div class="line"><span class="lineno">   35</span>    <span class="keywordflow">if</span> (!cd-&gt;isAnonymous() &amp;&amp;</div>
-<div class="line"><span class="lineno">   36</span>        (filter==<span class="keyword">nullptr</span> || *filter==cd-&gt;compoundType())</div>
+<div class="line"><span class="lineno">   36</span>        (filter==0 || *filter==cd-&gt;compoundType())</div>
 <div class="line"><span class="lineno">   37</span>       )</div>
 <div class="line"><span class="lineno">   38</span>    {</div>
 <div class="line"><span class="lineno">   39</span>      <span class="keywordtype">bool</span> isLink = cd-&gt;isLinkable();</div>
@@ -297,7 +297,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   61</span>    <span class="keywordflow">if</span> (!cd-&gt;isAnonymous() &amp;&amp;</div>
 <div class="line"><span class="lineno">   62</span>        !cd-&gt;isExtension() &amp;&amp;</div>
 <div class="line"><span class="lineno">   63</span>        (cd-&gt;protection()!=<a class="code hl_enumvalue" href="../../d9/d49/types_8h.html#a90e352184df58cd09455fe9996cd4dedaaa82165706f5dd0859648a09f1f64166">Private</a> || extractPrivate) &amp;&amp;</div>
-<div class="line"><span class="lineno">   64</span>        (filter==<span class="keyword">nullptr</span> || *filter==cd-&gt;compoundType())</div>
+<div class="line"><span class="lineno">   64</span>        (filter==0 || *filter==cd-&gt;compoundType())</div>
 <div class="line"><span class="lineno">   65</span>       )</div>
 <div class="line"><span class="lineno">   66</span>    {</div>
 <div class="line"><span class="lineno">   67</span>      <span class="comment">//printf(&quot;writeDeclarationLink()\n&quot;);</span></div>
@@ -363,7 +363,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   91</span>        cd-&gt;isLinkableInProject() &amp;&amp;</div>
 <div class="line"><span class="lineno">   92</span>        cd-&gt;isEmbeddedInOuterScope() &amp;&amp;</div>
 <div class="line"><span class="lineno">   93</span>        !cd-&gt;isAlias() &amp;&amp;</div>
-<div class="line"><span class="lineno">   94</span>        (container==<span class="keyword">nullptr</span> || cd-&gt;partOfGroups().empty()) <span class="comment">// if container==nullptr -&gt; show as part of the group docs, otherwise only show if not part of a group</span></div>
+<div class="line"><span class="lineno">   94</span>        (container==0 || cd-&gt;partOfGroups().empty()) <span class="comment">// if container==0 -&gt; show as part of the group docs, otherwise only show if not part of a group</span></div>
 <div class="line"><span class="lineno">   95</span>       )</div>
 <div class="line"><span class="lineno">   96</span>    {</div>
 <div class="line"><span class="lineno">   97</span>      <span class="comment">//printf(&quot;  showing class %s\n&quot;,cd-&gt;name().data());</span></div>

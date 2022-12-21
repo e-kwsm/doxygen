@@ -320,12 +320,12 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="../../db/d14/index_8cpp_source.html#l02750">2750</a> of file <a class="el" href="../../db/d14/index_8cpp_source.html">index.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 2751</span>{</div>
 <div class="line"><span class="lineno"> 2752</span>  <span class="keywordtype">bool</span> hideFriendCompounds = <a class="code hl_define" href="../../db/d16/config_8h.html#a5373d0332a31f16ad7a42037733e8c79">Config_getBool</a>(HIDE_FRIEND_COMPOUNDS);</div>
-<div class="line"><span class="lineno"> 2753</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d1/dcf/class_class_def.html">ClassDef</a> *cd=<span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno"> 2753</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d1/dcf/class_class_def.html">ClassDef</a> *cd=0;</div>
 <div class="line"><span class="lineno"> 2754</span> </div>
 <div class="line"><span class="lineno"> 2755</span>  <span class="keywordflow">if</span> (md-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a76c1eca28747e65a64edce870a0a79f8">isLinkableInProject</a>() &amp;&amp;</div>
 <div class="line"><span class="lineno"> 2756</span>      (cd=md-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a33ff70edee6691aacaeecf40a1146995">getClassDef</a>())    &amp;&amp;</div>
 <div class="line"><span class="lineno"> 2757</span>      cd-&gt;<a class="code hl_function" href="../../d1/dcf/class_class_def.html#ab44ea1cae6c5a0ff7ea797e355672e87">isLinkableInProject</a>() &amp;&amp;</div>
-<div class="line"><span class="lineno"> 2758</span>      cd-&gt;<a class="code hl_function" href="../../d1/dcf/class_class_def.html#ae587759f556ea0d641b92a30e923a7c9">templateMaster</a>()==<span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno"> 2758</span>      cd-&gt;<a class="code hl_function" href="../../d1/dcf/class_class_def.html#ae587759f556ea0d641b92a30e923a7c9">templateMaster</a>()==0)</div>
 <div class="line"><span class="lineno"> 2759</span>  {</div>
 <div class="line"><span class="lineno"> 2760</span>    <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a> n = md-&gt;<a class="code hl_function" href="../../d5/dcc/class_definition.html#a9374fedd7f64fea7e0e164302d1a9e61">name</a>();</div>
 <div class="line"><span class="lineno"> 2761</span>    std::string letter = <a class="code hl_function" href="../../d2/db5/utf8_8cpp.html#ac0c19c2bb475bc6f27dbf06345c865a3">getUTF8CharAt</a>(n.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a875e9ad762554ef12f3ed69b015bb245">str</a>(),<a class="code hl_function" href="../../df/d2d/util_8cpp.html#ae052d7dcea3289dd204d8d425cf9d4c9">getPrefixIndex</a>(n));</div>
