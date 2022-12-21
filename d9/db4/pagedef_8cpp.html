@@ -206,14 +206,14 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/db4/pagedef_8cpp_source.html#l00421">421</a> of file <a class="el" href="../../d9/db4/pagedef_8cpp_source.html">pagedef.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  422</span>{</div>
-<div class="line"><span class="lineno">  423</span>  <span class="keywordflow">if</span> (d==0) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  423</span>  <span class="keywordflow">if</span> (d==<span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  424</span>  <span class="keywordflow">if</span> (d &amp;&amp; <span class="keyword">typeid</span>(*d)==<span class="keyword">typeid</span>(<a class="code hl_class" href="../../dd/de8/class_page_def_impl.html">PageDefImpl</a>))</div>
 <div class="line"><span class="lineno">  425</span>  {</div>
 <div class="line"><span class="lineno">  426</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code hl_class" href="../../dd/d41/class_page_def.html">PageDef</a>*<span class="keyword">&gt;</span>(d);</div>
 <div class="line"><span class="lineno">  427</span>  }</div>
 <div class="line"><span class="lineno">  428</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  429</span>  {</div>
-<div class="line"><span class="lineno">  430</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  430</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  431</span>  }</div>
 <div class="line"><span class="lineno">  432</span>}</div>
 <div class="ttc" id="aclass_page_def_html"><div class="ttname"><a href="../../dd/d41/class_page_def.html">PageDef</a></div><div class="ttdoc">A model of a page symbol.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d66/pagedef_8h_source.html#l00025">pagedef.h:26</a></div></div>
@@ -238,14 +238,14 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/db4/pagedef_8cpp_source.html#l00408">408</a> of file <a class="el" href="../../d9/db4/pagedef_8cpp_source.html">pagedef.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  409</span>{</div>
-<div class="line"><span class="lineno">  410</span>  <span class="keywordflow">if</span> (d==0) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  410</span>  <span class="keywordflow">if</span> (d==<span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  411</span>  <span class="keywordflow">if</span> (d &amp;&amp; <span class="keyword">typeid</span>(*d)==<span class="keyword">typeid</span>(<a class="code hl_class" href="../../dd/de8/class_page_def_impl.html">PageDefImpl</a>))</div>
 <div class="line"><span class="lineno">  412</span>  {</div>
 <div class="line"><span class="lineno">  413</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="../../dd/d41/class_page_def.html">PageDef</a>*<span class="keyword">&gt;</span>(d);</div>
 <div class="line"><span class="lineno">  414</span>  }</div>
 <div class="line"><span class="lineno">  415</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  416</span>  {</div>
-<div class="line"><span class="lineno">  417</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  417</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  418</span>  }</div>
 <div class="line"><span class="lineno">  419</span>}</div>
 </div><!-- fragment -->

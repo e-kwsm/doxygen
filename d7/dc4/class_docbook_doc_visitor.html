@@ -1663,7 +1663,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  508</span>                                           <a class="code hl_function" href="../../df/d2d/util_8cpp.html#a29dc16dcef3e9ca42657dcf3bfd8d53a">lineBlock</a>(inc.<a class="code hl_function" href="../../d6/db9/class_doc_include.html#ab2a402fcaf6d3c4ecce0cd7647c0e339">text</a>(),inc.<a class="code hl_function" href="../../d6/db9/class_doc_include.html#a0a32ad9c12a12a6664dd90ba2c141c26">blockId</a>()),</div>
 <div class="line"><span class="lineno">  509</span>                                           -1,    <span class="comment">// endLine</span></div>
 <div class="line"><span class="lineno">  510</span>                                           <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <span class="comment">// inlineFragment</span></div>
-<div class="line"><span class="lineno">  511</span>                                           0,     <span class="comment">// memberDef</span></div>
+<div class="line"><span class="lineno">  511</span>                                           <span class="keyword">nullptr</span>,  <span class="comment">// memberDef</span></div>
 <div class="line"><span class="lineno">  512</span>                                           <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>   <span class="comment">// show line number</span></div>
 <div class="line"><span class="lineno">  513</span>                                          );</div>
 <div class="line"><span class="lineno">  514</span>         <span class="keyword">delete</span> fd;</div>
@@ -1753,7 +1753,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  543</span>    <a class="code hl_variable" href="../../d7/dc4/class_docbook_doc_visitor.html#ae883ef6f0124054b0c9bafb1ab5206b9">m_hide</a> = <a class="code hl_function" href="../../d0/d78/class_doc_visitor.html#afaec23aad7de1e76aab6a441d70c9119">popHidden</a>();</div>
 <div class="line"><span class="lineno">  544</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../d7/dc4/class_docbook_doc_visitor.html#ae883ef6f0124054b0c9bafb1ab5206b9">m_hide</a>)</div>
 <div class="line"><span class="lineno">  545</span>    {</div>
-<div class="line"><span class="lineno">  546</span>      <a class="code hl_class" href="../../de/db0/class_file_def.html">FileDef</a> *fd = 0;</div>
+<div class="line"><span class="lineno">  546</span>      <a class="code hl_class" href="../../de/db0/class_file_def.html">FileDef</a> *fd = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  547</span>      <span class="keywordflow">if</span> (!op.<a class="code hl_function" href="../../d2/db2/class_doc_inc_operator.html#a7c06a4a5f871ce72f41d72f7b1452736">includeFileName</a>().<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a621c4090d69ad7d05ef8e5234376c3d8">isEmpty</a>())</div>
 <div class="line"><span class="lineno">  548</span>      {</div>
 <div class="line"><span class="lineno">  549</span>        <a class="code hl_class" href="../../d0/da1/class_file_info.html">FileInfo</a> cfi( op.<a class="code hl_function" href="../../d2/db2/class_doc_inc_operator.html#a7c06a4a5f871ce72f41d72f7b1452736">includeFileName</a>().<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a875e9ad762554ef12f3ed69b015bb245">str</a>() );</div>
@@ -1767,7 +1767,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  557</span>                                        op.<a class="code hl_function" href="../../d2/db2/class_doc_inc_operator.html#ab9499d4c8335483abbface712143d69f">line</a>(),    <span class="comment">// startLine</span></div>
 <div class="line"><span class="lineno">  558</span>                                        -1,    <span class="comment">// endLine</span></div>
 <div class="line"><span class="lineno">  559</span>                                        <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <span class="comment">// inline fragment</span></div>
-<div class="line"><span class="lineno">  560</span>                                        0,     <span class="comment">// memberDef</span></div>
+<div class="line"><span class="lineno">  560</span>                                        <span class="keyword">nullptr</span>,  <span class="comment">// memberDef</span></div>
 <div class="line"><span class="lineno">  561</span>                                        op.<a class="code hl_function" href="../../d2/db2/class_doc_inc_operator.html#aea2218e2b49020af7c643b1b6b9204ac">showLineNo</a>()  <span class="comment">// show line numbers</span></div>
 <div class="line"><span class="lineno">  562</span>                                       );</div>
 <div class="line"><span class="lineno">  563</span>      <span class="keywordflow">if</span> (fd) <span class="keyword">delete</span> fd;</div>

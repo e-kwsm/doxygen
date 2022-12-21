@@ -182,7 +182,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d72/memberdef_8cpp_source.html#l06065">6065</a> of file <a class="el" href="../../d0/d72/memberdef_8cpp_source.html">memberdef.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 6066</span>{</div>
-<div class="line"><span class="lineno"> 6067</span>  <span class="keywordflow">if</span> (src==0 || dst==0) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno"> 6067</span>  <span class="keywordflow">if</span> (src==<span class="keyword">nullptr</span> || dst==<span class="keyword">nullptr</span>) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno"> 6068</span>  std::lock_guard&lt;std::mutex&gt; lock(<a class="code hl_variable" href="../../d0/d72/memberdef_8cpp.html#a6ec17e0e1fa9fc5b2ab522f618f39b88">g_docCrossReferenceMutex</a>);</div>
 <div class="line"><span class="lineno"> 6069</span>  <span class="comment">//printf(&quot;--&gt; addDocCrossReference src=%s,dst=%s\n&quot;,qPrint(src-&gt;name()),qPrint(dst-&gt;name()));</span></div>
 <div class="line"><span class="lineno"> 6070</span>  <span class="keywordflow">if</span> (dst-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a4bd8f9b14007a57f53918a21258c284e">isTypedef</a>() || dst-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#ab99e728441f3ce7d5784ad6fb6df18f2">isEnumerate</a>()) <span class="keywordflow">return</span>; <span class="comment">// don&#39;t add types</span></div>
@@ -362,7 +362,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 5924</span>      mdef-&gt;<a class="code hl_function" href="../../dd/d4b/class_member_def_mutable.html#a676b9f2dede597844630cbff914f2491">mergeMemberSpecifiers</a>(mdec-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a4458215515338eb7c5597c44d8694e5d">getMemberSpecifiers</a>());</div>
 <div class="line"><span class="lineno"> 5925</span> </div>
 <div class="line"><span class="lineno"> 5926</span>      <span class="comment">// copy group info.</span></div>
-<div class="line"><span class="lineno"> 5927</span>      <span class="keywordflow">if</span> (mdec-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a43ef09743c900283a46b2e0ecd81e486">getGroupDef</a>()==0 &amp;&amp; mdef-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a43ef09743c900283a46b2e0ecd81e486">getGroupDef</a>()!=0)</div>
+<div class="line"><span class="lineno"> 5927</span>      <span class="keywordflow">if</span> (mdec-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a43ef09743c900283a46b2e0ecd81e486">getGroupDef</a>()==<span class="keyword">nullptr</span> &amp;&amp; mdef-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a43ef09743c900283a46b2e0ecd81e486">getGroupDef</a>()!=<span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno"> 5928</span>      {</div>
 <div class="line"><span class="lineno"> 5929</span>        mdec-&gt;<a class="code hl_function" href="../../dd/d4b/class_member_def_mutable.html#a6b4b95698619165c9c6ce99a1ca4ef58">setGroupDef</a>(mdef-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a43ef09743c900283a46b2e0ecd81e486">getGroupDef</a>(),</div>
 <div class="line"><span class="lineno"> 5930</span>            mdef-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a9ed95e7cef3948c6a978540c0d48bca7">getGroupPri</a>(),</div>
@@ -372,7 +372,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 5934</span>            mdef</div>
 <div class="line"><span class="lineno"> 5935</span>            );</div>
 <div class="line"><span class="lineno"> 5936</span>      }</div>
-<div class="line"><span class="lineno"> 5937</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mdef-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a43ef09743c900283a46b2e0ecd81e486">getGroupDef</a>()==0 &amp;&amp; mdec-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a43ef09743c900283a46b2e0ecd81e486">getGroupDef</a>()!=0)</div>
+<div class="line"><span class="lineno"> 5937</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mdef-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a43ef09743c900283a46b2e0ecd81e486">getGroupDef</a>()==<span class="keyword">nullptr</span> &amp;&amp; mdec-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a43ef09743c900283a46b2e0ecd81e486">getGroupDef</a>()!=<span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno"> 5938</span>      {</div>
 <div class="line"><span class="lineno"> 5939</span>        mdef-&gt;<a class="code hl_function" href="../../dd/d4b/class_member_def_mutable.html#a6b4b95698619165c9c6ce99a1ca4ef58">setGroupDef</a>(mdec-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a43ef09743c900283a46b2e0ecd81e486">getGroupDef</a>(),</div>
 <div class="line"><span class="lineno"> 5940</span>            mdec-&gt;<a class="code hl_function" href="../../da/d09/class_member_def.html#a9ed95e7cef3948c6a978540c0d48bca7">getGroupPri</a>(),</div>
@@ -645,7 +645,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 6137</span>  }</div>
 <div class="line"><span class="lineno"> 6138</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 6139</span>  {</div>
-<div class="line"><span class="lineno"> 6140</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno"> 6140</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno"> 6141</span>  }</div>
 <div class="line"><span class="lineno"> 6142</span>}</div>
 </div><!-- fragment -->
@@ -675,7 +675,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 6112</span>  }</div>
 <div class="line"><span class="lineno"> 6113</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 6114</span>  {</div>
-<div class="line"><span class="lineno"> 6115</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno"> 6115</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno"> 6116</span>  }</div>
 <div class="line"><span class="lineno"> 6117</span>}</div>
 </div><!-- fragment -->
@@ -708,7 +708,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 6125</span>  }</div>
 <div class="line"><span class="lineno"> 6126</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 6127</span>  {</div>
-<div class="line"><span class="lineno"> 6128</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno"> 6128</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno"> 6129</span>  }</div>
 <div class="line"><span class="lineno"> 6130</span>}</div>
 <div class="ttc" id="aclass_definition_html"><div class="ttname"><a href="../../d5/dcc/class_definition.html">Definition</a></div><div class="ttdoc">The common base class of all entity definitions found in the sources.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/da1/definition_8h_source.html#l00076">definition.h:77</a></div></div>
@@ -742,7 +742,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 6161</span>  }</div>
 <div class="line"><span class="lineno"> 6162</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 6163</span>  {</div>
-<div class="line"><span class="lineno"> 6164</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno"> 6164</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno"> 6165</span>  }</div>
 <div class="line"><span class="lineno"> 6166</span>}</div>
 </div><!-- fragment -->
@@ -772,7 +772,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 6149</span>  }</div>
 <div class="line"><span class="lineno"> 6150</span>  <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno"> 6151</span>  {</div>
-<div class="line"><span class="lineno"> 6152</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno"> 6152</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno"> 6153</span>  }</div>
 <div class="line"><span class="lineno"> 6154</span>}</div>
 </div><!-- fragment -->

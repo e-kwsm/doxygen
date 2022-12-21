@@ -164,7 +164,7 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a05c3df3676bcd5a22d91befa0db47a2c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../da/d25/class_template_parser.html">TemplateParser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d46/class_expression_parser.html#a05c3df3676bcd5a22d91befa0db47a2c">m_parser</a> = 0</td></tr>
+<tr class="memitem:a05c3df3676bcd5a22d91befa0db47a2c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../da/d25/class_template_parser.html">TemplateParser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d46/class_expression_parser.html#a05c3df3676bcd5a22d91befa0db47a2c">m_parser</a> = nullptr</td></tr>
 <tr class="separator:a05c3df3676bcd5a22d91befa0db47a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16ad2bd607b47235c005764958ddd899"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d2a/class_expression_parser_1_1_expr_token.html">ExprToken</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d46/class_expression_parser.html#a16ad2bd607b47235c005764958ddd899">m_curToken</a></td></tr>
 <tr class="separator:a16ad2bd607b47235c005764958ddd899"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,7 +213,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../df/d54/template_8cpp_source.html#l02012">2012</a> of file <a class="el" href="../../df/d54/template_8cpp_source.html">template.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 2013</span>      : <a class="code hl_variable" href="../../da/d46/class_expression_parser.html#a05c3df3676bcd5a22d91befa0db47a2c">m_parser</a>(parser), <a class="code hl_variable" href="../../da/d46/class_expression_parser.html#a5f84a1fbbb4b33171cfa322c9ed779e0">m_line</a>(line), <a class="code hl_variable" href="../../da/d46/class_expression_parser.html#ae9ac14ed6295c397e35d4ad441fb4964">m_tokenStream</a>(0)</div>
+<div class="fragment"><div class="line"><span class="lineno"> 2013</span>      : <a class="code hl_variable" href="../../da/d46/class_expression_parser.html#a05c3df3676bcd5a22d91befa0db47a2c">m_parser</a>(parser), <a class="code hl_variable" href="../../da/d46/class_expression_parser.html#a5f84a1fbbb4b33171cfa322c9ed779e0">m_line</a>(line), <a class="code hl_variable" href="../../da/d46/class_expression_parser.html#ae9ac14ed6295c397e35d4ad441fb4964">m_tokenStream</a>(<span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno"> 2014</span>    {</div>
 <div class="line"><span class="lineno"> 2015</span>    }</div>
 <div class="ttc" id="aclass_expression_parser_html_a05c3df3676bcd5a22d91befa0db47a2c"><div class="ttname"><a href="../../da/d46/class_expression_parser.html#a05c3df3676bcd5a22d91befa0db47a2c">ExpressionParser::m_parser</a></div><div class="ttdeci">const TemplateParser * m_parser</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d54/template_8cpp_source.html#l02544">template.cpp:2544</a></div></div>
@@ -280,7 +280,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno"> 2345</span>      <span class="keyword">const</span> <span class="keywordtype">char</span> *p = <a class="code hl_variable" href="../../da/d46/class_expression_parser.html#ae9ac14ed6295c397e35d4ad441fb4964">m_tokenStream</a>;</div>
 <div class="line"><span class="lineno"> 2346</span>      <span class="keywordtype">char</span> s[2];</div>
 <div class="line"><span class="lineno"> 2347</span>      s[1]=0;</div>
-<div class="line"><span class="lineno"> 2348</span>      <span class="keywordflow">if</span> (p==0 || *p==<span class="charliteral">&#39;\0&#39;</span>) <span class="keywordflow">return</span> <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><span class="lineno"> 2348</span>      <span class="keywordflow">if</span> (p==<span class="keyword">nullptr</span> || *p==<span class="charliteral">&#39;\0&#39;</span>) <span class="keywordflow">return</span> <a class="code hl_define" href="../../d7/d5c/qcstring_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><span class="lineno"> 2349</span>      <span class="keywordflow">while</span> (*p==<span class="charliteral">&#39; &#39;</span>) p++; <span class="comment">// skip over spaces</span></div>
 <div class="line"><span class="lineno"> 2350</span>      <span class="keywordtype">char</span> c=*p;</div>
 <div class="line"><span class="lineno"> 2351</span>      <span class="keywordflow">if</span> (*p==<span class="charliteral">&#39;\0&#39;</span>) <span class="comment">// only spaces...</span></div>
@@ -544,7 +544,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d54/template_8cpp_source.html#l02020">2020</a> of file <a class="el" href="../../df/d54/template_8cpp_source.html">template.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 2021</span>    {</div>
-<div class="line"><span class="lineno"> 2022</span>      <span class="keywordflow">if</span> (expr.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a621c4090d69ad7d05ef8e5234376c3d8">isEmpty</a>()) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno"> 2022</span>      <span class="keywordflow">if</span> (expr.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a621c4090d69ad7d05ef8e5234376c3d8">isEmpty</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno"> 2023</span>      <a class="code hl_variable" href="../../da/d46/class_expression_parser.html#ae9ac14ed6295c397e35d4ad441fb4964">m_tokenStream</a> = expr.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#ac3aa3ac1a1c36d3305eba22a2eb0d098">data</a>();</div>
 <div class="line"><span class="lineno"> 2024</span>      <a class="code hl_function" href="../../da/d46/class_expression_parser.html#a4c08a8b728b8d44ee258d0adff911bf8">getNextToken</a>();</div>
 <div class="line"><span class="lineno"> 2025</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/d46/class_expression_parser.html#a558836d83decb6e5f9914afea443ff15">parseExpression</a>();</div>
@@ -1065,10 +1065,10 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno"> 2098</span>      {</div>
 <div class="line"><span class="lineno"> 2099</span>        <a class="code hl_function" href="../../da/d46/class_expression_parser.html#a4c08a8b728b8d44ee258d0adff911bf8">getNextToken</a>();</div>
 <div class="line"><span class="lineno"> 2100</span>        <a class="code hl_typedef" href="../../df/d54/template_8cpp.html#a1669783f8130ce10bceeaf5c7db6c26a">ExprAstPtr</a> expr = <a class="code hl_function" href="../../da/d46/class_expression_parser.html#a549da0200c08c290c7e1d65094dc5d14">parseCompareExpression</a>();</div>
-<div class="line"><span class="lineno"> 2101</span>        <span class="keywordflow">if</span> (expr==0)</div>
+<div class="line"><span class="lineno"> 2101</span>        <span class="keywordflow">if</span> (expr==<span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno"> 2102</span>        {</div>
 <div class="line"><span class="lineno"> 2103</span>          <a class="code hl_function" href="../../d8/d6a/message_8cpp.html#ab9900b0a7af62acd881e57901b0418a1">warn</a>(<a class="code hl_variable" href="../../da/d46/class_expression_parser.html#a05c3df3676bcd5a22d91befa0db47a2c">m_parser</a>-&gt;<a class="code hl_function" href="../../da/d25/class_template_parser.html#a5d031c606dc45d7786c1e2239490d5cb">templateName</a>(),<a class="code hl_variable" href="../../da/d46/class_expression_parser.html#a5f84a1fbbb4b33171cfa322c9ed779e0">m_line</a>,<span class="stringliteral">&quot;argument missing for not operator&quot;</span>);</div>
-<div class="line"><span class="lineno"> 2104</span>          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno"> 2104</span>          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno"> 2105</span>        }</div>
 <div class="line"><span class="lineno"> 2106</span>        result = std::make_unique&lt;ExprAstNegate&gt;(std::move(expr));</div>
 <div class="line"><span class="lineno"> 2107</span>      }</div>
@@ -1372,7 +1372,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../da/d25/class_template_parser.html">TemplateParser</a>* ExpressionParser::m_parser = 0</td>
+          <td class="memname">const <a class="el" href="../../da/d25/class_template_parser.html">TemplateParser</a>* ExpressionParser::m_parser = nullptr</td>
         </tr>
       </table>
   </td>

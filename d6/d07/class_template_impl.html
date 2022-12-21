@@ -149,7 +149,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a4e129f4146bec29a4e9185680a5b85c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d1d/class_template_engine.html">TemplateEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d07/class_template_impl.html#a4e129f4146bec29a4e9185680a5b85c1">m_engine</a> = 0</td></tr>
+<tr class="memitem:a4e129f4146bec29a4e9185680a5b85c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d1d/class_template_engine.html">TemplateEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d07/class_template_impl.html#a4e129f4146bec29a4e9185680a5b85c1">m_engine</a> = nullptr</td></tr>
 <tr class="separator:a4e129f4146bec29a4e9185680a5b85c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecf287e462372daff77f0057489c31e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d45/class_q_c_string.html">QCString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d07/class_template_impl.html#aecf287e462372daff77f0057489c31e2">m_name</a></td></tr>
 <tr class="separator:aecf287e462372daff77f0057489c31e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,7 +202,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../df/d54/template_8cpp_source.html#l05176">5176</a> of file <a class="el" href="../../df/d54/template_8cpp_source.html">template.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 5178</span>  : <a class="code hl_class" href="../../d6/d53/class_template_node.html">TemplateNode</a>(0)</div>
+<div class="fragment"><div class="line"><span class="lineno"> 5178</span>  : <a class="code hl_class" href="../../d6/d53/class_template_node.html">TemplateNode</a>(<span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno"> 5179</span>{</div>
 <div class="line"><span class="lineno"> 5180</span>  <span class="comment">//printf(&quot;%p:TemplateImpl::TemplateImpl(%s)\n&quot;,(void*)this,qPrint(name));</span></div>
 <div class="line"><span class="lineno"> 5181</span>  <a class="code hl_variable" href="../../d6/d07/class_template_impl.html#aecf287e462372daff77f0057489c31e2">m_name</a> = name;</div>
@@ -356,11 +356,11 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="../../df/d54/template_8cpp_source.html#l05199">5199</a> of file <a class="el" href="../../df/d54/template_8cpp_source.html">template.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 5200</span>{</div>
 <div class="line"><span class="lineno"> 5201</span>  <a class="code hl_class" href="../../da/dbf/class_template_context_impl.html">TemplateContextImpl</a> *ci = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="../../da/dbf/class_template_context_impl.html">TemplateContextImpl</a>*<span class="keyword">&gt;</span>(c);</div>
-<div class="line"><span class="lineno"> 5202</span>  <span class="keywordflow">if</span> (ci==0) <span class="keywordflow">return</span>; <span class="comment">// should not happen</span></div>
+<div class="line"><span class="lineno"> 5202</span>  <span class="keywordflow">if</span> (ci==<span class="keyword">nullptr</span>) <span class="keywordflow">return</span>; <span class="comment">// should not happen</span></div>
 <div class="line"><span class="lineno"> 5203</span>  <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../d6/d07/class_template_impl.html#aad047bb80b9e3479b2bb260b25f99b83">m_nodes</a>.empty())</div>
 <div class="line"><span class="lineno"> 5204</span>  {</div>
 <div class="line"><span class="lineno"> 5205</span>    <a class="code hl_class" href="../../d0/d21/class_template_node_extend.html">TemplateNodeExtend</a> *ne = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="../../d0/d21/class_template_node_extend.html">TemplateNodeExtend</a>*<span class="keyword">&gt;</span>(<a class="code hl_variable" href="../../d6/d07/class_template_impl.html#aad047bb80b9e3479b2bb260b25f99b83">m_nodes</a>.front().get());</div>
-<div class="line"><span class="lineno"> 5206</span>    <span class="keywordflow">if</span> (ne==0) <span class="comment">// normal template, add blocks to block context</span></div>
+<div class="line"><span class="lineno"> 5206</span>    <span class="keywordflow">if</span> (ne==<span class="keyword">nullptr</span>) <span class="comment">// normal template, add blocks to block context</span></div>
 <div class="line"><span class="lineno"> 5207</span>    {</div>
 <div class="line"><span class="lineno"> 5208</span>      <a class="code hl_class" href="../../dc/d7f/class_template_block_context.html">TemplateBlockContext</a> *bc = ci-&gt;<a class="code hl_function" href="../../da/dbf/class_template_context_impl.html#aa95cf328b6caf850d094d38e39487fd8">blockContext</a>();</div>
 <div class="line"><span class="lineno"> 5209</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;n : <a class="code hl_variable" href="../../d6/d07/class_template_impl.html#aad047bb80b9e3479b2bb260b25f99b83">m_nodes</a>)</div>
@@ -426,7 +426,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d0/d1d/class_template_engine.html">TemplateEngine</a>* TemplateImpl::m_engine = 0</td>
+          <td class="memname"><a class="el" href="../../d0/d1d/class_template_engine.html">TemplateEngine</a>* TemplateImpl::m_engine = nullptr</td>
         </tr>
       </table>
   </td>

@@ -2744,7 +2744,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  555</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;cd : *<a class="code hl_variable" href="../../de/d6a/class_doxygen.html#a5f4b7acdd27a42865b4832e4e7ffe82c">Doxygen::classLinkedMap</a>)</div>
 <div class="line"><span class="lineno">  556</span>        {</div>
 <div class="line"><span class="lineno">  557</span>          <span class="keywordflow">if</span> (cd-&gt;isLinkableInProject() &amp;&amp;</div>
-<div class="line"><span class="lineno">  558</span>              cd-&gt;templateMaster()==0 &amp;&amp;</div>
+<div class="line"><span class="lineno">  558</span>              cd-&gt;templateMaster()==<span class="keyword">nullptr</span> &amp;&amp;</div>
 <div class="line"><span class="lineno">  559</span>             !cd-&gt;isEmbeddedInOuterScope() &amp;&amp;</div>
 <div class="line"><span class="lineno">  560</span>             !cd-&gt;isAlias()</div>
 <div class="line"><span class="lineno">  561</span>             )</div>

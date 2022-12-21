@@ -820,7 +820,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d1c/portable_8cpp_source.html#l00598">598</a> of file <a class="el" href="../../d0/d1c/portable_8cpp_source.html">portable.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  599</span>{</div>
-<div class="line"><span class="lineno">  600</span>  <span class="keywordflow">if</span> (inputStr.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a621c4090d69ad7d05ef8e5234376c3d8">isEmpty</a>() || outBuf==0) <span class="keywordflow">return</span> 0; <span class="comment">// empty input or invalid output</span></div>
+<div class="line"><span class="lineno">  600</span>  <span class="keywordflow">if</span> (inputStr.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#a621c4090d69ad7d05ef8e5234376c3d8">isEmpty</a>() || outBuf==<span class="keyword">nullptr</span>) <span class="keywordflow">return</span> 0; <span class="comment">// empty input or invalid output</span></div>
 <div class="line"><span class="lineno">  601</span>  <span class="keywordtype">void</span> *handle = <a class="code hl_function" href="../../d2/de2/portable_8h.html#a7bc4daae6d2c3e89837c44e2c3d4dac6">portable_iconv_open</a>(<span class="stringliteral">&quot;UTF-16LE&quot;</span>,<span class="stringliteral">&quot;UTF-8&quot;</span>);</div>
 <div class="line"><span class="lineno">  602</span>  <span class="keywordflow">if</span> (handle==<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">void</span> *<span class="keyword">&gt;</span>(-1)) <span class="keywordflow">return</span> 0; <span class="comment">// invalid encoding</span></div>
 <div class="line"><span class="lineno">  603</span>  <span class="keywordtype">size_t</span> len = inputStr.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#ac52596733e9110b778019946d73fb268">length</a>();</div>
@@ -1003,7 +1003,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  583</span>      <span class="keywordflow">return</span> x;</div>
 <div class="line"><span class="lineno">  584</span>    }</div>
 <div class="line"><span class="lineno">  585</span>  }</div>
-<div class="line"><span class="lineno">  586</span>  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  586</span>  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  587</span>}</div>
 <div class="ttc" id="aportable_8cpp_html_a9ecb00561bffb0bffa3cce647d399c6f"><div class="ttname"><a href="../../d0/d1c/portable_8cpp.html#a9ecb00561bffb0bffa3cce647d399c6f">portable_memmem</a></div><div class="ttdeci">static const char * portable_memmem(const char *haystack, size_t haystack_len, const char *needle, size_t needle_len)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d1c/portable_8cpp_source.html#l00547">portable.cpp:547</a></div></div>
 </div><!-- fragment -->
@@ -1112,7 +1112,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  105</span>  }</div>
 <div class="line"><span class="lineno">  106</span>  <span class="keywordflow">if</span> (pid==0)</div>
 <div class="line"><span class="lineno">  107</span>  {</div>
-<div class="line"><span class="lineno">  108</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> argv[4] = { <span class="stringliteral">&quot;sh&quot;</span>, <span class="stringliteral">&quot;-c&quot;</span>, fullCmd.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#ac3aa3ac1a1c36d3305eba22a2eb0d098">data</a>(), 0 };</div>
+<div class="line"><span class="lineno">  108</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> argv[4] = { <span class="stringliteral">&quot;sh&quot;</span>, <span class="stringliteral">&quot;-c&quot;</span>, fullCmd.<a class="code hl_function" href="../../d9/d45/class_q_c_string.html#ac3aa3ac1a1c36d3305eba22a2eb0d098">data</a>(), <span class="keyword">nullptr</span> };</div>
 <div class="line"><span class="lineno">  109</span>    execve(<span class="stringliteral">&quot;/bin/sh&quot;</span>,<span class="keyword">const_cast&lt;</span><span class="keywordtype">char</span> * const*<span class="keyword">&gt;</span>(argv),<a class="code hl_variable" href="../../d0/d1c/portable_8cpp.html#aa006daaf11f1e2e45a6ababaf463212b">environ</a>);</div>
 <div class="line"><span class="lineno">  110</span>    exit(127);</div>
 <div class="line"><span class="lineno">  111</span>  }</div>

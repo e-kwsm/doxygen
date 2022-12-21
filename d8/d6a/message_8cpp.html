@@ -251,7 +251,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  151</span>  <span class="comment">// format + arguments</span></div>
 <div class="line"><span class="lineno">  152</span>  <span class="comment">// prefix</span></div>
 <div class="line"><span class="lineno">  153</span>  <span class="comment">// 1 position for `\0`</span></div>
-<div class="line"><span class="lineno">  154</span>  <span class="keywordtype">size_t</span> bufSize = vsnprintf(NULL, 0, fmt, args) + l + 1;</div>
+<div class="line"><span class="lineno">  154</span>  <span class="keywordtype">size_t</span> bufSize = vsnprintf(<span class="keyword">nullptr</span>, 0, fmt, args) + l + 1;</div>
 <div class="line"><span class="lineno">  155</span>  <a class="code hl_class" href="../../d9/d45/class_q_c_string.html">QCString</a> text(bufSize);</div>
 <div class="line"><span class="lineno">  156</span>  <span class="keywordflow">if</span> (prefix)</div>
 <div class="line"><span class="lineno">  157</span>  {</div>

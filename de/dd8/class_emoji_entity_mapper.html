@@ -150,7 +150,7 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:aefd0bd31e345895d4f8fd2d864e3d3d5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/dd8/class_emoji_entity_mapper.html">EmojiEntityMapper</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd8/class_emoji_entity_mapper.html#aefd0bd31e345895d4f8fd2d864e3d3d5">s_instance</a> = 0</td></tr>
+<tr class="memitem:aefd0bd31e345895d4f8fd2d864e3d3d5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/dd8/class_emoji_entity_mapper.html">EmojiEntityMapper</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd8/class_emoji_entity_mapper.html#aefd0bd31e345895d4f8fd2d864e3d3d5">s_instance</a> = nullptr</td></tr>
 <tr class="separator:aefd0bd31e345895d4f8fd2d864e3d3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -298,7 +298,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d38/emoji_8cpp_source.html#l01968">1968</a> of file <a class="el" href="../../d2/d38/emoji_8cpp_source.html">emoji.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1969</span>{</div>
-<div class="line"><span class="lineno"> 1970</span>  <span class="keywordflow">return</span> index&gt;=0 &amp;&amp; <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(index)&lt;<a class="code hl_variable" href="../../d2/d38/emoji_8cpp.html#ad516913e9bf2ae76d996ab575a437b97">g_numEmojiEntities</a> ? <a class="code hl_variable" href="../../d2/d38/emoji_8cpp.html#a8b86138452dd158fe6335f581a491596">g_emojiEntities</a>[index].<a class="code hl_function" href="../../de/dd8/class_emoji_entity_mapper.html#a33137ef11c5d63f6f7d7a27c01db943e">name</a> : 0;</div>
+<div class="line"><span class="lineno"> 1970</span>  <span class="keywordflow">return</span> index&gt;=0 &amp;&amp; <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(index)&lt;<a class="code hl_variable" href="../../d2/d38/emoji_8cpp.html#ad516913e9bf2ae76d996ab575a437b97">g_numEmojiEntities</a> ? <a class="code hl_variable" href="../../d2/d38/emoji_8cpp.html#a8b86138452dd158fe6335f581a491596">g_emojiEntities</a>[index].<a class="code hl_function" href="../../de/dd8/class_emoji_entity_mapper.html#a33137ef11c5d63f6f7d7a27c01db943e">name</a> : <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno"> 1971</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d2/d38/emoji_8cpp.html#a8b86138452dd158fe6335f581a491596">g_emojiEntities</a>, <a class="el" href="../../d2/d38/emoji_8cpp_source.html#l01897">g_numEmojiEntities</a>, and <a class="el" href="../../d2/d38/emoji_8cpp_source.html#l01968">name()</a>.</p>
@@ -371,7 +371,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d38/emoji_8cpp_source.html#l01958">1958</a> of file <a class="el" href="../../d2/d38/emoji_8cpp_source.html">emoji.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1959</span>{</div>
-<div class="line"><span class="lineno"> 1960</span>  <span class="keywordflow">return</span> index&gt;=0 &amp;&amp; <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(index)&lt;<a class="code hl_variable" href="../../d2/d38/emoji_8cpp.html#ad516913e9bf2ae76d996ab575a437b97">g_numEmojiEntities</a> ? <a class="code hl_variable" href="../../d2/d38/emoji_8cpp.html#a8b86138452dd158fe6335f581a491596">g_emojiEntities</a>[index].<a class="code hl_function" href="../../de/dd8/class_emoji_entity_mapper.html#a1b6d7e3d1f82adf44c46fdd82d11b2f8">unicode</a> : 0;</div>
+<div class="line"><span class="lineno"> 1960</span>  <span class="keywordflow">return</span> index&gt;=0 &amp;&amp; <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(index)&lt;<a class="code hl_variable" href="../../d2/d38/emoji_8cpp.html#ad516913e9bf2ae76d996ab575a437b97">g_numEmojiEntities</a> ? <a class="code hl_variable" href="../../d2/d38/emoji_8cpp.html#a8b86138452dd158fe6335f581a491596">g_emojiEntities</a>[index].<a class="code hl_function" href="../../de/dd8/class_emoji_entity_mapper.html#a1b6d7e3d1f82adf44c46fdd82d11b2f8">unicode</a> : <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno"> 1961</span>}</div>
 <div class="ttc" id="aclass_emoji_entity_mapper_html_a1b6d7e3d1f82adf44c46fdd82d11b2f8"><div class="ttname"><a href="../../de/dd8/class_emoji_entity_mapper.html#a1b6d7e3d1f82adf44c46fdd82d11b2f8">EmojiEntityMapper::unicode</a></div><div class="ttdeci">const char * unicode(int index) const</div><div class="ttdoc">Access routine to the unicode sequence for the Emoji entity.</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d38/emoji_8cpp_source.html#l01958">emoji.cpp:1958</a></div></div>
 </div><!-- fragment -->
@@ -456,7 +456,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../de/dd8/class_emoji_entity_mapper.html">EmojiEntityMapper</a> * EmojiEntityMapper::s_instance = 0</td>
+          <td class="memname"><a class="el" href="../../de/dd8/class_emoji_entity_mapper.html">EmojiEntityMapper</a> * EmojiEntityMapper::s_instance = nullptr</td>
         </tr>
       </table>
   </td>
