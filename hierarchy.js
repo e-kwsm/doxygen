@@ -17,6 +17,7 @@ var hierarchy =
     [ "AutoNodeStack", "d2/d29/class_auto_node_stack.html", null ],
     [ "TemplateFilterFactory::AutoRegister< T >", "d4/d67/class_template_filter_factory_1_1_auto_register.html", null ],
     [ "TemplateNodeFactory::AutoRegister< T >", "dd/d26/class_template_node_factory_1_1_auto_register.html", null ],
+    [ "AutoTimeKeeper", "df/d45/class_auto_time_keeper.html", null ],
     [ "Base", null, [
       [ "DefinitionAliasMixin< Base >", "d8/d83/class_definition_alias_mixin.html", null ],
       [ "DefinitionMixin< Base >", "dd/d10/class_definition_mixin.html", null ]
@@ -646,7 +647,7 @@ var hierarchy =
     [ "FilterAlphaIndex", "df/de8/class_filter_alpha_index.html", null ],
     [ "FilterAppend", "d9/dfb/class_filter_append.html", null ],
     [ "FilterCache", "d8/d80/class_filter_cache.html", null ],
-    [ "FilterCacheItem", "d6/db3/struct_filter_cache_item.html", null ],
+    [ "FilterCache::FilterCacheItem", "d3/d05/struct_filter_cache_1_1_filter_cache_item.html", null ],
     [ "FilterDecodeURL", "d1/d70/class_filter_decode_u_r_l.html", null ],
     [ "FilterDefault", "de/dfe/class_filter_default.html", null ],
     [ "FilterDivisibleBy", "db/d70/class_filter_divisible_by.html", null ],
@@ -723,6 +724,7 @@ var hierarchy =
     [ "JJEnter< T >", "d2/d49/struct_j_j_enter.html", null ],
     [ "JJExit< T >", "d5/d16/struct_j_j_exit.html", null ],
     [ "KeywordHash", "d4/d10/class_keyword_hash.html", null ],
+    [ "KeywordSubstitution", "d0/d3b/struct_keyword_substitution.html", null ],
     [ "Lang2ExtMap", "d8/def/struct_lang2_ext_map.html", null ],
     [ "LatexDocVisitor::LatexListItemInfo", "da/dc3/struct_latex_doc_visitor_1_1_latex_list_item_info.html", null ],
     [ "LayoutDocEntry", "d9/dba/struct_layout_doc_entry.html", [
@@ -872,6 +874,7 @@ var hierarchy =
     [ "ClassIndexContext::Private", "d4/dd6/class_class_index_context_1_1_private.html", null ],
     [ "ClassMembersIndexContext::Private", "d1/df8/class_class_members_index_context_1_1_private.html", null ],
     [ "ClassTreeContext::Private", "d0/d87/class_class_tree_context_1_1_private.html", null ],
+    [ "ColoredImage::Private", "d9/d12/struct_colored_image_1_1_private.html", null ],
     [ "CommentScanner::Private", "da/d25/struct_comment_scanner_1_1_private.html", null ],
     [ "ConceptTreeContext::Private", "df/d9e/class_concept_tree_context_1_1_private.html", null ],
     [ "ConfigContext::Private", "de/d04/class_config_context_1_1_private.html", null ],
@@ -896,6 +899,7 @@ var hierarchy =
     [ "FTVHelp::Private", "d0/dca/struct_f_t_v_help_1_1_private.html", null ],
     [ "GlobalsIndexContext::Private", "d9/da5/class_globals_index_context_1_1_private.html", null ],
     [ "HtmlHelp::Private", "d7/dbe/class_html_help_1_1_private.html", null ],
+    [ "Image::Private", "d0/d8b/struct_image_1_1_private.html", null ],
     [ "IncludeInfoContext::Private", "d1/dbe/class_include_info_context_1_1_private.html", null ],
     [ "Index::Private", "d2/d5a/struct_index_1_1_private.html", null ],
     [ "InheritanceGraphContext::Private", "db/d5e/class_inheritance_graph_context_1_1_private.html", null ],
@@ -1026,6 +1030,7 @@ var hierarchy =
     [ "SymbolMap< Definition >", "d4/d85/class_symbol_map.html", null ],
     [ "SymbolModifiers", "df/d1b/struct_symbol_modifiers.html", null ],
     [ "SymbolResolver", "da/d0c/class_symbol_resolver.html", null ],
+    [ "SysTimeKeeper", "d2/d23/class_sys_time_keeper.html", null ],
     [ "TableCell", "d5/d9b/struct_table_cell.html", null ],
     [ "LatexDocVisitor::TableState", "d6/df9/struct_latex_doc_visitor_1_1_table_state.html", null ],
     [ "TagInfo", "d3/dc3/struct_tag_info.html", null ],
@@ -1223,6 +1228,7 @@ var hierarchy =
     ] ],
     [ "TextStream", "d3/d30/class_text_stream.html", null ],
     [ "ThreadPool", "d9/df5/class_thread_pool.html", null ],
+    [ "SysTimeKeeper::TimeData", "d0/d10/struct_sys_time_keeper_1_1_time_data.html", null ],
     [ "Timer", "d8/d08/class_timer.html", null ],
     [ "vhdl::parser::Token", "dc/de7/classvhdl_1_1parser_1_1_token.html", null ],
     [ "TokenInfo", "d6/df4/struct_token_info.html", null ],
@@ -1287,15 +1293,13 @@ var hierarchy =
                   [ "TranslatorRomanian", "da/d32/class_translator_romanian.html", null ],
                   [ "TranslatorRussian", "d0/dab/class_translator_russian.html", null ],
                   [ "TranslatorSlovak", "d2/d53/class_translator_slovak.html", null ]
-                ] ],
-                [ "TranslatorSpanish", "dc/d44/class_translator_spanish.html", null ]
+                ] ]
               ] ]
             ] ],
             [ "TranslatorBulgarian", "da/dbb/class_translator_bulgarian.html", null ],
             [ "TranslatorChinese", "d6/db6/class_translator_chinese.html", null ],
             [ "TranslatorGreek", "df/d75/class_translator_greek.html", null ],
-            [ "TranslatorHindi", "d1/d8a/class_translator_hindi.html", null ],
-            [ "TranslatorSwedish", "d5/d5c/class_translator_swedish.html", null ]
+            [ "TranslatorHindi", "d1/d8a/class_translator_hindi.html", null ]
           ] ],
           [ "TranslatorFrench", "da/d1a/class_translator_french.html", null ]
         ] ]
@@ -1307,7 +1311,9 @@ var hierarchy =
         [ "TranslatorJapaneseEn", "d0/d16/class_translator_japanese_en.html", null ],
         [ "TranslatorKoreanEn", "d0/d3a/class_translator_korean_en.html", null ]
       ] ],
-      [ "TranslatorPortuguese", "dc/df2/class_translator_portuguese.html", null ]
+      [ "TranslatorPortuguese", "dc/df2/class_translator_portuguese.html", null ],
+      [ "TranslatorSpanish", "dc/d44/class_translator_spanish.html", null ],
+      [ "TranslatorSwedish", "d5/d5c/class_translator_swedish.html", null ]
     ] ],
     [ "TemplateNodeTree::TreeContext", "de/d99/struct_template_node_tree_1_1_tree_context.html", null ],
     [ "TreeDiagram", "d4/dc4/class_tree_diagram.html", null ],
