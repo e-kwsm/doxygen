@@ -1245,6 +1245,7 @@ digraph "/home/runner/work/doxygen/doxygen/src/qcstring.h"
   Node196 -> Node48 [dir="back",color="steelblue1",style="solid"];
   Node196 -> Node45 [dir="back",color="steelblue1",style="solid"];
   Node196 -> Node12 [dir="back",color="steelblue1",style="solid"];
+  Node196 -> Node149 [dir="back",color="steelblue1",style="solid"];
   Node196 -> Node54 [dir="back",color="steelblue1",style="solid"];
   Node196 -> Node68 [dir="back",color="steelblue1",style="solid"];
   Node196 -> Node75 [dir="back",color="steelblue1",style="solid"];
@@ -1545,6 +1546,7 @@ digraph "/home/runner/work/doxygen/doxygen/src/qcstring.h"
   Node217 -> Node29 [dir="back",color="steelblue1",style="solid"];
   Node213 -> Node190 [dir="back",color="steelblue1",style="solid"];
   Node213 -> Node55 [dir="back",color="steelblue1",style="solid"];
+  Node213 -> Node174 [dir="back",color="steelblue1",style="solid"];
   Node213 -> Node129 [dir="back",color="steelblue1",style="solid"];
   Node213 -> Node185 [dir="back",color="steelblue1",style="solid"];
   Node213 -> Node218 [dir="back",color="steelblue1",style="solid"];

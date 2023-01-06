@@ -274,6 +274,7 @@ digraph "/home/runner/work/doxygen/doxygen/src/xmlgen.cpp"
   Node74 -> Node75 [color="steelblue1",style="solid"];
   Node75 [label="deque",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node74 -> Node5 [color="steelblue1",style="solid"];
+  Node74 -> Node22 [color="steelblue1",style="solid"];
   Node74 -> Node65 [color="steelblue1",style="solid"];
   Node73 -> Node65 [color="steelblue1",style="solid"];
   Node1 -> Node76 [color="steelblue1",style="solid"];
@@ -323,6 +324,7 @@ digraph "/home/runner/work/doxygen/doxygen/src/xmlgen.cpp"
   Node85 -> Node4 [color="steelblue1",style="solid"];
   Node85 -> Node11 [color="steelblue1",style="solid"];
   Node82 -> Node31 [color="steelblue1",style="solid"];
+  Node82 -> Node26 [color="steelblue1",style="solid"];
   Node80 -> Node3 [color="steelblue1",style="solid"];
   Node1 -> Node29 [color="steelblue1",style="solid"];
   Node1 -> Node86 [color="steelblue1",style="solid"];
