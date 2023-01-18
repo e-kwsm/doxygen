@@ -75,6 +75,8 @@ digraph "/home/runner/work/doxygen/doxygen/src/markdown.cpp"
   Node1 -> Node26 [color="steelblue1",style="solid"];
   Node1 -> Node30 [color="steelblue1",style="solid"];
   Node30 [label="debug.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d16/debug_8h.html",tooltip=" "];
+  Node30 -> Node14 [color="steelblue1",style="solid"];
+  Node30 -> Node7 [color="steelblue1",style="solid"];
   Node1 -> Node31 [color="steelblue1",style="solid"];
   Node31 [label="util.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/d3c/util_8h.html",tooltip="A bunch of utility functions."];
   Node31 -> Node18 [color="steelblue1",style="solid"];
@@ -271,4 +273,10 @@ digraph "/home/runner/work/doxygen/doxygen/src/markdown.cpp"
   Node72 [label="fileinfo.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d45/fileinfo_8h.html",tooltip=" "];
   Node72 -> Node8 [color="steelblue1",style="solid"];
   Node1 -> Node16 [color="steelblue1",style="solid"];
+  Node1 -> Node73 [color="steelblue1",style="solid"];
+  Node73 [label="trace.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/d1b/trace_8h.html",tooltip=" "];
+  Node73 -> Node74 [color="steelblue1",style="solid"];
+  Node74 [label="spdlog/spdlog.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node73 -> Node20 [color="steelblue1",style="solid"];
+  Node73 -> Node7 [color="steelblue1",style="solid"];
 }

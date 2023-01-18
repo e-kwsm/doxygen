@@ -306,7 +306,8 @@ digraph "/home/runner/work/doxygen/doxygen/src/xmlgen.cpp"
   Node81 -> Node11 [color="steelblue1",style="solid"];
   Node80 -> Node82 [color="steelblue1",style="solid"];
   Node82 [label="docnode.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d2b/docnode_8h.html",tooltip=" "];
-  Node82 -> Node30 [color="steelblue1",style="solid"];
+  Node82 -> Node8 [color="steelblue1",style="solid"];
+  Node82 -> Node7 [color="steelblue1",style="solid"];
   Node82 -> Node24 [color="steelblue1",style="solid"];
   Node82 -> Node20 [color="steelblue1",style="solid"];
   Node82 -> Node83 [color="steelblue1",style="solid"];
@@ -338,6 +339,7 @@ digraph "/home/runner/work/doxygen/doxygen/src/xmlgen.cpp"
   Node88 -> Node89 [color="steelblue1",style="solid"];
   Node89 [label="ctime",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node88 -> Node11 [color="steelblue1",style="solid"];
+  Node87 -> Node23 [color="steelblue1",style="solid"];
   Node86 -> Node56 [color="steelblue1",style="solid"];
   Node1 -> Node90 [color="steelblue1",style="solid"];
   Node90 [label="parserintf.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$da/d55/parserintf_8h.html",tooltip=" "];

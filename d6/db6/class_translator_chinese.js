@@ -40,6 +40,7 @@ var class_translator_chinese =
     [ "trCompoundReferenceFortran", "d6/db6/class_translator_chinese.html#ab2146ba02cfc52998b733d381fcb2cf4", null ],
     [ "trCompoundReferenceSlice", "d6/db6/class_translator_chinese.html#a928ecb0c58720e0075d93af244db4ec3", null ],
     [ "trCompounds", "d6/db6/class_translator_chinese.html#a19c9dc872c0c350585e466340a3cd8f1", null ],
+    [ "trCompoundType", "d6/db6/class_translator_chinese.html#adc50ce2d7a6ae3903060fc8fa4258167", null ],
     [ "trConcept", "d6/db6/class_translator_chinese.html#aa7bcb0a2ee5caf2d002fdb3a8b29e267", null ],
     [ "trConceptDefinition", "d6/db6/class_translator_chinese.html#a59e716785e6651ce90f6c6e08b1ed5c8", null ],
     [ "trConceptDocumentation", "d6/db6/class_translator_chinese.html#aec334300ae190834060c4e43f373ebc9", null ],
@@ -99,7 +100,6 @@ var class_translator_chinese =
     [ "trEnumValue", "d6/db6/class_translator_chinese.html#a53639b2b66e0959a98363bec0c264bb0", null ],
     [ "trEventDocumentation", "d6/db6/class_translator_chinese.html#ad0bb3e2015b491a3a396e7a526588ae2", null ],
     [ "trEvents", "d6/db6/class_translator_chinese.html#ad562702b2a77d308bb44fcb408687d8e", null ],
-    [ "trExampleDocumentation", "d6/db6/class_translator_chinese.html#aba7739cb1e6ecad74962f981530c6683", null ],
     [ "trExamples", "d6/db6/class_translator_chinese.html#a646a38b296d5f3976f71a2cac754f535", null ],
     [ "trExamplesDescription", "d6/db6/class_translator_chinese.html#a5f39dcec9fccd6083bed00de3b3178f3", null ],
     [ "trExceptionDocumentation", "d6/db6/class_translator_chinese.html#a0805de0e9d0c28544867cef4853a167d", null ],
@@ -291,7 +291,7 @@ var class_translator_chinese =
     [ "trVariableDocumentation", "d6/db6/class_translator_chinese.html#aa6c82d423d650d67d66bf2e41fecedd4", null ],
     [ "trVariables", "d6/db6/class_translator_chinese.html#aa8382105fb4bf476af35c99eab73671d", null ],
     [ "trVersion", "d6/db6/class_translator_chinese.html#a42f90a67384ca5199dde2a5773d364fd", null ],
-    [ "trVhdlType", "d6/db6/class_translator_chinese.html#adaf2aa3093db37c099d67b61aa5ee5d4", null ],
+    [ "trVhdlType", "d6/db6/class_translator_chinese.html#a6e3f49e9a225584da023b9b00645e8d7", null ],
     [ "trWarning", "d6/db6/class_translator_chinese.html#a2dac895831b7daf21ef915aebeb79df7", null ],
     [ "trWriteList", "d6/db6/class_translator_chinese.html#a3868f38015e02414b1b112099129770c", null ]
 ];

@@ -36,6 +36,7 @@ var class_translator_brazilian =
     [ "trCompoundReferenceFortran", "d2/d4c/class_translator_brazilian.html#a8feeb91fb39c99ef3e7b0fc3f62b65c2", null ],
     [ "trCompoundReferenceSlice", "d2/d4c/class_translator_brazilian.html#ab323a75d2d418afd811f62bafb29ac81", null ],
     [ "trCompounds", "d2/d4c/class_translator_brazilian.html#a9cc45d726696646119bc3ad9639128c8", null ],
+    [ "trCompoundType", "d2/d4c/class_translator_brazilian.html#aa54c39463e99920d21ff728a502083e9", null ],
     [ "trConcept", "d2/d4c/class_translator_brazilian.html#ac1267394e0fc1f432d12f19c181fee70", null ],
     [ "trConceptDefinition", "d2/d4c/class_translator_brazilian.html#acec565c1dc191310110bad18f3fcc351", null ],
     [ "trConceptDocumentation", "d2/d4c/class_translator_brazilian.html#a686d6272df4b95d6d18d83d813b403cd", null ],
@@ -95,7 +96,6 @@ var class_translator_brazilian =
     [ "trEnumValue", "d2/d4c/class_translator_brazilian.html#af0d43dbe3d66592929606d2e8625669b", null ],
     [ "trEventDocumentation", "d2/d4c/class_translator_brazilian.html#ae16fbd16a90bb95a84cfc48ef107b28a", null ],
     [ "trEvents", "d2/d4c/class_translator_brazilian.html#aec10651691524b1eb605047c5753dbfd", null ],
-    [ "trExampleDocumentation", "d2/d4c/class_translator_brazilian.html#afb5619b984448f4b60c2e067367f1f32", null ],
     [ "trExamples", "d2/d4c/class_translator_brazilian.html#ac28d1f1400883ca9671356b129312823", null ],
     [ "trExamplesDescription", "d2/d4c/class_translator_brazilian.html#a0735b11722a71ac5fab8825898ec5e7b", null ],
     [ "trExceptionDocumentation", "d2/d4c/class_translator_brazilian.html#a71e95bcccc4131874c5c01f2fbe8aad9", null ],
@@ -289,7 +289,7 @@ var class_translator_brazilian =
     [ "trVariableDocumentation", "d2/d4c/class_translator_brazilian.html#a190f58095888ba21251372961e6cd428", null ],
     [ "trVariables", "d2/d4c/class_translator_brazilian.html#ad7ad3b249c9fa289fdd910ecc5c64669", null ],
     [ "trVersion", "d2/d4c/class_translator_brazilian.html#a9afd12cbe1654a177cf3607a29489061", null ],
-    [ "trVhdlType", "d2/d4c/class_translator_brazilian.html#a8cfd7c0ac4952835ab2ca311aa32f74e", null ],
+    [ "trVhdlType", "d2/d4c/class_translator_brazilian.html#aa3ae29046bcd67ab49ec719fbb9e7d3b", null ],
     [ "trWarning", "d2/d4c/class_translator_brazilian.html#a0df8d947cded269c31eebe27eed02a0c", null ],
     [ "trWriteList", "d2/d4c/class_translator_brazilian.html#acaecaff49a31e83740a9924f4daa488b", null ]
 ];

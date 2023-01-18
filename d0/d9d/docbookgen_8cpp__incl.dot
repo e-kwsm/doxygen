@@ -340,7 +340,8 @@ digraph "/home/runner/work/doxygen/doxygen/src/docbookgen.cpp"
   Node87 -> Node12 [color="steelblue1",style="solid"];
   Node86 -> Node88 [color="steelblue1",style="solid"];
   Node88 [label="docnode.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d2b/docnode_8h.html",tooltip=" "];
-  Node88 -> Node32 [color="steelblue1",style="solid"];
+  Node88 -> Node17 [color="steelblue1",style="solid"];
+  Node88 -> Node19 [color="steelblue1",style="solid"];
   Node88 -> Node23 [color="steelblue1",style="solid"];
   Node88 -> Node8 [color="steelblue1",style="solid"];
   Node88 -> Node89 [color="steelblue1",style="solid"];
@@ -372,6 +373,7 @@ digraph "/home/runner/work/doxygen/doxygen/src/docbookgen.cpp"
   Node94 -> Node95 [color="steelblue1",style="solid"];
   Node95 [label="ctime",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node94 -> Node12 [color="steelblue1",style="solid"];
+  Node93 -> Node22 [color="steelblue1",style="solid"];
   Node92 -> Node6 [color="steelblue1",style="solid"];
   Node1 -> Node96 [color="steelblue1",style="solid"];
   Node96 [label="parserintf.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$da/d55/parserintf_8h.html",tooltip=" "];
@@ -400,4 +402,11 @@ digraph "/home/runner/work/doxygen/doxygen/src/docbookgen.cpp"
   Node1 -> Node42 [color="steelblue1",style="solid"];
   Node1 -> Node25 [color="steelblue1",style="solid"];
   Node1 -> Node67 [color="steelblue1",style="solid"];
+  Node1 -> Node99 [color="steelblue1",style="solid"];
+  Node99 [label="growbuf.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d72/growbuf_8h.html",tooltip=" "];
+  Node99 -> Node52 [color="steelblue1",style="solid"];
+  Node99 -> Node2 [color="steelblue1",style="solid"];
+  Node99 -> Node100 [color="steelblue1",style="solid"];
+  Node100 [label="string.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node99 -> Node13 [color="steelblue1",style="solid"];
 }

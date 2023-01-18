@@ -234,6 +234,7 @@ digraph "/home/runner/work/doxygen/doxygen/src/latexgen.cpp"
   Node64 -> Node65 [color="steelblue1",style="solid"];
   Node65 [label="ctime",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node64 -> Node12 [color="steelblue1",style="solid"];
+  Node63 -> Node21 [color="steelblue1",style="solid"];
   Node62 -> Node5 [color="steelblue1",style="solid"];
   Node1 -> Node66 [color="steelblue1",style="solid"];
   Node66 [label="version.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
@@ -326,7 +327,8 @@ digraph "/home/runner/work/doxygen/doxygen/src/latexgen.cpp"
   Node1 -> Node30 [color="steelblue1",style="solid"];
   Node1 -> Node86 [color="steelblue1",style="solid"];
   Node86 [label="docnode.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d2b/docnode_8h.html",tooltip=" "];
-  Node86 -> Node31 [color="steelblue1",style="solid"];
+  Node86 -> Node17 [color="steelblue1",style="solid"];
+  Node86 -> Node18 [color="steelblue1",style="solid"];
   Node86 -> Node22 [color="steelblue1",style="solid"];
   Node86 -> Node7 [color="steelblue1",style="solid"];
   Node86 -> Node87 [color="steelblue1",style="solid"];
