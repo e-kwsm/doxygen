@@ -25,16 +25,6 @@ var hierarchy =
     ] ],
     [ "BaseClassDef", "d1/d06/struct_base_class_def.html", null ],
     [ "BaseInfo", "de/d64/struct_base_info.html", null ],
-    [ "BaseOutputDocInterface", "df/d27/class_base_output_doc_interface.html", [
-      [ "OutputGenerator", "d3/d8e/class_output_generator.html", [
-        [ "DocbookGenerator", "d1/d72/class_docbook_generator.html", null ],
-        [ "HtmlGenerator", "d7/d41/class_html_generator.html", null ],
-        [ "LatexGenerator", "d3/d77/class_latex_generator.html", null ],
-        [ "ManGenerator", "de/da5/class_man_generator.html", null ],
-        [ "RTFGenerator", "d0/da4/class_r_t_f_generator.html", null ]
-      ] ],
-      [ "OutputList", "df/dc8/class_output_list.html", null ]
-    ] ],
     [ "BodyInfo", "db/dab/struct_body_info.html", null ],
     [ "BriefInfo", "d0/da7/struct_brief_info.html", null ],
     [ "BufStr", "d5/d64/class_buf_str.html", null ],
@@ -864,6 +854,14 @@ var hierarchy =
       [ "PythonOutlineParser", "dd/d49/class_python_outline_parser.html", null ],
       [ "VHDLOutlineParser", "df/d4b/class_v_h_d_l_outline_parser.html", null ]
     ] ],
+    [ "OutputGenerator", "d3/d8e/class_output_generator.html", [
+      [ "DocbookGenerator", "d1/d72/class_docbook_generator.html", null ],
+      [ "HtmlGenerator", "d7/d41/class_html_generator.html", null ],
+      [ "LatexGenerator", "d3/d77/class_latex_generator.html", null ],
+      [ "ManGenerator", "de/da5/class_man_generator.html", null ],
+      [ "RTFGenerator", "d0/da4/class_r_t_f_generator.html", null ]
+    ] ],
+    [ "OutputList", "df/dc8/class_output_list.html", null ],
     [ "vhdl::parser::ParseException", "d2/d2b/classvhdl_1_1parser_1_1_parse_exception.html", null ],
     [ "ParserManager", "d4/d0d/class_parser_manager.html", null ],
     [ "ParserManager::ParserPair", "df/d04/struct_parser_manager_1_1_parser_pair.html", null ],
@@ -1027,7 +1025,6 @@ var hierarchy =
     [ "vhdl::parser::VhdlParser::SharedState", "d9/da2/structvhdl_1_1parser_1_1_vhdl_parser_1_1_shared_state.html", null ],
     [ "SIData_CurrentDoc", "d0/d9d/struct_s_i_data___current_doc.html", null ],
     [ "SIData_Word", "d7/def/struct_s_i_data___word.html", null ],
-    [ "SIDataCollection", "d2/dc1/class_s_i_data_collection.html", null ],
     [ "SourceLinkInfo", "dc/dc2/struct_source_link_info.html", null ],
     [ "SpecFormat", "d5/dfd/struct_spec_format.html", null ],
     [ "sqlcodeYY_state", "da/d7b/structsqlcode_y_y__state.html", null ],
