@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('db/d12/context_8cpp.html','../../'); i
   <div class="headertitle"><div class="title">context.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;assert.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../dc/d1e/context_8h_source.html">context.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../db/d16/config_8h_source.html">config.h</a>&quot;</code><br />
@@ -836,7 +836,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno"> 9147</span>      <span class="comment">// TODO: clean index before each run...</span></div>
 <div class="line"><span class="lineno"> 9148</span> </div>
 <div class="line"><span class="lineno"> 9149</span>      <span class="comment">//if (Config_getBool(GENERATE_LATEX))</span></div>
-<div class="line"><span class="lineno"> 9150</span>      <span class="keywordflow">if</span> (<span class="keyword">false</span>)</div>
+<div class="line"><span class="lineno"> 9150</span>      <span class="keywordflow">if</span> (0)</div>
 <div class="line"><span class="lineno"> 9151</span>      { <span class="comment">// render LaTeX output</span></div>
 <div class="line"><span class="lineno"> 9152</span>        e-&gt;setTemplateDir(<span class="stringliteral">&quot;templates/latex&quot;</span>); <span class="comment">// TODO: make template part user configurable</span></div>
 <div class="line"><span class="lineno"> 9153</span>        <a class="code hl_class" href="../../d5/de9/class_template.html">Template</a> *tpl = e-&gt;loadByName(<span class="stringliteral">&quot;latexlayout.tpl&quot;</span>,1);</div>

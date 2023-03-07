@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('db/d14/index_8cpp_source.html','../../
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;array&gt;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;assert.h&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;cassert&gt;</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="../../d2/d0d/message_8h.html">message.h</a>&quot;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="../../d1/db5/index_8h.html">index.h</a>&quot;</span></div>
@@ -3833,7 +3833,7 @@ $(document).ready(function(){initNavTree('db/d14/index_8cpp_source.html','../../
 <div class="line"><a id="l03737" name="l03737"></a><span class="lineno"> 3737</span>    <span class="keywordtype">bool</span> hasSubGroups = !gd-&gt;<a class="code hl_function" href="../../d8/d09/class_group_def.html#a29954976b38072020da6c0c0dbde6520">getSubGroups</a>().empty();</div>
 <div class="line"><a id="l03738" name="l03738"></a><span class="lineno"> 3738</span>    <span class="keywordtype">bool</span> hasSubPages  = !gd-&gt;<a class="code hl_function" href="../../d8/d09/class_group_def.html#a97d9ddba395f4c011a01966dc7a61568">getPages</a>().<a class="code hl_function" href="../../d2/db7/class_linked_ref_map.html#ad4eea714e29d412612981ac2a8bcab40">empty</a>();</div>
 <div class="line"><a id="l03739" name="l03739"></a><span class="lineno"> 3739</span>    <span class="keywordtype">size_t</span> numSubItems = 0;</div>
-<div class="line"><a id="l03740" name="l03740"></a><span class="lineno"> 3740</span>    <span class="keywordflow">if</span> (<span class="keyword">true</span> <span class="comment">/*Config_getBool(TOC_EXPAND)*/</span>)</div>
+<div class="line"><a id="l03740" name="l03740"></a><span class="lineno"> 3740</span>    <span class="keywordflow">if</span> (1 <span class="comment">/*Config_getBool(TOC_EXPAND)*/</span>)</div>
 <div class="line"><a id="l03741" name="l03741"></a><span class="lineno"> 3741</span>    {</div>
 <div class="line"><a id="l03742" name="l03742"></a><span class="lineno"> 3742</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;ml : gd-&gt;<a class="code hl_function" href="../../d8/d09/class_group_def.html#a2d174d39f8e75953f384736d3effaad8">getMemberLists</a>())</div>
 <div class="line"><a id="l03743" name="l03743"></a><span class="lineno"> 3743</span>      {</div>

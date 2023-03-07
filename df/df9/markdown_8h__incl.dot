@@ -59,9 +59,7 @@ digraph "/home/runner/work/doxygen/doxygen/src/markdown.h"
   Node23 [label="growbuf.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d72/growbuf_8h.html",tooltip=" "];
   Node23 -> Node24 [color="steelblue1",style="solid"];
   Node24 [label="utility",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
-  Node23 -> Node25 [color="steelblue1",style="solid"];
-  Node25 [label="stdlib.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
-  Node23 -> Node26 [color="steelblue1",style="solid"];
-  Node26 [label="string.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node23 -> Node9 [color="steelblue1",style="solid"];
+  Node23 -> Node7 [color="steelblue1",style="solid"];
   Node23 -> Node4 [color="steelblue1",style="solid"];
 }
