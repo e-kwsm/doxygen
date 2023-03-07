@@ -421,15 +421,17 @@ digraph "/home/runner/work/doxygen/doxygen/src/htmldocvisitor.cpp"
   Node1 -> Node105 [color="steelblue1",style="solid"];
   Node105 [label="growbuf.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d72/growbuf_8h.html",tooltip=" "];
   Node105 -> Node54 [color="steelblue1",style="solid"];
-  Node105 -> Node11 [color="steelblue1",style="solid"];
-  Node105 -> Node9 [color="steelblue1",style="solid"];
+  Node105 -> Node106 [color="steelblue1",style="solid"];
+  Node106 [label="stdlib.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node105 -> Node107 [color="steelblue1",style="solid"];
+  Node107 [label="string.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node105 -> Node6 [color="steelblue1",style="solid"];
-  Node1 -> Node106 [color="steelblue1",style="solid"];
-  Node106 [label="portable.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/de2/portable_8h.html",tooltip="Portable versions of functions that are platform dependent."];
-  Node106 -> Node19 [color="steelblue1",style="solid"];
-  Node106 -> Node50 [color="steelblue1",style="solid"];
-  Node106 -> Node107 [color="steelblue1",style="solid"];
-  Node107 [label="stdint.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
-  Node106 -> Node59 [color="steelblue1",style="solid"];
-  Node106 -> Node5 [color="steelblue1",style="solid"];
+  Node1 -> Node108 [color="steelblue1",style="solid"];
+  Node108 [label="portable.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/de2/portable_8h.html",tooltip="Portable versions of functions that are platform dependent."];
+  Node108 -> Node19 [color="steelblue1",style="solid"];
+  Node108 -> Node50 [color="steelblue1",style="solid"];
+  Node108 -> Node109 [color="steelblue1",style="solid"];
+  Node109 [label="stdint.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node108 -> Node59 [color="steelblue1",style="solid"];
+  Node108 -> Node5 [color="steelblue1",style="solid"];
 }

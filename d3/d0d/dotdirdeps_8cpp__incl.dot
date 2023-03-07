@@ -245,7 +245,7 @@ digraph "/home/runner/work/doxygen/doxygen/src/dotdirdeps.cpp"
   Node1 -> Node58 [color="steelblue1",style="solid"];
   Node1 -> Node14 [color="steelblue1",style="solid"];
   Node1 -> Node65 [color="steelblue1",style="solid"];
-  Node65 [label="cmath",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node65 [label="math.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node1 -> Node66 [color="steelblue1",style="solid"];
   Node66 [label="cassert",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node1 -> Node6 [color="steelblue1",style="solid"];

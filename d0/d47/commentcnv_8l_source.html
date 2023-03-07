@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('d0/d47/commentcnv_8l_source.html','../
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>%option reentrant</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>%option extra-type=&quot;struct commentcnvYY_state *&quot;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>%top{</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// forward declare yyscan_t to improve type safety</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d0/d47/commentcnv_8l.html#a5d5508008cac8fb66fca3baa4e9b6584">   24</a></span><span class="preprocessor">#define YY_TYPEDEF_YY_SCANNER_T</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">struct </span>yyguts_t;</div>
@@ -126,8 +126,8 @@ $(document).ready(function(){initNavTree('d0/d47/commentcnv_8l_source.html','../
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>%{</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;cstdio&gt;</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;stack&gt;</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('d0/d47/commentcnv_8l_source.html','../
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &quot;<a class="code" href="../../d8/d3c/util_8h.html">util.h</a>&quot;</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &quot;<a class="code" href="../../d7/d6f/condparser_8h.html">condparser.h</a>&quot;</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#include &lt;assert.h&gt;</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d0/d47/commentcnv_8l.html#a85523a0c7d95c059d251b4e9829947aa">   47</a></span><span class="preprocessor">#define YY_NO_INPUT 1</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d0/d47/commentcnv_8l.html#ae78ac56cd1f29572e967ed7636952d15">   48</a></span><span class="preprocessor">#define YY_NO_UNISTD_H 1</span></div>
