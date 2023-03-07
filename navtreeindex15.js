@@ -1,6 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"d1/dc4/structfmt_1_1formatter_3_01_q_c_string_01_4.html":[8,0,2,4],
 "d1/dc4/structfmt_1_1formatter_3_01_q_c_string_01_4.html#a768f8d3922a8990ab22d3a7fd3562922":[7,0,6,4,0],
 "d1/dc4/structfmt_1_1formatter_3_01_q_c_string_01_4.html#a768f8d3922a8990ab22d3a7fd3562922":[8,0,2,4,0],
 "d1/dc5/translator__je_8h.html":[9,0,2,271],
@@ -249,5 +248,6 @@ var NAVTREEINDEX15 =
 "d1/dfe/dotrunner_8cpp.html#aea20ab8f782b45746f1e20f5d0b565e6":[9,0,2,103,2],
 "d1/dfe/dotrunner_8cpp.html#af2aa6035c4917cd2d139f59850c5a008":[9,0,2,103,5],
 "d1/dfe/dotrunner_8cpp_source.html":[9,0,2,103],
-"d1/dff/class_config_string.html":[8,0,86]
+"d1/dff/class_config_string.html":[8,0,86],
+"d1/dff/class_config_string.html#a027fe9f4c7d81d3a13ad77c956da5cbf":[8,0,86,13]
 };
