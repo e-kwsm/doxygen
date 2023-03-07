@@ -935,8 +935,8 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno"> 2527</span>    <span class="keywordflow">if</span> (data[i]!=<span class="charliteral">&#39; &#39;</span> &amp;&amp; data[i]!=<span class="charliteral">&#39;\t&#39;</span>) j++; <span class="comment">// some non whitespace</span></div>
 <div class="line"><span class="lineno"> 2528</span>    i++;</div>
 <div class="line"><span class="lineno"> 2529</span>  }</div>
-<div class="line"><span class="lineno"> 2530</span>  <span class="keywordflow">if</span> (i&gt;=size) { <span class="keywordflow">return</span> 0; } <span class="comment">// empty line</span></div>
-<div class="line"><span class="lineno"> 2531</span>  <span class="keywordflow">if</span> (i&lt;2)     { <span class="keywordflow">return</span> 0; } <span class="comment">// not long enough</span></div>
+<div class="line"><span class="lineno"> 2530</span>  <span class="keywordflow">if</span> (i&gt;=size) { <span class="keywordflow">return</span> <span class="keyword">false</span>; } <span class="comment">// empty line</span></div>
+<div class="line"><span class="lineno"> 2531</span>  <span class="keywordflow">if</span> (i&lt;2)     { <span class="keywordflow">return</span> <span class="keyword">false</span>; } <span class="comment">// not long enough</span></div>
 <div class="line"><span class="lineno"> 2532</span>  <span class="keywordtype">bool</span> res = (j&gt;0 &amp;&amp; data[i-1]==<span class="charliteral">&#39; &#39;</span> &amp;&amp; data[i-2]==<span class="charliteral">&#39; &#39;</span>); <span class="comment">// non blank line with at two spaces at the end</span></div>
 <div class="line"><span class="lineno"> 2533</span>  <a class="code hl_define" href="../../d1/d1b/trace_8h.html#a81912d2a3d12aab7a9e546e5299e2e09">AUTO_TRACE_EXIT</a>(<span class="stringliteral">&quot;result={}&quot;</span>,res);</div>
 <div class="line"><span class="lineno"> 2534</span>  <span class="keywordflow">return</span> res;</div>

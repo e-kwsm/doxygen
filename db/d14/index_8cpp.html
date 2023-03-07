@@ -6358,7 +6358,7 @@ template&lt;class ListType &gt; </div>
 <div class="line"><span class="lineno"> 3737</span>    <span class="keywordtype">bool</span> hasSubGroups = !gd-&gt;<a class="code hl_function" href="../../d8/d09/class_group_def.html#a29954976b38072020da6c0c0dbde6520">getSubGroups</a>().empty();</div>
 <div class="line"><span class="lineno"> 3738</span>    <span class="keywordtype">bool</span> hasSubPages  = !gd-&gt;<a class="code hl_function" href="../../d8/d09/class_group_def.html#a97d9ddba395f4c011a01966dc7a61568">getPages</a>().<a class="code hl_function" href="../../d2/db7/class_linked_ref_map.html#ad4eea714e29d412612981ac2a8bcab40">empty</a>();</div>
 <div class="line"><span class="lineno"> 3739</span>    <span class="keywordtype">size_t</span> numSubItems = 0;</div>
-<div class="line"><span class="lineno"> 3740</span>    <span class="keywordflow">if</span> (1 <span class="comment">/*Config_getBool(TOC_EXPAND)*/</span>)</div>
+<div class="line"><span class="lineno"> 3740</span>    <span class="keywordflow">if</span> (<span class="keyword">true</span> <span class="comment">/*Config_getBool(TOC_EXPAND)*/</span>)</div>
 <div class="line"><span class="lineno"> 3741</span>    {</div>
 <div class="line"><span class="lineno"> 3742</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;ml : gd-&gt;getMemberLists())</div>
 <div class="line"><span class="lineno"> 3743</span>      {</div>
