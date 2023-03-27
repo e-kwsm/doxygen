@@ -1,5 +1,15 @@
 var NAVTREEINDEX82 =
 {
+"da/dbb/class_translator_bulgarian.html#a7c6b09b5df95f1c049cad5f768030553":[8,0,583,21],
+"da/dbb/class_translator_bulgarian.html#a7ec7dc8fac74f8e9d7f3fa99f7bd9789":[8,0,583,176],
+"da/dbb/class_translator_bulgarian.html#a7f94baa80729d6e5225a32af4ab1fb0b":[8,0,583,245],
+"da/dbb/class_translator_bulgarian.html#a7fd3d64048f6f5e228a7563007b322b9":[8,0,583,272],
+"da/dbb/class_translator_bulgarian.html#a7fe208a24e668c3053c864affcd775a8":[8,0,583,203],
+"da/dbb/class_translator_bulgarian.html#a8070517e42070f189b74e6047dace508":[8,0,583,277],
+"da/dbb/class_translator_bulgarian.html#a80c98ef8cdec5f834fd248edd2fc93db":[8,0,583,135],
+"da/dbb/class_translator_bulgarian.html#a81be7fdf7370a1c78231179f02bebf33":[8,0,583,175],
+"da/dbb/class_translator_bulgarian.html#a81ebe6f14451da9baa03924351c04448":[8,0,583,165],
+"da/dbb/class_translator_bulgarian.html#a8201512ce63086775f8499921fd7c9ab":[8,0,583,120],
 "da/dbb/class_translator_bulgarian.html#a828bb831213633a2b0e18472c2ddeb70":[8,0,583,101],
 "da/dbb/class_translator_bulgarian.html#a82c7e39e848d2893293d6a85f5b64a77":[8,0,583,31],
 "da/dbb/class_translator_bulgarian.html#a83d9707ca0d4548a654538f8d4215f90":[8,0,583,270],
@@ -239,15 +249,5 @@ var NAVTREEINDEX82 =
 "da/dd8/struct_style_data.html#a0b065b8e48e6258fdc607f8b362ded48":[8,0,490,0],
 "da/dd8/struct_style_data.html#a443c5942e29a67d8410ed800671c3d0b":[8,0,490,7],
 "da/dd8/struct_style_data.html#a778df6e3e0962fc37bdbbb8cf4dced15":[8,0,490,3],
-"da/dd8/struct_style_data.html#a7a9ef51c3d04534f0d123bc771ab3367":[8,0,490,5],
-"da/dd8/struct_style_data.html#acae6677bf1fd21e0b3b0607243d3f01a":[8,0,490,2],
-"da/dd8/struct_style_data.html#af5bfe4b887b11e7daba3c3648697e031":[8,0,490,4],
-"da/dd8/struct_style_data.html#af7b4270cec917791d56b70ff1c5606e3":[8,0,490,8],
-"da/dd8/struct_style_data.html#afa4e839cadb0aa89001d0a3b45845ce9":[8,0,490,1],
-"da/dd8/struct_style_data.html#afb8d293d6b6162f687f6d753e9221729":[8,0,490,6],
-"da/ddb/class_search_index_context.html":[8,0,472],
-"da/ddb/class_search_index_context.html#a3dffa187690f49c14a113bf36cfeca5c":[8,0,472,2],
-"da/ddb/class_search_index_context.html#a5d4ca0019e5bf84cff2ac20ae354cdb4":[8,0,472,1],
-"da/ddb/class_search_index_context.html#a60285ba08e1262deae1ccb3da68a862a":[8,0,472,3],
-"da/ddb/class_search_index_context.html#a72c264ac48a3281aae4ab20dd312d2c3":[8,0,472,4]
+"da/dd8/struct_style_data.html#a7a9ef51c3d04534f0d123bc771ab3367":[8,0,490,5]
 };
