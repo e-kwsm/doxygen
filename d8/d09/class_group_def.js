@@ -12,6 +12,7 @@ var class_group_def =
     [ "addPage", "d8/d09/class_group_def.html#a5c5d805ca23c87783db6d27f231ba8ab", null ],
     [ "anchor", "d8/d09/class_group_def.html#a4793e7380ad34e51deabeb86fa5067f4", null ],
     [ "computeAnchors", "d8/d09/class_group_def.html#a63dbf389eb8b78455fca974006ffa73e", null ],
+    [ "containsFile", "d8/d09/class_group_def.html#a645821da41c9e9e22e0f9e4e114c2087", null ],
     [ "countMembers", "d8/d09/class_group_def.html#a12209686dee1aa61c48d34e82cd31017", null ],
     [ "definitionType", "d8/d09/class_group_def.html#a1ac8ba7e1e83fdc38aa1594eec54a7aa", null ],
     [ "displayName", "d8/d09/class_group_def.html#a18e0fe51d16e379b0de8a0c232e390b5", null ],
@@ -46,7 +47,7 @@ var class_group_def =
     [ "sortSubGroups", "d8/d09/class_group_def.html#a504ee747b49968786514ec580fa5218c", null ],
     [ "subGrouping", "d8/d09/class_group_def.html#a9c6b08e19187d1332f355ab93a421480", null ],
     [ "writeDocumentation", "d8/d09/class_group_def.html#a6e661711fbab648ce59579dc94618538", null ],
-    [ "writeMemberPages", "d8/d09/class_group_def.html#ac56026c085468a8244cb04a27af01be9", null ],
+    [ "writeMemberPages", "d8/d09/class_group_def.html#a1e54ab530ac3ca3c1495031770de8b4e", null ],
     [ "writeQuickMemberLinks", "d8/d09/class_group_def.html#adcb59b59ce5cf7db4bb1f62d5a9592ed", null ],
     [ "writeTagFile", "d8/d09/class_group_def.html#a0f8761743f1171297d79ea2b7074ec63", null ]
 ];
