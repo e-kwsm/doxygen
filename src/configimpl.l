@@ -654,7 +654,7 @@ static ConfigImpl       *g_config = nullptr;
 static Config::CompareMode g_compareMode = Config::CompareMode::Full;
 static QCString          g_localStoreRepl;
 
-#define unput_string(yytext,yyleng) do { for (int i=(int)yyleng-1;i>=0;i--) unput(yytext[i]); } while(0)
+#define unput_string(yytext,yyleng) do { for (int i=(int)yyleng-1;i>=0;i--) unput(yytext[i]); } while(false)
 /* -----------------------------------------------------------------
  */
 #undef  YY_INPUT
