@@ -1117,9 +1117,9 @@ static contexts_t getParagraphContext(const DocPara &p,bool &isFirst,bool &isLas
       }
       isFirst=isFirstChildNode(parBlock,p);
       isLast =isLastChildNode (parBlock,p);
-      bool isLI = p3!=0 && holds_one_of_alternatives<DocHtmlListItem,DocSecRefItem>(*p3);
-      bool isDD = p3!=0 && holds_one_of_alternatives<DocHtmlDescData,DocXRefItem,DocSimpleSect>(*p3);
-      bool isTD = p3!=0 && holds_one_of_alternatives<DocHtmlCell,DocParamList>(*p3);
+      bool isLI = p3!=nullptr && holds_one_of_alternatives<DocHtmlListItem,DocSecRefItem>(*p3);
+      bool isDD = p3!=nullptr && holds_one_of_alternatives<DocHtmlDescData,DocXRefItem,DocSimpleSect>(*p3);
+      bool isTD = p3!=nullptr && holds_one_of_alternatives<DocHtmlCell,DocParamList>(*p3);
       t=contexts_t::NONE;
       if (isFirst)
       {

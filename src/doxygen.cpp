@@ -1836,7 +1836,7 @@ static void findUsingDirectives(const Entry *root)
       // see if the using statement was found inside a namespace or inside
       // the global file scope.
       if (root->parent() && root->parent()->section.isNamespace() &&
-          (fd==0 || fd->getLanguage()!=SrcLangExt::Java) // not a .java file
+          (fd==nullptr || fd->getLanguage()!=SrcLangExt::Java) // not a .java file
          )
       {
         nsName=stripAnonymousNamespaceScope(root->parent()->name);
@@ -3212,7 +3212,7 @@ static void addMethodToClass(const Entry *root,ClassDefMutable *cd,
   // strip redundant template specifier for constructors
   int i = -1;
   int j = -1;
-  if ((fd==0 || fd->getLanguage()==SrcLangExt::Cpp) &&
+  if ((fd==nullptr || fd->getLanguage()==SrcLangExt::Cpp) &&
       !name.startsWith("operator ") &&   // not operator
       (i=name.find('<'))!=-1    &&   // containing <
       (j=name.find('>'))!=-1    &&   // or >
@@ -4498,7 +4498,7 @@ static bool findClassRelation(
         int i=findTemplateSpecializationPosition(baseClassName);
         int si=baseClassName.findRev("::",i);
         if (si==-1) si=0;
-        if (baseClass==0 && static_cast<size_t>(i)!=baseClassName.length())
+        if (baseClass==nullptr && static_cast<size_t>(i)!=baseClassName.length())
           // base class has template specifiers
         {
           // TODO: here we should try to find the correct template specialization
