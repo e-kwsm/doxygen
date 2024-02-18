@@ -237,7 +237,7 @@ void Entry::reset()
   typeConstr.reset();
   sli.clear();
   req.clear();
-  m_fileDef = 0;
+  m_fileDef = nullptr;
   qualifiers.clear();
 }
 

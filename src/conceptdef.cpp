@@ -435,7 +435,7 @@ void ConceptDefImpl::writeDefinition(OutputList &ol,const QCString &title) const
     TextStream conceptDef;
     conceptDef << m_initializer;
     intf->parseCode(codeOL,scopeName,conceptDef.str(),SrcLangExt::Cpp,false,QCString(),
-                    m_fileDef, -1,-1,true,0,false,this);
+                    m_fileDef, -1,-1,true,nullptr,false,this);
     codeOL.endCodeFragment("DoxyCode");
 }
 
