@@ -1037,7 +1037,7 @@ REGEX_w [a-z_A-Z0-9\x80-\xFF]
 <Start>[a-z_A-Z][a-z_A-Z0-9]*[ \t]*"="   { g_cmd=yytext;
                                            g_cmd=g_cmd.left(g_cmd.length()-1).stripWhiteSpace();
                                            ConfigOption *option = g_config->get(g_cmd);
-                                           if (option==0) // oops not known
+                                           if (option==nullptr) // oops not known
                                            {
                                              ConfigImpl::config_warn("ignoring unsupported tag '{}' at line {}, file {}\n",
                                                  g_cmd,g_yyLineNr,g_yyFileName);
@@ -1126,7 +1126,7 @@ REGEX_w [a-z_A-Z0-9\x80-\xFF]
 <Start>[a-z_A-Z][a-z_A-Z0-9]*[ \t]*"+=" { g_cmd=yytext;
                                           g_cmd=g_cmd.left(g_cmd.length()-2).stripWhiteSpace();
                                           ConfigOption *option = g_config->get(g_cmd);
-                                          if (option==0) // oops not known
+                                          if (option==nullptr) // oops not known
                                           {
                                             ConfigImpl::config_warn("ignoring unsupported tag '{}' at line {}, file {}\n",
                                                 g_cmd,g_yyLineNr,g_yyFileName);
@@ -1556,7 +1556,7 @@ void ConfigImpl::init()
     if (!depName.isEmpty())
     {
       ConfigOption * opt = ConfigImpl::instance()->get(depName);
-      if (opt==0)
+      if (opt==nullptr)
       {
         config_term("Config option '{}' has invalid depends relation on unknown option '{}'\n",
             option->name(),depName);
@@ -1617,7 +1617,7 @@ bool ConfigImpl::parseString(const QCString &fn,const QCString &str,bool update)
   g_configUpdate = update;
   configimplYYlex();
   g_configUpdate = FALSE;
-  g_inputString = 0;
+  g_inputString = nullptr;
   return TRUE;
 }
 
