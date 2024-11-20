@@ -336,7 +336,7 @@ void parseFuncDecl(const QCString &decl,const SrcLangExt lang,QCString &cl,QCStr
   declinfoYYset_debug(Debug::isFlagSet(Debug::Lex_declinfo)?1:0,g_yyscanner);
 #endif
 
-  DebugLex debugLex(Debug::Lex_declinfo,__FILE__, NULL);
+  DebugLex debugLex(Debug::Lex_declinfo,__FILE__, nullptr);
   yyextra->inputString   = decl.data();
   //printf("Input='%s'\n",yyextra->inputString);
   yyextra->inputPosition      = 0;
