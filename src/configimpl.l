@@ -928,7 +928,7 @@ static FILE *tryPath(const QCString &path,const QCString &fileName)
     if (!f) ConfigImpl::config_err("could not open file {} for reading\n",absName);
     return f;
   }
-  return 0;
+  return nullptr;
 }
 
 static void substEnvVarsInStrList(StringVector &sl);
@@ -938,7 +938,7 @@ static FILE *findFile(const QCString &fileName)
 {
   if (fileName.isEmpty())
   {
-    return 0;
+    return nullptr;
   }
   if (Portable::isAbsolutePath(fileName))
   {
