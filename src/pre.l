@@ -2374,7 +2374,7 @@ static std::unique_ptr<FileState> checkAndOpenFile(yyscan_t yyscanner,const DStr
       {
         alreadyProcessed = true;
         //printf("  already included 1\n");
-        return 0; // already done
+        return nullptr; // already done
       }
     }
     // check include stack for absName

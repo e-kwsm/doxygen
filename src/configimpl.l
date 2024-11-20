@@ -932,7 +932,7 @@ static FILE *tryPath(const DString &path,const DString &fileName)
     if (!f) ConfigImpl::config_err("could not open file {} for reading\n",absName);
     return f;
   }
-  return 0;
+  return nullptr;
 }
 
 static void substEnvVarsInStrList(StringVector &sl);
@@ -942,7 +942,7 @@ static FILE *findFile(const DString &fileName)
 {
   if (fileName.empty())
   {
-    return 0;
+    return nullptr;
   }
   if (Portable::isAbsolutePath(fileName))
   {
