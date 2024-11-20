@@ -1243,9 +1243,9 @@ void LexCodeParser::parseCode(OutputCodeList &codeOutIntf,
   yyextra->exampleBlock  = isExampleBlock;
   yyextra->exampleName   = exampleName;
   yyextra->sourceFileDef = fileDef;
-  yyextra->lineNumbers   = fileDef!=0 && showLineNumbers;
+  yyextra->lineNumbers   = fileDef!=nullptr && showLineNumbers;
 
-  if (isExampleBlock && fileDef==0)
+  if (isExampleBlock && fileDef==nullptr)
   {
     // create a dummy filedef for the example
     yyextra->exampleFileDef = createFileDef(QCString(),!exampleName.isEmpty() ? exampleName : QCString("generated"));

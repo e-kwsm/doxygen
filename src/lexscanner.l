@@ -949,7 +949,7 @@ static void parseMain(yyscan_t yyscanner,
 
   yyextra->inputString = fileBuf;
   yyextra->inputPosition = 0;
-  lexscannerYYrestart(0,yyscanner);
+  lexscannerYYrestart(nullptr,yyscanner);
 
   yyextra->current_root  = rt;
   yyextra->fileName = fileName;
