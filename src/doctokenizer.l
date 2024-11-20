@@ -126,7 +126,7 @@ DString extractPartAfterNewLine(const DString &text)
 
 static int computeIndent(const char *str,size_t length)
 {
-  if (str==0 || length==std::string::npos) return 0;
+  if (str==nullptr || length==std::string::npos) return 0;
   size_t i;
   int indent=0;
   int tabSize=Config_getInt(TAB_SIZE);

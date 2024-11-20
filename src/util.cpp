@@ -306,7 +306,7 @@ DString resolveTypeDef(const Definition *context,const DString &qualifiedName,
         searchRelated=true;
       }
       MemberName *mn=mnd->find(resName);
-      if (mn==0 && searchRelated)
+      if (mn==nullptr && searchRelated)
       {
         mn=Doxygen::memberNameLinkedMap->find(resName);
         mustBeRelated=true;
