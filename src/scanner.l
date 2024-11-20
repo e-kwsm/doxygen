@@ -8033,7 +8033,7 @@ static void startCommentBlock(yyscan_t yyscanner,bool brief)
 static void newEntry(yyscan_t yyscanner)
 {
   struct yyguts_t *yyg = (struct yyguts_t*)yyscanner;
-  if (yyextra->tempEntry==0) // if temp entry is not 0, it holds yyextra->current,
+  if (yyextra->tempEntry==nullptr) // if temp entry is not 0, it holds yyextra->current,
                     // and yyextra->current is actually replaced by yyextra->previous which was
                     // already added to yyextra->current_root, so we should not add it again
                     // (see bug723314)
