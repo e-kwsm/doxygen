@@ -452,7 +452,7 @@ void SQLCodeParser::parseCode(OutputCodeList &codeOutIntf,
   yyextra->exampleName   = exampleName;
   yyextra->sourceFileDef = fileDef;
 
-  if (isExampleBlock && fileDef==0)
+  if (isExampleBlock && fileDef==nullptr)
   {
     // create a dummy filedef for the example
     yyextra->exampleFileDef = createFileDef(QCString(),!exampleName.isEmpty() ? exampleName : QCString("generated"));
