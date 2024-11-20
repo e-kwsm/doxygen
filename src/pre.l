@@ -1905,7 +1905,7 @@ WSopt [ \t\r]*
                                             addMacroDefinition(yyscanner);
                                           }
                                           def=isDefined(yyscanner,yyextra->defName);
-                                          if (def==0) // new define
+                                          if (def==nullptr) // new define
                                           {
                                             //printf("new define '%s'!\n",qPrint(yyextra->defName));
                                             addDefine(yyscanner);
