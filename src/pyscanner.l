@@ -2057,7 +2057,7 @@ static void endOfDef(yyscan_t yyscanner,int correction)
   if (yyextra->bodyEntry)
   {
     yyextra->bodyEntry->endBodyLine  = yyextra->yyLineNr-correction;
-    yyextra->bodyEntry = 0;
+    yyextra->bodyEntry = nullptr;
   }
   newEntry(yyscanner);
   //yyextra->insideConstructor = FALSE;
