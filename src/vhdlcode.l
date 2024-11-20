@@ -1462,7 +1462,7 @@ static void endFontClass(yyscan_t yyscanner,bool specialComment)
   if (yyextra->currentFontClass)
   {
     yyextra->code->endFontClass();
-    yyextra->currentFontClass=0;
+    yyextra->currentFontClass=nullptr;
   }
   if (specialComment && yyextra->insideSpecialComment)
   {
