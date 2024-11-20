@@ -280,7 +280,7 @@ static void endFontClass(yyscan_t yyscanner)
   if (yyextra->currentFontClass)
   {
     yyextra->code->endFontClass();
-    yyextra->currentFontClass=0;
+    yyextra->currentFontClass=nullptr;
   }
 }
 
