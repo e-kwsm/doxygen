@@ -3908,7 +3908,7 @@ static void readIncludeFile(yyscan_t yyscanner,const DString &inc)
       state->expectGuard=true;
       state->inputBuf   = &fs_ptr->fileBuf;
       state->inputBufPos=0;
-      yy_switch_to_buffer(yy_create_buffer(0, YY_BUF_SIZE, yyscanner),yyscanner);
+      yy_switch_to_buffer(yy_create_buffer(nullptr, YY_BUF_SIZE, yyscanner),yyscanner);
     }
     else
     {
