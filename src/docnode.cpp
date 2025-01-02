@@ -2337,7 +2337,7 @@ struct ActiveRowSpan
 };
 
 /** List of ActiveRowSpan classes. */
-typedef std::vector<ActiveRowSpan> RowSpanList;
+using RowSpanList = std::vector<ActiveRowSpan>;
 
 /** determines the location of all cells in a grid, resolving row and
     column spans. For each the total number of visible cells is computed,
