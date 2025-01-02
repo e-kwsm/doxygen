@@ -179,8 +179,8 @@ static bool handleIPrefix(yyscan_t yyscanner,const QCString &, const StringVecto
 
 static QCString fileInfoLookup(const FileInfo &fi,const std::string &name);
 
-typedef bool (*DocCmdFunc)(yyscan_t yyscanner,const QCString &name, const StringVector &optList);
-typedef EntryType (*MakeEntryType)();
+using DocCmdFunc = bool (*)(yyscan_t yyscanner,const QCString &name, const StringVector &optList);
+using MakeEntryType = EntryType (*)();
 
 enum class CommandSpacing
 {
