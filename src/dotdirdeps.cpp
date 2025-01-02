@@ -58,7 +58,7 @@ class DotDirPropertyBuilder
 };
 
 /** Elements consist of (1) directory relation and (2) whether it is pointing only to inherited dependees. */
-typedef std::vector< std::pair< std::unique_ptr<DirRelation>, bool> > DirRelations;
+using DirRelations = std::vector<std::pair<std::unique_ptr<DirRelation>, bool>>;
 
 /** Returns a DOT color name according to the directory depth. */
 static QCString getDirectoryBackgroundColor(int depthIndex)
