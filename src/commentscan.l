@@ -177,8 +177,8 @@ static bool handleIPrefix(yyscan_t yyscanner,const QCString &, const StringVecto
 
 [[maybe_unused]] static const char *stateToString(int state);
 
-typedef bool (*DocCmdFunc)(yyscan_t yyscanner,const QCString &name, const StringVector &optList);
-typedef EntryType (*MakeEntryType)();
+using DocCmdFunc = bool (*)(yyscan_t yyscanner,const QCString &name, const StringVector &optList);
+using MakeEntryType = EntryType (*)();
 
 enum class CommandSpacing
 {
