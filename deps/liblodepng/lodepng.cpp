@@ -95,13 +95,13 @@ Either, *out must be NULL and *outsize must be 0, or, *out must be a valid buffe
 
 //--------------------------------------------------------------------------------------------
 
-typedef struct vector /*this one is used only by the deflate compressor*/
+struct vector /*this one is used only by the deflate compressor*/
 {
   void* data;
   size_t size; /*in groups of bytes depending on type*/
   size_t allocsize; /*in bytes*/
   unsigned typesize; /*sizeof the type you store in data*/
-} vector;
+};
 
 static unsigned vector_resize(vector* p, size_t size) /*returns 1 if success, 0 if failure ==> nothing done*/
 {
@@ -164,12 +164,12 @@ static void* vector_get(vector* p, size_t index)
 
 /* /////////////////////////////////////////////////////////////////////////// */
 
-typedef struct uivector
+struct uivector
 {
   unsigned* data;
   size_t size; /*size in number of unsigned longs*/
   size_t allocsize; /*allocated size in bytes*/
-} uivector;
+};
 
 static void uivector_cleanup(void* p)
 {
@@ -236,12 +236,12 @@ static void uivector_swap(uivector* p, uivector* q)
 
 /* /////////////////////////////////////////////////////////////////////////// */
 
-typedef struct ucvector
+struct ucvector
 {
   unsigned char* data;
   size_t size; /*used size*/
   size_t allocsize; /*allocated size*/
-} ucvector;
+};
 
 static void ucvector_cleanup(void* p)
 {
@@ -337,11 +337,11 @@ static const unsigned CLCL[NUM_CODE_LENGTH_CODES] /*the order in which "code len
 /* /////////////////////////////////////////////////////////////////////////// */
 
 /*terminology used for the package-merge algorithm and the coin collector's problem*/
-typedef struct Coin /*a coin can be multiple coins (when they're merged)*/
+struct Coin /*a coin can be multiple coins (when they're merged)*/
 {
   uivector symbols;
   float weight; /*the sum of all weights in this coin*/
-} Coin;
+};
 
 static void Coin_init(Coin* c)
 {
@@ -390,14 +390,14 @@ static void Coin_sort(Coin* data, size_t amount) /*combsort*/
   }
 }
 
-typedef struct HuffmanTree
+struct HuffmanTree
 {
   uivector tree2d;
   uivector tree1d;
   uivector lengths; /*the lengths of the codes of the 1d-tree*/
   unsigned maxbitlen; /*maximum number of bits a single code can get*/
   unsigned numcodes; /*number of symbols in the alphabet = number of codes*/
-} HuffmanTree;
+};
 
 /*function used for debug purposes*/
 /*#include <iostream>
