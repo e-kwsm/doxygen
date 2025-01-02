@@ -29,7 +29,7 @@
 // forward declare yyscan_t to improve type safety
 #define YY_TYPEDEF_YY_SCANNER_T
 struct yyguts_t;
-typedef yyguts_t *yyscan_t;
+using yyscan_t = yyguts_t *;
 }
 
 %{
