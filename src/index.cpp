@@ -2783,7 +2783,7 @@ static void writeMemberList(OutputList &ol,bool useSections,const std::string &p
   const int numIndices = 4;
   ASSERT(index<numIndices);
 
-  typedef void (*writeLinkForMember_t)(OutputList &ol,const MemberDef *md,const QCString &separator,
+  using writeLinkForMember_t = void (*)(OutputList &ol,const MemberDef *md,const QCString &separator,
                                    QCString &prevNamespaceName);
 
   // each index tab has its own write function
