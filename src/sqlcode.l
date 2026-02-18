@@ -435,7 +435,7 @@ void SQLCodeParser::parseCode(OutputCodeList &codeOutIntf,
   yyextra->sourceFileDef     = options.fileDef();
   yyextra->lineNumbers       = options.fileDef() && options.showLineNumbers();
 
-  if (options.isExample() && options.fileDef()==0)
+  if (options.isExample() && options.fileDef()==nullptr)
   {
     // create a dummy filedef for the example
     yyextra->exampleFileDef = createFileDef(DString(),!options.exampleName().empty() ? options.exampleName() : DString("generated"));
